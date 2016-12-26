@@ -58,8 +58,10 @@ SRC =		ft_atoi.c \
 			ft_putstr.c \
 			ft_putstr_fd.c \
 			ft_strcat.c \
+			ft_strccat.c \
 			ft_strccpy.c \
 			ft_strchr.c \
+			ft_strcjoin.c \
 			ft_strclen.c \
 			ft_strclr.c \
 			ft_strcmp.c \
