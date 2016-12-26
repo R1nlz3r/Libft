@@ -6,7 +6,7 @@
 /*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 07:26:24 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/16 21:56:50 by mapandel         ###   ########.fr       */
+/*   Updated: 2016/12/27 00:04:10 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,15 @@ char	*ft_strncat(char *dest, const char *src, size_t n)
 
 	i = 0;
 	j = 0;
-	if (n == 0)
+	if (!n)
 		return (dest);
 	while (dest[i])
-		i++;
+		++i;
 	while (j < n && src[j])
 	{
 		dest[i] = src[j];
-		i++;
-		j++;
+		++i;
+		++j;
 	}
 	dest[i] = '\0';
 	return (dest);
