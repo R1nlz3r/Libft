@@ -6,7 +6,7 @@
 /*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 18:31:15 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/07 08:32:41 by mapandel         ###   ########.fr       */
+/*   Updated: 2016/12/27 00:03:30 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,17 +21,13 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	i = 0;
 	scpy = NULL;
 	result = NULL;
-	if (s != NULL && f != NULL)
+	if (!s || !f || !(scpy = ft_strdup(s))
+		|| !(result = ft_strnew(ft_strlen(scpy))))
+		return (NULL);
+	while (i < ft_strlen(scpy))
 	{
-		if ((scpy = ft_strdup(s)) == NULL)
-			return (NULL);
-		if ((result = ft_strnew(ft_strlen(scpy))) == NULL)
-			return (NULL);
-		while (i < ft_strlen(scpy))
-		{
-			result[i] = f(i, scpy[i]);
-			i++;
-		}
+		result[i] = f(i, scpy[i]);
+		i++;
 	}
 	return (result);
 }
