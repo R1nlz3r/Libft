@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/26 12:36:12 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/26 12:37:44 by mapandel         ###   ########.fr       */
+/*   Updated: 2016/12/26 15:49:15 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strccat(char *dest, const char *src, char c)
 	i = 0;
 	j = 0;
 	while (dest[i])
-		i++;
+		++i;
 	while (src[j] && src[j] != c)
 		dest[i++] = src[j++];
 	dest[i] = '\0';
