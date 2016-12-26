@@ -6,7 +6,7 @@
 /*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 06:56:49 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/04 07:02:44 by mapandel         ###   ########.fr       */
+/*   Updated: 2016/12/26 23:03:40 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strcpy(char *dest, const char *src)
 	while (src[i])
 	{
 		dest[i] = src[i];
-		i++;
+		++i;
 	}
 	dest[i] = '\0';
 	return (dest);
