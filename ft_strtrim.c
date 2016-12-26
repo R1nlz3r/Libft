@@ -6,7 +6,7 @@
 /*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 19:33:53 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/13 13:56:21 by mapandel         ###   ########.fr       */
+/*   Updated: 2016/12/26 23:06:57 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_strtrim(const char *s)
 	if (i == 0 && (s[i] == ' ' || s[i] == '\n' || s[i] == '\t'))
 		return (NULL);
 	++i;
-	if ((ret = ft_strnew(i)) == NULL)
+	if (!(ret = ft_strnew(i)))
 		return (NULL);
 	ft_strncpy(ret, s, i);
 	return (ret);
