@@ -6,7 +6,7 @@
 /*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 15:34:05 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/13 20:09:56 by mapandel         ###   ########.fr       */
+/*   Updated: 2016/12/26 13:05:56 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,9 @@ int		ft_atoi(const char *nptr)
 	while (ft_isspace(nptr[i]))
 		i++;
 	if (nptr[i] == '+' || nptr[i] == '-')
-	{
-		if (nptr[i] == '-')
+		if (nptr[i++] == '-')
 			neg = -1;
-		i++;
-	}
 	while (nptr[i] >= '0' && nptr[i] <= '9')
-	{
-		result = result * 10 + nptr[i] - '0';
-		i++;
-	}
+		result = result * 10 + nptr[i++] - '0';
 	return (result * neg);
 }
