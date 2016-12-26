@@ -6,7 +6,7 @@
 /*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 21:10:53 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/15 17:02:38 by mapandel         ###   ########.fr       */
+/*   Updated: 2016/12/26 15:52:39 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_putstr(char const *s)
 {
-	if (s != NULL)
+	if (s)
 		write(1, s, ft_strlen(s));
 }
