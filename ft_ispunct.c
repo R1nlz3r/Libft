@@ -6,7 +6,7 @@
 /*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 17:05:23 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/06 17:08:18 by mapandel         ###   ########.fr       */
+/*   Updated: 2016/12/26 14:21:12 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 int		ft_ispunct(int c)
 {
-	if (ft_isalnum(c) == 0 && ft_isgraph(c) == 1)
+	if (!ft_isalnum(c) && ft_isgraph(c))
 		return (1);
-	else
-		return (0);
+	return (0);
 }
