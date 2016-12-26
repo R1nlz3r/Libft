@@ -6,7 +6,7 @@
 /*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 07:35:06 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/09 19:57:50 by mapandel         ###   ########.fr       */
+/*   Updated: 2016/12/26 12:58:50 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	while (dest[i] && i < size)
 		i++;
 	j = i;
-	while (src[i - j] && i < (size - 1))
+	while (src[i - j] && size != 0 && i < (size - 1))
 	{
 		dest[i] = src[i - j];
 		i++;
