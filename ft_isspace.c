@@ -6,7 +6,7 @@
 /*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 17:09:31 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/06 17:14:55 by mapandel         ###   ########.fr       */
+/*   Updated: 2016/12/26 14:22:55 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 int		ft_isspace(int c)
 {
-	if (ft_isblank(c) == 1 || (c >= 10 && c <= 13))
+	if (ft_isblank(c) || (c >= 10 && c <= 13))
 		return (1);
-	else
-		return (0);
+	return (0);
 }
