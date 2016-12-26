@@ -6,7 +6,7 @@
 /*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 03:27:31 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/16 19:52:47 by mapandel         ###   ########.fr       */
+/*   Updated: 2016/12/26 23:11:50 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,9 +61,9 @@ char			**ft_strsplit(const char *s, char c)
 	char		**result;
 	size_t		nbwords;
 
-	if (s == NULL || c == 0)
+	if (!s || !c)
 		return (NULL);
-	if (s[0] == '\0')
+	if (!s[0])
 	{
 		if (!(result = ft_memalloc(sizeof(char*) * 1)))
 			return (NULL);
