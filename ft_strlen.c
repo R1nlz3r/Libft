@@ -6,7 +6,7 @@
 /*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 03:25:47 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/12 15:40:39 by mapandel         ###   ########.fr       */
+/*   Updated: 2016/12/26 23:56:50 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,7 @@ size_t		ft_strlen(const char *s)
 	size_t	i;
 
 	i = 0;
-	while (*s)
-	{
-		s++;
-		i++;
-	}
+	while (s[i])
+		++i;
 	return (i);
 }
