@@ -6,7 +6,7 @@
 /*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 16:56:06 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/16 22:48:56 by mapandel         ###   ########.fr       */
+/*   Updated: 2016/12/26 13:14:12 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 int		ft_iscntrl(int c)
 {
-	if (ft_isprint(c) == 0)
+	if (!ft_isprint(c))
 		return (1);
-	else
-		return (0);
+	return (0);
 }
