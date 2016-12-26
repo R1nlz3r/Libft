@@ -6,7 +6,7 @@
 /*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 18:10:27 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/07 08:26:00 by mapandel         ###   ########.fr       */
+/*   Updated: 2016/12/26 23:44:20 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,6 @@ void	ft_striter(char *s, void (*f)(char*))
 	size_t i;
 
 	i = 0;
-	if (s != NULL && f != NULL)
-	{
-		while (s[i])
-		{
-			f(&s[i]);
-			i++;
-		}
-	}
+	while (f && s && s[i])
+		f(&s[i++]);
 }
