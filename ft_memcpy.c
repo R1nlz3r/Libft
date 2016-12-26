@@ -6,7 +6,7 @@
 /*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 17:44:51 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/05 17:44:54 by mapandel         ###   ########.fr       */
+/*   Updated: 2016/12/27 00:22:30 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	while (i < n)
 	{
 		((char *)dest)[i] = ((char *)(unsigned long)src)[i];
-		i++;
+		++i;
 	}
 	return (dest);
 }
