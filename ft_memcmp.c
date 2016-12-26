@@ -6,7 +6,7 @@
 /*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 06:16:37 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/09 22:07:48 by mapandel         ###   ########.fr       */
+/*   Updated: 2016/12/26 15:48:12 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	if (n <= 0)
+	if (!n)
 		return (0);
 	while (--n && *(char*)(unsigned long)s1 == *(char*)(unsigned long)s2)
 	{
