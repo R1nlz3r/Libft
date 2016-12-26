@@ -6,7 +6,7 @@
 /*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 17:23:05 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/07 07:12:49 by mapandel         ###   ########.fr       */
+/*   Updated: 2016/23/26 23:05:13 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,5 @@ int		ft_toupper(int c)
 {
 	if (ft_islower(c))
 		return (c - 32);
-	else
-		return (c);
+	return (c);
 }
