@@ -6,7 +6,7 @@
 /*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 05:54:16 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/09 22:11:53 by mapandel         ###   ########.fr       */
+/*   Updated: 2016/12/26 15:15:34 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,6 @@ void	*ft_memchr(const void *s, int c, size_t n)
 		i++;
 	if (i >= n)
 		return (NULL);
-	else
-	{
-		bus = &((char*)(unsigned long)s)[i];
-		return ((void*)bus);
-	}
+	bus = &((char*)(unsigned long)s)[i];
+	return ((void*)bus);
 }
