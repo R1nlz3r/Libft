@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2016/12/05 15:57:33 by mapandel         ###   ########.fr        #
+#    Updated: 2016/12/29 18:38:28 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,6 +57,7 @@ SRC =		ft_atoi.c \
 			ft_putnbr_fd.c \
 			ft_putstr.c \
 			ft_putstr_fd.c \
+			ft_stradd.c \
 			ft_strcat.c \
 			ft_strccat.c \
 			ft_strccpy.c \
