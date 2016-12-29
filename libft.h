@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/05 16:17:18 by mapandel         ###   ########.fr       */
+/*   Updated: 2016/12/29 18:37:50 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,7 @@ void				ft_putnbr(int n);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putstr(char const *s);
 void				ft_putstr_fd(char const *s, int fd);
+char				*ft_stradd(char const *s1, char c);
 char				*ft_strcat(char *dest, const char *src);
 char				*ft_strccat(char *dest, const char *src, char c);
 char				*ft_strccpy(char *dest, const char *src, char c);
