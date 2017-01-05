@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/01/05 14:33:58 by mapandel         ###   ########.fr        #
+#    Updated: 2017/01/05 14:52:56 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -121,7 +121,7 @@ all: $(NAME)
 
 standard:
 	@echo "$(YEL)--::Check Standard::--$(DEF)"
-	@norminette -R CheckForbiddenSourceHeader $(SRC) $(LIB)
+	@norminette -R CheckForbiddenSourceHeader $(SRC)
 
 re: fclean all
 
