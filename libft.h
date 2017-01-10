@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/01/05 19:15:44 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/01/10 17:04:54 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,10 @@ typedef struct		s_list
 
 typedef struct		s_line
 {
-	struct s_line   *next;
-  int             fd;
-	char						pad_0[4];
-  char            *buf;
+	struct s_line	*next;
+	int				fd;
+	char			pad_0[4];
+	char			*buf;
 }					t_line;
 
 int					ft_atoi(const char *nptr);
