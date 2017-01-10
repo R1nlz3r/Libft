@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/01/05 19:16:14 by mapandel         ###   ########.fr        #
+#    Updated: 2017/01/10 17:01:57 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -114,7 +114,7 @@ WHI =		\033[37m
 
 $(NAME):
 	@make affcompil
-	@echo "$(GRE)--::Indextion Bookstore::--$(DEF)"
+	@echo "$(GRE)--::Library Indextion::--$(DEF)"
 	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
 
@@ -134,13 +134,13 @@ glu: fclean all clean
 	$(CC) $(CFLAGS) -c -o $@ $^
 
 affcompil:
-	@echo "$(BLU)--::Check Standard::--$(DEF)"
+	@echo "$(BLU)--::Library Compilation::--$(DEF)"
 	@make $(OBJ)
 
 #			Clean Rules
 
 clean:
-	@echo "$(PUR)--::Binary Delection::--$(DEF)"
+	@echo "$(PUR)--::Library Binary Delection::--$(DEF)"
 	@rm -rf $(OBJ)
 
 fclean: clean
