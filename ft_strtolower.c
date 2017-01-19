@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/19 16:51:55 by mapandel          #+#    #+#             */
-/*   Updated: 2017/01/19 16:57:38 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/01/19 17:12:08 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libbft.h"
+#include "libft.h"
 
 char	*ft_strtolower(char *s)
 {
