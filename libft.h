@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/01/20 17:29:20 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/01/23 22:24:35 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,8 @@ int					ft_isspace(int c);
 int					ft_isupper(int c);
 int					ft_isxdigit(int c);
 char				*ft_itoa(int n);
+char				*ft_itoabase_signed(long long int, int base);
+char				*ft_itoabase_unsigned(unsigned long long int, int base);
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstdel(t_list **alst, void (*del)(void*, size_t));
 void				ft_lstdelone(t_list **alst, void (*del)(void*, size_t));
@@ -101,6 +103,7 @@ char				*ft_strnew(size_t size);
 char				*ft_strnstr(const char *big, const char *little,
 		size_t len);
 char				*ft_strrchr(const char *s, int c);
+char				*ft_strrev(const char *s);
 char				**ft_strsplit(char const *s, char c);
 char				*ft_strstr(const char *big, const char *little);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
