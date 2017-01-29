@@ -6,18 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/29 04:06:11 by mapandel          #+#    #+#             */
-/*   Updated: 2017/01/29 04:08:17 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/01/29 06:37:48 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strfill(char *s, char c)
+char	*ft_strfill(char *s, char c, size_t size)
 {
 	size_t		i;
 
 	i = 0;
-	while (s && s[i])
+	while (s && i < size)
 		s[i++] = c;
 	return (s);
 }
