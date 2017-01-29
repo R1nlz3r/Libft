@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/01/29 04:09:35 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/01/29 06:37:50 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,7 +88,7 @@ char				*ft_strcpy(char *dest, const char *src);
 void				ft_strdel(char **as);
 char				*ft_strdup(const char *s);
 int					ft_strequ(char const *s1, char const *s2);
-char				*ft_strfill(char *s, char c);
+char				*ft_strfill(char *s, char c, size_t size);
 void				ft_striter(char *s, void (*f)(char*));
 void				ft_striteri(char *s, void (*f)(unsigned int, char*));
 char				*ft_strjoin(char const *s1, char const *s2);
