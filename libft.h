@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/01/30 11:55:31 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/02/03 13:52:48 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,23 +16,6 @@
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
-
-# define BUFF_SIZE 32
-
-typedef struct		s_list
-{
-	void			*content;
-	size_t			content_size;
-	struct s_list	*next;
-}					t_list;
-
-typedef struct		s_line
-{
-	struct s_line	*next;
-	int				fd;
-	char			pad_0[4];
-	char			*buf;
-}					t_line;
 
 int					ft_atoi(const char *nptr);
 void				ft_bzero(void *s, size_t n);
@@ -50,8 +33,8 @@ int					ft_isspace(int c);
 int					ft_isupper(int c);
 int					ft_isxdigit(int c);
 char				*ft_itoa(int n);
-char				*ft_itoabase_signed(long long int, int base);
-char				*ft_itoabase_unsigned(unsigned long long int, int base);
+char				*ft_itoabase_signed(long long int nbr, int base);
+char				*ft_itoabase_unsigned(unsigned long long int nbr, int base);
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstdel(t_list **alst, void (*del)(void*, size_t));
 void				ft_lstdelone(t_list **alst, void (*del)(void*, size_t));
@@ -116,6 +99,5 @@ char				*ft_strtrim(char const *s);
 int					*ft_tabfill(int *t, int n, size_t size);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
-int					get_next_line(const int fd, char **line);
 
 #endif
