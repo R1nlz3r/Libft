@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_stradd.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/29 18:33:25 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/29 18:36:40 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/02/03 13:30:33 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ char	*ft_stradd(char const *s1, char c)
 	if (!(result = ft_strnew(len)))
 		return (NULL);
 	result = ft_strcpy(result, s1);
-  result[len - 1] = c;
+	result[len - 1] = c;
 	return (result);
 }
