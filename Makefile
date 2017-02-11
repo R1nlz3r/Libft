@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/02/03 14:01:23 by mapandel         ###   ########.fr        #
+#    Updated: 2017/02/11 14:29:23 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -122,7 +122,7 @@ WHI =		\033[37m
 
 $(NAME):
 	@make affcompil
-	@echo "$(GRE)--::Library Indextion::--$(DEF)"
+	@echo "$(GRE)--::Libft Indextion::--$(DEF)"
 	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
 
