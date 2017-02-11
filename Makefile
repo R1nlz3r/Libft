@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/02/11 14:29:23 by mapandel         ###   ########.fr        #
+#    Updated: 2017/02/11 15:37:14 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -142,15 +142,15 @@ glu: fclean all clean
 	$(CC) $(CFLAGS) -c -o $@ $^
 
 affcompil:
-	@echo "$(BLU)--::Library Compilation::--$(DEF)"
+	@echo "$(BLU)--::Libft Compilation::--$(DEF)"
 	@make $(OBJ)
 
 #			Clean Rules
 
 clean:
-	@echo "$(PUR)--::Library Binary Delection::--$(DEF)"
+	@echo "$(PUR)--::Libft Binary Delection::--$(DEF)"
 	@rm -rf $(OBJ)
 
 fclean: clean
-	@echo "$(RED)--::Library Delection::--$(DEF)"
+	@echo "$(RED)--::Libft.a Delection::--$(DEF)"
 	@rm -rf $(NAME)
