@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/21 02:18:37 by mapandel          #+#    #+#             */
-/*   Updated: 2017/01/23 22:32:21 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/02/24 14:40:31 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_itoabase_signed(long long int nbr, int base)
 	if (nbr < 0 && (++neg))
 		nbr = -nbr;
 	if (!nbr)
-		s = ft_stradd(s, '0');
+		s = ft_stradd_leakless(s, '0');
 	while (nbr && base > 1 && base < 37)
 	{
 		tmp = (char)(nbr % base);
@@ -31,10 +31,10 @@ char	*ft_itoabase_signed(long long int nbr, int base)
 			tmp += 'a' - 10;
 		else
 			tmp += '0';
-		s = ft_stradd(s, tmp);
+		s = ft_stradd_leakless(s, tmp);
 		nbr /= base;
 	}
 	if (neg)
-		s = ft_stradd(s, '-');
+		s = ft_stradd_leakless(s, '-');
 	return ((s = ft_strrev(s)));
 }
