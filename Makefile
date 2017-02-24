@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/02/11 15:37:14 by mapandel         ###   ########.fr        #
+#    Updated: 2017/02/24 14:34:59 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,12 +61,14 @@ SRC =		ft_atoi.c \
 			ft_putstr.c \
 			ft_putstr_fd.c \
 			ft_stradd.c \
+			ft_stradd_leakless.c \
 			ft_strcat.c \
 			ft_strccat.c \
 			ft_strccmp.c \
 			ft_strccpy.c \
 			ft_strchr.c \
 			ft_strcjoin.c \
+			ft_strcjoin_leakless.c \
 			ft_strclen.c \
 			ft_strclr.c \
 			ft_strcmp.c \
@@ -78,6 +80,7 @@ SRC =		ft_atoi.c \
 			ft_striter.c \
 			ft_striteri.c \
 			ft_strjoin.c \
+			ft_strjoin_leakless.c \
 			ft_strlcat.c \
 			ft_strlen.c \
 			ft_strmap.c \
