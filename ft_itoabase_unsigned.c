@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/23 22:17:10 by mapandel          #+#    #+#             */
-/*   Updated: 2017/02/24 14:40:46 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/03/03 20:52:24 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,5 @@ char	*ft_itoabase_unsigned(unsigned long long int nbr, int base)
 		s = ft_stradd_leakless(s, (char)tmp);
 		nbr /= (unsigned)base;
 	}
-	return ((s = ft_strrev(s)));
+	return ((s = ft_strrev_leakless(s)));
 }
