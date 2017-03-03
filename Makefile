@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/02/24 14:34:59 by mapandel         ###   ########.fr        #
+#    Updated: 2017/03/03 20:45:59 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,10 @@ SRC =		ft_atoi.c \
 			ft_iscntrl.c \
 			ft_isdigit.c \
 			ft_isgraph.c \
+			ft_isinf.c \
+			ft_islessinf.c \
 			ft_islower.c \
+			ft_isnan.c \
 			ft_isprint.c \
 			ft_ispunct.c \
 			ft_isspace.c \
@@ -55,6 +58,7 @@ SRC =		ft_atoi.c \
 			ft_putchar_fd.c \
 			ft_putendl.c \
 			ft_putendl_fd.c \
+			ft_putllnbr.c \
 			ft_putmap.c \
 			ft_putnbr.c \
 			ft_putnbr_fd.c \
@@ -94,6 +98,7 @@ SRC =		ft_atoi.c \
 			ft_strplugc.c \
 			ft_strrchr.c \
 			ft_strrev.c \
+			ft_strrev_leakless.c \
 			ft_strsplit.c \
 			ft_strstr.c \
 			ft_strsub.c \
@@ -123,6 +128,8 @@ WHI =		\033[37m
 
 #			Main Rules
 
+.PHONY: all re glu affcompil clean fclean
+
 $(NAME):
 	@make affcompil
 	@echo "$(GRE)--::Libft Indextion::--$(DEF)"
@@ -130,10 +137,6 @@ $(NAME):
 	@ranlib $(NAME)
 
 all: $(NAME)
-
-standard:
-	@echo "$(YEL)--::Check Standard::--$(DEF)"
-	@norminette -R CheckForbiddenSourceHeader $(SRC)
 
 re: fclean all
 
