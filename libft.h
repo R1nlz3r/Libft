@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/03/03 20:45:22 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/03/11 02:00:03 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,22 @@
 # include <string.h>
 # include <unistd.h>
 
+# define BUFF_SIZE 10000
+
 typedef struct		s_list
 {
 	void			*content;
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
+
+typedef struct		s_line
+{
+	struct s_line	*next;
+	int				fd;
+	char			pad_0[4];
+	char			*save;
+}					t_line;
 
 int					ft_atoi(const char *nptr);
 void				ft_bzero(void *s, size_t n);
@@ -115,5 +125,7 @@ char				*ft_strtrim(char const *s);
 int					*ft_tabfill(int *t, int n, size_t size);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
+int					get_next_char(const int fd, char **line, char c);
+int					get_next_line(const int fd, char **line);
 
 #endif
