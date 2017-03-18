@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/03/11 02:00:03 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/03/18 14:54:45 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,6 +123,7 @@ char				*ft_strtolower(const char *s);
 char				*ft_strtoupper(const char *s);
 char				*ft_strtrim(char const *s);
 int					*ft_tabfill(int *t, int n, size_t size);
+int					*ft_tabnew(size_t size);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
 int					get_next_char(const int fd, char **line, char c);
