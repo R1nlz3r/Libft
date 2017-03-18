@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/18 14:45:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/03/18 14:55:28 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/03/18 15:06:56 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@ int		*ft_tabnew(size_t size)
 	if (!(tab = (int*)malloc(size)))
 		return (NULL);
 	while (i < size)
-		tab[i++] = '\0';
+		tab[i++] = 0;
 	return (tab);
 }
