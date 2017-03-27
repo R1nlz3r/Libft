@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/04 03:17:08 by mapandel          #+#    #+#             */
-/*   Updated: 2017/03/11 01:54:30 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/03/28 00:50:05 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,12 +60,9 @@ static int			ft_check_buf(char *buf, t_line *list, char **line)
 
 static int			ft_end_gnl(t_line *list, char **line, char *buf)
 {
+	ft_strdel(&buf);
 	if (**line)
-	{
-		ft_strdel(&buf);
 		return (1);
-	}
-	ft_strdel(&list->save);
 	list->fd = 0;
 	return (0);
 }
@@ -79,18 +76,18 @@ int					get_next_line(const int fd, char **line)
 	i = 0;
 	if (!line || BUFF_SIZE < 1 || fd < 0 || read(fd, 0, 0)
 		|| !(*line = ft_strnew(0))
-		|| !(list = ft_init_list(list, fd))
-		|| !(buf = ft_strnew(BUFF_SIZE)))
+		|| !(list = ft_init_list(list, fd)))
 		return (-1);
 	if (list->save && ft_check_buf(list->save, list, line))
 		return (1);
+	ft_strdel(&list->save);
+	if (!(buf = ft_strnew(BUFF_SIZE)))
+		return (-1);
 	while ((i = read(fd, buf, BUFF_SIZE)))
 	{
 		buf[i] = '\0';
 		if (ft_check_buf(buf, list, line))
 			return (1);
-		if (!*line)
-			return (-1);
 		if (i < BUFF_SIZE)
 			break ;
 	}
