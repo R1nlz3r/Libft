@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/04 03:17:08 by mapandel          #+#    #+#             */
-/*   Updated: 2017/03/28 00:46:25 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/03/28 00:50:32 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ static t_line		*ft_init_list(t_line *list, const int fd)
 	return (list);
 }
 
-static int			ft_check_buf(char *buf, t_line *list, char **line)
+static int			ft_check_buf(char *buf, t_line *list, char **line, char c)
 {
 	char	*tmp;
 
@@ -45,9 +45,9 @@ static int			ft_check_buf(char *buf, t_line *list, char **line)
 	ft_strdel(line);
 	if (ft_strrchr(buf, '\n'))
 	{
-		*line = ft_strcjoin(tmp, buf, '\n');
-		list->save = ft_strsub(buf, (unsigned int)ft_strclen(buf,
-			'\n') + 1, ft_strlen(buf) - ft_strclen(buf, '\n'));
+		*line = ft_strcjoin(tmp, buf, c);
+		list->save = ft_strsub(buf, (unsigned int)ft_strclen(buf, c) + 1,
+			ft_strlen(buf) - ft_strclen(buf, c));
 		ft_strdel(&buf);
 		ft_strdel(&tmp);
 		return (1);
@@ -67,7 +67,7 @@ static int			ft_end_gnl(t_line *list, char **line, char *buf)
 	return (0);
 }
 
-int					get_next_line(const int fd, char **line)
+int					get_next_char(const int fd, char **line, char c)
 {
 	static t_line	*list = NULL;
 	char			*buf;
@@ -78,7 +78,7 @@ int					get_next_line(const int fd, char **line)
 		|| !(*line = ft_strnew(0))
 		|| !(list = ft_init_list(list, fd)))
 		return (-1);
-	if (list->save && ft_check_buf(list->save, list, line))
+	if (list->save && ft_check_buf(list->save, list, line, c))
 		return (1);
 	ft_strdel(&list->save);
 	if (!(buf = ft_strnew(BUFF_SIZE)))
@@ -86,7 +86,7 @@ int					get_next_line(const int fd, char **line)
 	while ((i = read(fd, buf, BUFF_SIZE)))
 	{
 		buf[i] = '\0';
-		if (ft_check_buf(buf, list, line))
+		if (ft_check_buf(buf, list, line, c))
 			return (1);
 		if (i < BUFF_SIZE)
 			break ;
