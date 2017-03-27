@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/03/18 14:54:45 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/03/27 23:30:08 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,7 +111,7 @@ char				*ft_strncpy(char *dest, const char *src, size_t n);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 char				*ft_strnew(size_t size);
 char				*ft_strnstr(const char *big, const char *little,
-		size_t len);
+	size_t len);
 char				*ft_strplugc(const char *s, char tochange, char toadd);
 char				*ft_strrchr(const char *s, int c);
 char				*ft_strrev(const char *s);
@@ -119,6 +119,8 @@ char				*ft_strrev_leakless(char *s);
 char				**ft_strsplit(char const *s, char c);
 char				*ft_strstr(const char *big, const char *little);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
+char				*ft_strsub_leakless(char *s, unsigned int start,
+	size_t len);
 char				*ft_strtolower(const char *s);
 char				*ft_strtoupper(const char *s);
 char				*ft_strtrim(char const *s);
