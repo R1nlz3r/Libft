@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/04/01 01:32:45 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/04/01 03:40:11 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -129,6 +129,7 @@ int					*ft_tabadd_leakless(int *t, int i);
 int					*ft_tabcpy(int *dest, const int *src);
 int					*ft_tabfill(int *t, int n, size_t size);
 size_t				ft_tablen(const int *s);
+int					*ft_tabncpy(int *dest, const int *src, size_t n);
 int					*ft_tabnew(size_t size);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
