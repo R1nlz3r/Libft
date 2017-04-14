@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/04/01 03:40:27 by mapandel         ###   ########.fr        #
+#    Updated: 2017/04/14 22:13:53 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,8 +38,8 @@ SRC =		ft_atoi.c \
 			ft_isupper.c \
 			ft_isxdigit.c \
 			ft_itoa.c \
-			ft_itoabase_signed.c \
-			ft_itoabase_unsigned.c \
+			ft_lltoabase_signed.c \
+			ft_lltoabase_unsigned.c \
 			ft_lstadd.c \
 			ft_lstdel.c \
 			ft_lstdelone.c \
@@ -106,8 +106,6 @@ SRC =		ft_atoi.c \
 			ft_strtolower.c \
 			ft_strtoupper.c \
 			ft_strtrim.c \
-			ft_tabadd.c \
-			ft_tabadd_leakless.c \
 			ft_tabcpy.c \
 			ft_tabfill.c \
 			ft_tablen.c \
