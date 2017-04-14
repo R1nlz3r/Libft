@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/04/01 03:40:11 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/04/14 22:14:14 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,8 @@ int					ft_isspace(int c);
 int					ft_isupper(int c);
 int					ft_isxdigit(int c);
 char				*ft_itoa(int n);
-char				*ft_itoabase_signed(long long int nbr, int base);
-char				*ft_itoabase_unsigned(unsigned long long int nbr, int base);
+char				*ft_lltoabase_signed(long long nbr, int base);
+char				*ft_lltoabase_unsigned(unsigned long long nbr, int base);
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstdel(t_list **alst, void (*del)(void*, size_t));
 void				ft_lstdelone(t_list **alst, void (*del)(void*, size_t));
@@ -124,8 +124,6 @@ char				*ft_strsub_leakless(char *s, unsigned int start,
 char				*ft_strtolower(const char *s);
 char				*ft_strtoupper(const char *s);
 char				*ft_strtrim(char const *s);
-int					*ft_tabadd(int const *t, int i);
-int					*ft_tabadd_leakless(int *t, int i);
 int					*ft_tabcpy(int *dest, const int *src);
 int					*ft_tabfill(int *t, int n, size_t size);
 size_t				ft_tablen(const int *s);
