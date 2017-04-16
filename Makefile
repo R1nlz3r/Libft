@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/04/15 02:16:09 by mapandel         ###   ########.fr        #
+#    Updated: 2017/04/16 02:09:31 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -105,7 +105,9 @@ SRC =		ft_atoi.c \
 			ft_strsub.c \
 			ft_strsub_leakless.c \
 			ft_strtolower.c \
+			ft_strtolower_leakless.c \
 			ft_strtoupper.c \
+			ft_strtoupper_leakless.c \
 			ft_strtrim.c \
 			ft_tabcpy.c \
 			ft_tabfill.c \
