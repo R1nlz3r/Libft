@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/04/15 02:13:44 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/04/16 02:10:37 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -123,7 +123,9 @@ char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strsub_leakless(char *s, unsigned int start,
 	size_t len);
 char				*ft_strtolower(const char *s);
+char				*ft_strtolower_leakless(char *s);
 char				*ft_strtoupper(const char *s);
+char				*ft_strtoupper_leakless(char *s);
 char				*ft_strtrim(char const *s);
 int					*ft_tabcpy(int *dest, const int *src);
 int					*ft_tabfill(int *t, int n, size_t size);
