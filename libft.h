@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/04/16 02:10:37 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/04/18 00:45:41 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,12 @@ void				ft_putnbr(int n);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putstr(char const *s);
 void				ft_putstr_fd(char const *s, int fd);
+void				ft_putwchar(wchar_t wc);
+void				ft_putwchar_fd(wchar_t wc, int fd);
+void				ft_putwendl(wchar_t const *ws);
+void				ft_putwendl_fd(wchar_t const *ws, int fd);
+void				ft_putwstr(wchar_t const *ws);
+void				ft_putwstr_fd(wchar_t const *ws, int fd);
 char				*ft_stradd(char const *s1, char c);
 char				*ft_stradd_leakless(char *s1, char c);
 char				*ft_strcat(char *dest, const char *src);
@@ -134,6 +140,7 @@ int					*ft_tabncpy(int *dest, const int *src, size_t n);
 int					*ft_tabnew(size_t size);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
+size_t				ft_wstrlen(const wchar_t *ws);
 int					get_next_char(const int fd, char **line, char c);
 int					get_next_line(const int fd, char **line);
 
