@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/04/16 02:09:31 by mapandel         ###   ########.fr        #
+#    Updated: 2017/04/17 23:40:13 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -65,6 +65,12 @@ SRC =		ft_atoi.c \
 			ft_putnbr_fd.c \
 			ft_putstr.c \
 			ft_putstr_fd.c \
+			ft_putwchar.c \
+			ft_putwchar_fd.c \
+			ft_putwendl.c \
+			ft_putwendl_fd.c \
+			ft_putwstr.c \
+			ft_putwstr_fd.c \
 			ft_stradd.c \
 			ft_stradd_leakless.c \
 			ft_strcat.c \
@@ -116,6 +122,7 @@ SRC =		ft_atoi.c \
 			ft_tabnew.c \
 			ft_tolower.c \
 			ft_toupper.c \
+			ft_wstrlen.c \
 			get_next_line.c \
 			get_next_char.c
 
