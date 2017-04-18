@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/04/18 00:45:41 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/04/18 05:30:47 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -140,7 +140,19 @@ int					*ft_tabncpy(int *dest, const int *src, size_t n);
 int					*ft_tabnew(size_t size);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
+wchar_t				*ft_wstrcat(wchar_t *dest, const wchar_t *src);
+wchar_t				*ft_wstrcpy(wchar_t *dest, const wchar_t *src);
+void				ft_wstrdel(wchar_t **as);
+wchar_t				*ft_wstrdup(const wchar_t *ws);
+wchar_t				*ft_wstrfill(wchar_t *ws, wchar_t wc, size_t size);
+wchar_t				*ft_wstrjoin(wchar_t const *s1, wchar_t const *s2);
+wchar_t				*ft_wstrjoin_leakless(wchar_t *s1, wchar_t const *s2);
 size_t				ft_wstrlen(const wchar_t *ws);
+wchar_t				*ft_wstrnew(size_t size);
+wchar_t				*ft_wstrsub_leakless(wchar_t *ws, unsigned int start,
+	size_t len);
+wchar_t				*ft_wstrsub(wchar_t const *ws, unsigned int start,
+	size_t len);
 int					get_next_char(const int fd, char **line, char c);
 int					get_next_line(const int fd, char **line);
 
