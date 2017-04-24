@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/04/18 05:27:16 by mapandel         ###   ########.fr        #
+#    Updated: 2017/04/25 00:38:21 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -130,6 +130,7 @@ SRC =		ft_atoi.c \
 			ft_wstrjoin.c \
 			ft_wstrjoin_leakless.c \
 			ft_wstrlen.c \
+			ft_wstrlenuni.c \
 			ft_wstrnew.c \
 			ft_wstrsub.c \
 			ft_wstrsub_leakless.c \
