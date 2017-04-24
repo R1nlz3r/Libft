@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/18 05:18:36 by mapandel          #+#    #+#             */
-/*   Updated: 2017/04/18 05:19:35 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/04/18 06:02:52 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@ wchar_t			*ft_wstrcat(wchar_t *dest, const wchar_t *src)
 		++i;
 	while (src[j])
 		dest[i++] = src[j++];
-	dest[i] = '\0';
+	dest[i] = L'\0';
 	return (dest);
 }
