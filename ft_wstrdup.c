@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/18 04:55:51 by mapandel          #+#    #+#             */
-/*   Updated: 2017/04/18 05:05:20 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/04/18 15:26:27 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ wchar_t			*ft_wstrdup(const wchar_t *ws)
 		dup[i] = ws[i];
 		++i;
 	}
-	dup[i] = '\0';
+	dup[i] = L'\0';
 	return (dup);
 }
