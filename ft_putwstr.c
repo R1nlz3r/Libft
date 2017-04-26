@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/17 23:13:49 by mapandel          #+#    #+#             */
-/*   Updated: 2017/04/17 23:14:32 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/04/26 23:50:56 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void	ft_putwstr(wchar_t const *ws)
 {
-	if (ws)
-		write(1, ws, ft_wstrlen(ws));
+	int		i;
+
+	i = 0;
+	while (ws && ws[i])
+		ft_putwchar(ws[i++]);
 }
