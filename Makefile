@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/04/25 00:58:11 by mapandel         ###   ########.fr        #
+#    Updated: 2017/05/01 13:08:35 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -101,6 +101,8 @@ SRC =		ft_atoi.c \
 			ft_strncpy.c \
 			ft_strnequ.c \
 			ft_strnew.c \
+			ft_strnjoin.c \
+			ft_strnjoin_leakless.c \
 			ft_strnstr.c \
 			ft_strplugc.c \
 			ft_strrchr.c \
