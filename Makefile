@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/05/05 12:11:37 by mapandel         ###   ########.fr        #
+#    Updated: 2017/05/05 17:18:43 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -88,6 +88,19 @@ SRC =		ft_atoi.c \
 			ft_strdup.c \
 			ft_strequ.c \
 			ft_strfill.c \
+			ft_strisalnum.c \
+			ft_strisalpha.c \
+			ft_strisascii.c \
+			ft_strisblank.c \
+			ft_striscntrl.c \
+			ft_strisdigit.c \
+			ft_strisgraph.c \
+			ft_strislower.c \
+			ft_strisprint.c \
+			ft_strispunct.c \
+			ft_strisspace.c \
+			ft_strisupper.c \
+			ft_strisxdigit.c \
 			ft_striter.c \
 			ft_striteri.c \
 			ft_strjoin.c \
