@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/05/05 12:10:05 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/05/05 17:17:29 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,6 +104,19 @@ void				ft_strdel(char **as);
 char				*ft_strdup(const char *s);
 int					ft_strequ(char const *s1, char const *s2);
 char				*ft_strfill(char *s, char c, size_t size);
+int					ft_strisalnum(const char *s);
+int					ft_strisalpha(const char *s);
+int					ft_strisascii(const char *s);
+int					ft_strisblank(const char *s);
+int					ft_striscntrl(const char *s);
+int					ft_strisdigit(const char *s);
+int					ft_strisgraph(const char *s);
+int					ft_strislower(const char *s);
+int					ft_strisprint(const char *s);
+int					ft_strispunct(const char *s);
+int					ft_strisspace(const char *s);
+int					ft_strisupper(const char *s);
+int					ft_strisxdigit(const char *s);
 void				ft_striter(char *s, void (*f)(char*));
 void				ft_striteri(char *s, void (*f)(unsigned int, char*));
 char				*ft_strjoin(char const *s1, char const *s2);
