@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/25 00:40:36 by mapandel          #+#    #+#             */
-/*   Updated: 2017/04/26 23:52:12 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/05/08 11:53:44 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ size_t		ft_wstrlenuni(const wchar_t *ws)
 	ret = 0;
 	while (ws[i])
 	{
-		if (ws[i] < 128)
+		if ((ws[i] < 128) || (MB_CUR_MAX != 4 && ws[i] >= 128 && ws[i] < 256))
 			++ret;
 		else if (ws[i] >= 128 && ws[i] < 2048)
 			ret += 2;
