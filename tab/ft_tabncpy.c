@@ -6,23 +6,23 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/01 03:37:31 by mapandel          #+#    #+#             */
-/*   Updated: 2017/04/01 03:57:28 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/06/01 01:45:08 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		*ft_tabncpy(int *dest, const int *src, size_t n)
+t_tab		*ft_tabncpy(t_tab *dest, const t_tab *src, size_t n)
 {
 	size_t i;
 
 	i = 0;
-	while (i < n)
+	while (i < n && i < src->size)
 	{
-		dest[i] = src[i];
+		dest->tab[i] = src->tab[i];
 		++i;
 	}
 	while (i < n)
-		dest[i++] = 0;
+		dest->tab[i++] = 0;
 	return (dest);
 }
