@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/05/05 17:17:29 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/06/01 01:43:55 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,12 @@
 # include <unistd.h>
 
 # define BUFF_SIZE 10000
+
+typedef struct		s_tab
+{
+	int				*tab;
+	size_t			size;
+}					t_tab;
 
 typedef struct		s_list
 {
@@ -148,12 +154,11 @@ char				*ft_strtolower_leakless(char *s);
 char				*ft_strtoupper(const char *s);
 char				*ft_strtoupper_leakless(char *s);
 char				*ft_strtrim(char const *s);
-int					*ft_tabcpy(int *dest, const int *src);
-void				ft_tabdel(int **as);
-int					*ft_tabfill(int *t, int n, size_t size);
-size_t				ft_tablen(const int *s);
-int					*ft_tabncpy(int *dest, const int *src, size_t n);
-int					*ft_tabnew(size_t size);
+t_tab				*ft_tabcpy(t_tab *dest, const t_tab *src);
+void				ft_tabdel(t_tab **t);
+t_tab				*ft_tabfill(t_tab *t, int n, size_t size);
+t_tab				*ft_tabncpy(t_tab *dest, const t_tab *src, size_t n);
+t_tab				*ft_tabnew(size_t size);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
 wchar_t				*ft_wstrcat(wchar_t *dest, const wchar_t *src);
