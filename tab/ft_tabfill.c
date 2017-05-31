@@ -6,18 +6,15 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/29 09:27:50 by mapandel          #+#    #+#             */
-/*   Updated: 2017/01/29 09:31:31 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/06/01 01:35:43 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		*ft_tabfill(int *t, int n, size_t size)
+t_tab		*ft_tabfill(t_tab *t, int n, size_t size)
 {
-	size_t		i;
-
-	i = 0;
-	while (t && i < size)
-		t[i++] = n;
+	while (size)
+		t->tab[--size] = n;
 	return (t);
 }
