@@ -6,21 +6,21 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/18 14:45:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/05/05 12:08:37 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/06/01 01:45:26 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		*ft_tabnew(size_t size)
+t_tab			*ft_tabnew(size_t size)
 {
-	size_t		i;
-	int			*tab;
+	t_tab		*t;
 
-	i = 0;
-	if (!(tab = (int*)malloc(sizeof(int) * (size + 1))))
+	if (!(t = ft_memalloc(sizeof(t_tab)))
+		|| !(t->tab = (int*)malloc(sizeof(int) * size)))
 		return (NULL);
-	while (i <= size)
-		tab[i++] = 0;
-	return (tab);
+	t->size = size;
+	while (size)
+		t->tab[--size] = 0;
+	return (t);
 }
