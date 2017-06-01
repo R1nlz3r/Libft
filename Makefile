@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/06/01 01:43:44 by mapandel         ###   ########.fr        #
+#    Updated: 2017/06/02 01:32:49 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -137,6 +137,10 @@ SRC =		conv/ft_atoi.c \
 			tab/ft_tabfill.c \
 			tab/ft_tabncpy.c \
 			tab/ft_tabnew.c \
+			tab/ft_tabpush.c \
+			tab/ft_tabrevrotate.c \
+			tab/ft_tabrotate.c \
+			tab/ft_tabswap.c \
 			to/ft_tolower.c \
 			to/ft_toupper.c \
 			wstr/ft_wstrcat.c \
