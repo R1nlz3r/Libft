@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/06/01 01:43:55 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/06/02 01:34:29 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ typedef struct		s_tab
 {
 	int				*tab;
 	size_t			size;
+	size_t			len;
 }					t_tab;
 
 typedef struct		s_list
@@ -159,6 +160,10 @@ void				ft_tabdel(t_tab **t);
 t_tab				*ft_tabfill(t_tab *t, int n, size_t size);
 t_tab				*ft_tabncpy(t_tab *dest, const t_tab *src, size_t n);
 t_tab				*ft_tabnew(size_t size);
+void				ft_tabpush(t_tab *a, t_tab *b);
+t_tab				*ft_tabrevrotate(t_tab *t);
+t_tab				*ft_tabrotate(t_tab *t);
+t_tab				*ft_tabswap(t_tab *t);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
 wchar_t				*ft_wstrcat(wchar_t *dest, const wchar_t *src);
