@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/06/02 19:39:04 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/06/06 18:32:04 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,6 +93,7 @@ void				ft_putwendl(wchar_t const *ws);
 void				ft_putwendl_fd(wchar_t const *ws, int fd);
 void				ft_putwstr(wchar_t const *ws);
 void				ft_putwstr_fd(wchar_t const *ws, int fd);
+t_tab				*ft_qsort(t_tab *t);
 char				*ft_stradd(char const *s1, char c);
 char				*ft_stradd_leakless(char *s1, char c);
 char				*ft_strcat(char *dest, const char *src);
@@ -159,7 +160,9 @@ t_tab				*ft_tabcpy(t_tab *dest, const t_tab *src);
 void				ft_tabdel(t_tab **t);
 t_tab				*ft_tabdup(t_tab *t);
 t_tab				*ft_tabfill(t_tab *t, int n, size_t size);
-int					ft_tabissort(t_tab *t);
+int					ft_tabmedian(t_tab *t);
+int					ft_tabisdescending(t_tab *t);
+int					ft_tabisincreasing(t_tab *t);
 t_tab				*ft_tabncpy(t_tab *dest, const t_tab *src, size_t n);
 t_tab				*ft_tabnew(size_t size);
 void				ft_tabpush(t_tab *a, t_tab *b);
