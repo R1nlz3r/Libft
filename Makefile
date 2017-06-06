@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/06/02 19:40:20 by mapandel         ###   ########.fr        #
+#    Updated: 2017/06/06 18:31:47 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,7 +55,8 @@ SRC =		conv/ft_atoi.c \
 			is/ft_strisspace.c \
 			is/ft_strisupper.c \
 			is/ft_strisxdigit.c \
-			is/ft_tabissort.c \
+			is/ft_tabisdescending.c \
+			is/ft_tabisincreasing.c \
 			lst/ft_lstadd.c \
 			lst/ft_lstdel.c \
 			lst/ft_lstdelone.c \
@@ -87,6 +88,7 @@ SRC =		conv/ft_atoi.c \
 			put/ft_putwendl_fd.c \
 			put/ft_putwstr.c \
 			put/ft_putwstr_fd.c \
+			sort/ft_qsort.c \
 			str/ft_stradd.c \
 			str/ft_stradd_leakless.c \
 			str/ft_strcat.c \
@@ -137,6 +139,7 @@ SRC =		conv/ft_atoi.c \
 			tab/ft_tabdel.c \
 			tab/ft_tabdup.c \
 			tab/ft_tabfill.c \
+			tab/ft_tabmedian.c \
 			tab/ft_tabncpy.c \
 			tab/ft_tabnew.c \
 			tab/ft_tabpush.c \
