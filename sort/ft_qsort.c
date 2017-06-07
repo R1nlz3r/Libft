@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/06 06:35:35 by mapandel          #+#    #+#             */
-/*   Updated: 2017/06/06 18:11:23 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/06/07 02:10:48 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,6 @@ static void		ft_qsort2(t_tab *t, size_t start, size_t end)
 
 t_tab			*ft_qsort(t_tab *t)
 {
-	ft_qsort2(t, 0, t->len);
+	ft_qsort2(t, 0, t->len - 1);
 	return (t);
 }
