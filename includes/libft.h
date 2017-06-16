@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/06/15 05:45:51 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/06/16 11:02:24 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -161,10 +161,14 @@ void				ft_tabdel(t_tab **t);
 t_tab				*ft_tabdup(t_tab *t);
 t_tab				*ft_tabfill(t_tab *t, int n, size_t size);
 int					ft_tabmax(t_tab *t);
+int					ft_tabmax_underone(t_tab *t);
 size_t				ft_tabmaxpos(t_tab *t);
+size_t				ft_tabmaxpos_underone(t_tab *t);
 double				ft_tabmedian(t_tab *t);
 int					ft_tabmin(t_tab *t);
+int					ft_tabmin_overone(t_tab *t);
 size_t				ft_tabminpos(t_tab *t);
+size_t				ft_tabminpos_overone(t_tab *t);
 int					ft_tabisdescending(t_tab *t);
 int					ft_tabisincreasing(t_tab *t);
 t_tab				*ft_tabncpy(t_tab *dest, const t_tab *src, size_t n);
