@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/06/15 05:45:04 by mapandel         ###   ########.fr        #
+#    Updated: 2017/06/16 11:03:36 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -140,9 +140,13 @@ SRC =		conv/ft_atoi.c \
 			tab/ft_tabdup.c \
 			tab/ft_tabfill.c \
 			tab/ft_tabmax.c \
+			tab/ft_tabmax_underone.c \
 			tab/ft_tabmaxpos.c \
+			tab/ft_tabmaxpos_underone.c \
 			tab/ft_tabmedian.c \
 			tab/ft_tabmin.c \
+			tab/ft_tabmin_overone.c \
+			tab/ft_tabminpos_overone.c \
 			tab/ft_tabminpos.c \
 			tab/ft_tabncpy.c \
 			tab/ft_tabnew.c \
