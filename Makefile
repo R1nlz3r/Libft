@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/06/16 11:03:36 by mapandel         ###   ########.fr        #
+#    Updated: 2017/06/21 06:12:17 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -139,6 +139,16 @@ SRC =		conv/ft_atoi.c \
 			tab/ft_tabdel.c \
 			tab/ft_tabdup.c \
 			tab/ft_tabfill.c \
+			tab/ft_tabfindpos.c \
+			tab/ft_tabfindpos_over.c \
+			tab/ft_tabfindpos_overeq.c \
+			tab/ft_tabfindpos_under.c \
+			tab/ft_tabfindpos_undereq.c \
+			tab/ft_tabfindrev.c \
+			tab/ft_tabfindrev_over.c \
+			tab/ft_tabfindrev_overeq.c \
+			tab/ft_tabfindrev_under.c \
+			tab/ft_tabfindrev_undereq.c \
 			tab/ft_tabmax.c \
 			tab/ft_tabmax_underone.c \
 			tab/ft_tabmaxpos.c \
