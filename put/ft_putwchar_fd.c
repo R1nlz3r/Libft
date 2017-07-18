@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/17 23:06:46 by mapandel          #+#    #+#             */
-/*   Updated: 2017/04/27 02:04:44 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/07/19 00:34:52 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void			ft_putwchar_fd(wchar_t wc, int fd)
 	char	tmp;
 
 	if (wc < 128)
-		write (fd, &wc, 1);
+		write(fd, &wc, 1);
 	else if (wc >= 128 && wc < 2048)
 	{
 		tmp = (char)((wc >> 6) + 192);
