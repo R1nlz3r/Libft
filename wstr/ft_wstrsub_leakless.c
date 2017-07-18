@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/18 05:16:24 by mapandel          #+#    #+#             */
-/*   Updated: 2017/07/19 00:34:23 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/07/19 00:44:13 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,6 @@ wchar_t			*ft_wstrsub_leakless(wchar_t *ws, unsigned int start,
 		round = ft_wstrsub_leakless2(ws, i++, round);
 		if (round == len)
 			tmpround = round;
-		++i;
 	}
 	if (!(round = 0)
 		&& !(cpy = ft_wstrnew(i)))
