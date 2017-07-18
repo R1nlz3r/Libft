@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/18 05:14:08 by mapandel          #+#    #+#             */
-/*   Updated: 2017/07/19 00:34:09 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/07/19 00:44:20 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,6 @@ wchar_t			*ft_wstrsub(const wchar_t *ws, unsigned int start, size_t len)
 		round = ft_wstrsub2(ws, i++, round);
 		if (round == len)
 			tmpround = round;
-		++i;
 	}
 	if (!(round = 0)
 		&& !(cpy = ft_wstrnew(i)))
