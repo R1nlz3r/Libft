@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/08/01 15:18:44 by mapandel         ###   ########.fr        #
+#    Updated: 2017/08/01 18:05:20 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -279,7 +279,7 @@ $(NAME):
 	@make wstr
 	@make indexion
 
-indexion:
+indextion:
 	@echo "$(GRE)--::Libft Indextion::--$(DEF)"
 	@ranlib $(NAME)
 
