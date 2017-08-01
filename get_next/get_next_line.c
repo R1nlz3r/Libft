@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/04 03:17:08 by mapandel          #+#    #+#             */
-/*   Updated: 2017/03/28 00:50:05 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/07/24 20:08:27 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "get_next_line.h"
 
 static t_line		*ft_init_list(t_line *list, const int fd)
 {
