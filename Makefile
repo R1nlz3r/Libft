@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/07/24 20:05:27 by mapandel         ###   ########.fr        #
+#    Updated: 2017/08/01 07:53:26 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,12 +19,13 @@ CFLAGS = 	-Wall -Wextra -Werror -Weverything
 
 #			Sources
 
-SRC =		conv/ft_atoi.c \
+CONV =		conv/ft_atoi.c \
 			conv/ft_itoa.c \
 			conv/ft_lltoabase_signed.c \
 			conv/ft_lltoabase_signless.c \
 			conv/ft_lltoabase_unsigned.c \
-			ft_printf/ft_printf_c.c \
+
+FT_PRINTF =	ft_printf/ft_printf_c.c \
 			ft_printf/ft_printf_cc.c \
 			ft_printf/ft_printf_conv.c \
 			ft_printf/ft_printf_d.c \
@@ -45,9 +46,11 @@ SRC =		conv/ft_atoi.c \
 			ft_printf/ft_printf_x.c \
 			ft_printf/ft_printf.c \
 			ft_printf/touch_t_printf.c \
-			get_next/get_next_line.c \
+
+GET_NEXT =	get_next/get_next_line.c \
 			get_next/get_next_char.c \
-			is/ft_isalnum.c \
+
+IS =		is/ft_isalnum.c \
 			is/ft_isalpha.c \
 			is/ft_isascii.c \
 			is/ft_isblank.c \
@@ -78,13 +81,15 @@ SRC =		conv/ft_atoi.c \
 			is/ft_strisxdigit.c \
 			is/ft_tabisdescending.c \
 			is/ft_tabisincreasing.c \
-			lst/ft_lstadd.c \
+
+LST =		lst/ft_lstadd.c \
 			lst/ft_lstdel.c \
 			lst/ft_lstdelone.c \
 			lst/ft_lstiter.c \
 			lst/ft_lstmap.c \
 			lst/ft_lstnew.c \
-			mem/ft_bzero.c \
+
+MEM =		mem/ft_bzero.c \
 			mem/ft_memalloc.c \
 			mem/ft_memccpy.c \
 			mem/ft_memchr.c \
@@ -93,7 +98,8 @@ SRC =		conv/ft_atoi.c \
 			mem/ft_memdel.c \
 			mem/ft_memmove.c \
 			mem/ft_memset.c \
-			put/ft_putchar.c \
+
+PUT =		put/ft_putchar.c \
 			put/ft_putchar_fd.c \
 			put/ft_putendl.c \
 			put/ft_putendl_fd.c \
@@ -109,8 +115,10 @@ SRC =		conv/ft_atoi.c \
 			put/ft_putwendl_fd.c \
 			put/ft_putwstr.c \
 			put/ft_putwstr_fd.c \
-			sort/ft_qsort.c \
-			str/ft_stradd.c \
+
+SORT =		sort/ft_qsort.c \
+
+STR =		str/ft_stradd.c \
 			str/ft_stradd_leakless.c \
 			str/ft_strcat.c \
 			str/ft_strccat.c \
@@ -156,7 +164,8 @@ SRC =		conv/ft_atoi.c \
 			str/ft_strtoupper.c \
 			str/ft_strtoupper_leakless.c \
 			str/ft_strtrim.c \
-			tab/ft_tabcpy.c \
+
+TAB =		tab/ft_tabcpy.c \
 			tab/ft_tabdel.c \
 			tab/ft_tabdup.c \
 			tab/ft_tabfill.c \
@@ -187,9 +196,11 @@ SRC =		conv/ft_atoi.c \
 			tab/ft_tabrevrotate.c \
 			tab/ft_tabrotate.c \
 			tab/ft_tabswap.c \
-			to/ft_tolower.c \
+
+TO =		to/ft_tolower.c \
 			to/ft_toupper.c \
-			wstr/ft_wstrcat.c \
+
+WSTR =		wstr/ft_wstrcat.c \
 			wstr/ft_wstrcpy.c \
 			wstr/ft_wstrdel.c \
 			wstr/ft_wstrdup.c \
@@ -202,7 +213,22 @@ SRC =		conv/ft_atoi.c \
 			wstr/ft_wstrsub.c \
 			wstr/ft_wstrsub_leakless.c \
 
-OBJ =		$(SRC:.c=.o)
+SRC :=		$(CONV) $(FT_PRINTF) $(GET_NEXT) $(IS) $(LST) $(MEM) $(PUT) \
+			$(SORT) $(STR) $(TAB) $(TO) $(WSTR)
+
+OBJ =			$(SRC:.c=.o)
+OBJ_CONV =		$(CONV:.c=.o)
+OBJ_FT_PRINTF =	$(FT_PRINTF:.c=.o)
+OBJ_GET_NEXT =	$(GET_NEXT:.c=.o)
+OBJ_IS =		$(IS:.c=.o)
+OBJ_LST =		$(LST:.c=.o)
+OBJ_MEM =		$(MEM:.c=.o)
+OBJ_PUT =		$(PUT:.c=.o)
+OBJ_SORT =		$(SORT:.c=.o)
+OBJ_STR =		$(STR:.c=.o)
+OBJ_TAB =		$(TAB:.c=.o)
+OBJ_TO =		$(TO:.c=.o)
+OBJ_WSTR =		$(WSTR:.c=.o)
 
 INC =		includes
 
@@ -212,6 +238,7 @@ DEF =		\033[0m
 GRA =		\033[1m
 SOU =		\033[4m
 BLI =		\033[5m
+INV =		\033[7m
 BLA =		\033[30m
 RED =		\033[31m
 GRE =		\033[32m
@@ -220,18 +247,65 @@ BLU =		\033[34m
 PUR =		\033[35m
 CYA =		\033[36m
 WHI =		\033[37m
+BACK_BLA =	\033[40m
+BACK_RED =	\033[41m
+BACK_GRE =	\033[42m
+BACK_YEL =	\033[43m
+BACK_BLU =	\033[44m
+BACK_PUR =	\033[45m
+BACK_CYA =	\033[46m
+BACK_WHI =	\033[47m
 
 #			Main Rules
 
-.PHONY: all re glu affcompil clean fclean
+.PHONY: all compil_conv compil_ft_printf compil_get_next compil_is compil_lst \
+	compil_mem compil_put compil_sort compil_str compil_tab compil_to \
+	compil_wstr re glu  clean fclean
+
+all: $(NAME)
 
 $(NAME):
-	@make affcompil
+	@echo "$(CYA)--::Libft Compilation::--$(DEF)"
+	@make compil_conv
+	@make compil_ft_printf
+	@make compil_get_next
+	@make compil_is
+	@make compil_lst
+	@make compil_mem
+	@make compil_put
+	@make compil_sort
+	@make compil_str
+	@make compil_tab
+	@make compil_to
+	@make compil_wstr
 	@echo "$(GRE)--::Libft Indextion::--$(DEF)"
 	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
 
-all: $(NAME)
+$(CONV):
+	@make compil_conv
+$(FT_PRINTF):
+	@make compil_ft_printf
+$(GET_NEXT):
+	@make compil_get_next
+$(IS):
+	@make compil_is
+$(LST):
+	@make compil_lst
+$(MEM):
+	@make compil_mem
+$(PUT):
+	@make compil_put
+$(SORT):
+	@make compil_sort
+$(STR):
+	@make compil_str
+$(TAB):
+	@make compil_tab
+$(TO):
+	@make compil_to
+$(WSTR):
+	@make compil_wstr
 
 re: fclean all
 
@@ -242,9 +316,42 @@ glu: fclean all clean
 %.o: %.c
 	$(CC) $(CFLAGS) -I $(INC) -c -o $@ $^
 
-affcompil:
-	@echo "$(BLU)--::Libft Compilation::--$(DEF)"
-	@make $(OBJ)
+compil_conv:
+	@echo "$(BLU)--::Conv/ Compilation::--$(DEF)"
+	@make $(OBJ_CONV)
+compil_ft_printf:
+	@echo "$(BLU)--::Ft_printf/ Compilation::--$(DEF)"
+	@make $(OBJ_FT_PRINTF)
+compil_get_next:
+	@echo "$(BLU)--::Get_next/ Compilation::--$(DEF)"
+	@make $(OBJ_GET_NEXT)
+compil_is:
+	@echo "$(BLU)--::Is/ Compilation::--$(DEF)"
+	@make $(OBJ_IS)
+compil_lst:
+	@echo "$(BLU)--::Lst/ Compilation::--$(DEF)"
+	@make $(OBJ_LST)
+compil_mem:
+	@echo "$(BLU)--::Mem/ Compilation::--$(DEF)"
+	@make $(OBJ_MEM)
+compil_put:
+	@echo "$(BLU)--::Put/ Compilation::--$(DEF)"
+	@make $(OBJ_PUT)
+compil_sort:
+	@echo "$(BLU)--::Sort/ Compilation::--$(DEF)"
+	@make $(OBJ_SORT)
+compil_str:
+	@echo "$(BLU)--::Str/ Compilation::--$(DEF)"
+	@make $(OBJ_STR)
+compil_tab:
+	@echo "$(BLU)--::Tab/ Compilation::--$(DEF)"
+	@make $(OBJ_TAB)
+compil_to:
+	@echo "$(BLU)--::To/ Compilation::--$(DEF)"
+	@make $(OBJ_TO)
+compil_wstr:
+	@echo "$(BLU)--::Wstr/ Compilation::--$(DEF)"
+	@make $(OBJ_WSTR)
 
 #			Clean Rules
 
