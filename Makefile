@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/06/21 06:12:17 by mapandel         ###   ########.fr        #
+#    Updated: 2017/07/24 20:05:27 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,6 +24,27 @@ SRC =		conv/ft_atoi.c \
 			conv/ft_lltoabase_signed.c \
 			conv/ft_lltoabase_signless.c \
 			conv/ft_lltoabase_unsigned.c \
+			ft_printf/ft_printf_c.c \
+			ft_printf/ft_printf_cc.c \
+			ft_printf/ft_printf_conv.c \
+			ft_printf/ft_printf_d.c \
+			ft_printf/ft_printf_display.c \
+			ft_printf/ft_printf_get_conv.c \
+			ft_printf/ft_printf_get_flags.c \
+			ft_printf/ft_printf_get_modifier.c \
+			ft_printf/ft_printf_get_precision.c \
+			ft_printf/ft_printf_get_width.c \
+			ft_printf/ft_printf_no_conv.c \
+			ft_printf/ft_printf_o.c \
+			ft_printf/ft_printf_p.c \
+			ft_printf/ft_printf_parsing.c \
+			ft_printf/ft_printf_percent.c \
+			ft_printf/ft_printf_s.c \
+			ft_printf/ft_printf_ss.c \
+			ft_printf/ft_printf_u.c \
+			ft_printf/ft_printf_x.c \
+			ft_printf/ft_printf.c \
+			ft_printf/touch_t_printf.c \
 			get_next/get_next_line.c \
 			get_next/get_next_char.c \
 			is/ft_isalnum.c \
