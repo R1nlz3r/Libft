@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/07/24 20:06:42 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/08/02 06:38:45 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,15 +68,21 @@ void				ft_memdel(void **ap);
 void				*ft_memmove(void *dest, const void *src, size_t n);
 void				*ft_memset(void *s, int c, size_t n);
 void				ft_putchar(char c);
+int					ft_putchar_buffer(char c, int release);
 void				ft_putchar_fd(char c, int fd);
+int					ft_putchar_fd_buffer(char c, int release, int fd);
 void				ft_putendl(char const *s);
+int					ft_putendl_buffer(char *s, int release);
 void				ft_putendl_fd(char const *s, int fd);
+int					ft_putendl_fd_buffer(char *s, int release, int fd);
 void				ft_putllnbr(long long n);
 void				ft_putmap(char **m, size_t nblines);
 void				ft_putnbr(int n);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putstr(char const *s);
+int					ft_putstr_buffer(char *s, int release);
 void				ft_putstr_fd(char const *s, int fd);
+int					ft_putstr_fd_buffer(char *s, int release, int fd);
 void				ft_putwchar(wchar_t wc);
 void				ft_putwchar_fd(wchar_t wc, int fd);
 void				ft_putwendl(wchar_t const *ws);
@@ -87,17 +93,24 @@ t_tab				*ft_qsort(t_tab *t);
 char				*ft_stradd(char const *s1, char c);
 char				*ft_stradd_leakless(char *s1, char c);
 char				*ft_strcat(char *dest, const char *src);
+char				*ft_strcat_nullcrashless(char *dest, const char *src);
 char				*ft_strccat(char *dest, const char *src, char c);
+char				*ft_strccat_nullcrashless(char *dest, const char *src,
+	char c);
 int					ft_strccmp(const char *s1, const char *s2, char c);
 char				*ft_strccpy(char *dest, const char *src, char c);
+char				*ft_strccpy_nullcrashless(char *dest, const char *src,
+	char c);
 char				*ft_strchr(const char *s, int c);
 char				*ft_strcjoin(char const *s1, char const *s2, char c);
 char				*ft_strcjoin_leakless(char *s1, char const *s2,
 	char c);
 size_t				ft_strclen(const char *s, char c);
+size_t				ft_strclen_nullcrashless(const char *s, char c);
 void				ft_strclr(char *s);
 int					ft_strcmp(const char *s1, const char *s2);
 char				*ft_strcpy(char *dest, const char *src);
+char				*ft_strcpy_nullcrashless(char *dest, const char *src);
 void				ft_strdel(char **as);
 char				*ft_strdup(const char *s);
 int					ft_strequ(char const *s1, char const *s2);
@@ -121,6 +134,7 @@ char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strjoin_leakless(char *s1, char const *s2);
 size_t				ft_strlcat(char *dest, const char *src, size_t size);
 size_t				ft_strlen(const char *s);
+size_t				ft_strlen_nullcrashless(const char *s);
 char				*ft_strmap(char const *s, char (*f)(char));
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char				*ft_strncat(char *dest, const char *src, size_t n);
