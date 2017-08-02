@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/08/01 18:05:20 by mapandel         ###   ########.fr        #
+#    Updated: 2017/08/02 06:38:33 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -100,15 +100,21 @@ MEM =			mem/ft_bzero.c \
 				mem/ft_memset.c \
 
 PUT =			put/ft_putchar.c \
+				put/ft_putchar_buffer.c \
 				put/ft_putchar_fd.c \
+				put/ft_putchar_fd_buffer.c \
 				put/ft_putendl.c \
+				put/ft_putendl_buffer.c \
 				put/ft_putendl_fd.c \
+				put/ft_putendl_fd_buffer.c \
 				put/ft_putllnbr.c \
 				put/ft_putmap.c \
 				put/ft_putnbr.c \
 				put/ft_putnbr_fd.c \
 				put/ft_putstr.c \
+				put/ft_putstr_buffer.c \
 				put/ft_putstr_fd.c \
+				put/ft_putstr_fd_buffer.c \
 				put/ft_putwchar.c \
 				put/ft_putwchar_fd.c \
 				put/ft_putwendl.c \
@@ -121,16 +127,21 @@ SORT =			sort/ft_qsort.c \
 STR =			str/ft_stradd.c \
 				str/ft_stradd_leakless.c \
 				str/ft_strcat.c \
+				str/ft_strcat_nullcrashless.c \
 				str/ft_strccat.c \
+				str/ft_strccat_nullcrashless.c \
 				str/ft_strccmp.c \
 				str/ft_strccpy.c \
+				str/ft_strccpy_nullcrashless.c \
 				str/ft_strchr.c \
 				str/ft_strcjoin.c \
 				str/ft_strcjoin_leakless.c \
 				str/ft_strclen.c \
+				str/ft_strclen_nullcrashless.c \
 				str/ft_strclr.c \
 				str/ft_strcmp.c \
 				str/ft_strcpy.c \
+				str/ft_strcpy_nullcrashless.c \
 				str/ft_strdel.c \
 				str/ft_strdup.c \
 				str/ft_strequ.c \
@@ -141,6 +152,7 @@ STR =			str/ft_stradd.c \
 				str/ft_strjoin_leakless.c \
 				str/ft_strlcat.c \
 				str/ft_strlen.c \
+				str/ft_strlen_nullcrashless.c \
 				str/ft_strmap.c \
 				str/ft_strmapi.c \
 				str/ft_strncat.c \
@@ -277,7 +289,7 @@ $(NAME):
 	@make tab
 	@make to
 	@make wstr
-	@make indexion
+	@make indextion
 
 indextion:
 	@echo "$(GRE)--::Libft Indextion::--$(DEF)"
