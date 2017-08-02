@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strclen.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/03 18:19:33 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/26 15:57:30 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/08/02 06:02:18 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,7 @@ size_t		ft_strclen(const char *s, char c)
 	size_t	i;
 
 	i = 0;
-	while (s && *s && *s != c)
-	{
-		++s;
+	while (s[i] && s[i] != c)
 		++i;
-	}
 	return (i);
 }
