@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/03 01:15:33 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/08/03 06:41:19 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,11 +84,17 @@ int					ft_putstr_buffer(char *s, int release);
 void				ft_putstr_fd(char const *s, int fd);
 int					ft_putstr_fd_buffer(char *s, int release, int fd);
 void				ft_putwchar(wchar_t wc);
+int					ft_putwchar_buffer(wchar_t wc, int release);
 void				ft_putwchar_fd(wchar_t wc, int fd);
+int					ft_putwchar_fd_buffer(wchar_t wc, int release, int fd);
 void				ft_putwendl(wchar_t const *ws);
+int					ft_putwendl_buffer(wchar_t *wc, int release);
 void				ft_putwendl_fd(wchar_t const *ws, int fd);
+int					ft_putwendl_fd_buffer(wchar_t *wc, int release, int fd);
 void				ft_putwstr(wchar_t const *ws);
+int					ft_putwstr_buffer(wchar_t *wc, int release);
 void				ft_putwstr_fd(wchar_t const *ws, int fd);
+int					ft_putwstr_fd_buffer(wchar_t *wc, int release, int fd);
 t_tab				*ft_qsort(t_tab *t);
 char				*ft_stradd(char const *s1, char c);
 char				*ft_stradd_leakless(char *s1, char c);
@@ -197,14 +203,21 @@ t_tab				*ft_tabrotate(t_tab *t);
 t_tab				*ft_tabswap(t_tab *t);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
+wchar_t				*ft_wstradd(wchar_t const *ws1, wchar_t wc);
+wchar_t				*ft_wstradd_leakless(wchar_t *ws1, wchar_t wc);
 wchar_t				*ft_wstrcat(wchar_t *dest, const wchar_t *src);
+wchar_t				*ft_wstrcat_nullcrashless(wchar_t *dest,
+	const wchar_t *src);
 wchar_t				*ft_wstrcpy(wchar_t *dest, const wchar_t *src);
+wchar_t				*ft_wstrcpy_nullcrashless(wchar_t *dest,
+	const wchar_t *src);
 void				ft_wstrdel(wchar_t **as);
 wchar_t				*ft_wstrdup(const wchar_t *ws);
 wchar_t				*ft_wstrfill(wchar_t *ws, wchar_t wc, size_t size);
 wchar_t				*ft_wstrjoin(wchar_t const *s1, wchar_t const *s2);
 wchar_t				*ft_wstrjoin_leakless(wchar_t *s1, wchar_t const *s2);
 size_t				ft_wstrlen(const wchar_t *ws);
+size_t				ft_wstrlen_nullcrashless(const wchar_t *ws);
 size_t				ft_wstrlenuni(const wchar_t *ws);
 wchar_t				*ft_wstrnew(size_t size);
 wchar_t				*ft_wstrsub_leakless(wchar_t *ws, unsigned int start,
