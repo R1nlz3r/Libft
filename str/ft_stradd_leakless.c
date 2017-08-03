@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/24 14:25:29 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/02 04:21:21 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/08/03 02:54:30 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ char	*ft_stradd_leakless(char *s1, char c)
 	size_t		len;
 	char		*result;
 
-	len = 0;
 	result = NULL;
 	len = ft_strlen_nullcrashless(s1) + 1;
 	if (!(result = ft_strnew(len)))
