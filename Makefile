@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/08/03 01:41:44 by mapandel         ###   ########.fr        #
+#    Updated: 2017/08/03 06:40:05 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -116,11 +116,17 @@ PUT =			put/ft_putchar.c \
 				put/ft_putstr_fd.c \
 				put/ft_putstr_fd_buffer.c \
 				put/ft_putwchar.c \
+				put/ft_putwchar_buffer.c \
 				put/ft_putwchar_fd.c \
+				put/ft_putwchar_fd_buffer.c \
 				put/ft_putwendl.c \
+				put/ft_putwendl_buffer.c \
 				put/ft_putwendl_fd.c \
+				put/ft_putwendl_fd_buffer.c \
 				put/ft_putwstr.c \
+				put/ft_putwstr_buffer.c \
 				put/ft_putwstr_fd.c \
+				put/ft_putwstr_fd_buffer.c \
 
 SORT =			sort/ft_qsort.c \
 
@@ -213,14 +219,19 @@ TAB =			tab/ft_tabcpy.c \
 TO =			to/ft_tolower.c \
 				to/ft_toupper.c \
 
-WSTR =			wstr/ft_wstrcat.c \
+WSTR =			wstr/ft_wstradd.c \
+				wstr/ft_wstradd_leakless.c \
+				wstr/ft_wstrcat.c \
+				wstr/ft_wstrcat_nullcrashless.c \
 				wstr/ft_wstrcpy.c \
+				wstr/ft_wstrcpy_nullcrashless.c \
 				wstr/ft_wstrdel.c \
 				wstr/ft_wstrdup.c \
 				wstr/ft_wstrfill.c \
 				wstr/ft_wstrjoin.c \
 				wstr/ft_wstrjoin_leakless.c \
 				wstr/ft_wstrlen.c \
+				wstr/ft_wstrlen_nullcrashless.c \
 				wstr/ft_wstrlenuni.c \
 				wstr/ft_wstrnew.c \
 				wstr/ft_wstrsub.c \
