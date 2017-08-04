@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/08/03 06:40:05 by mapandel         ###   ########.fr        #
+#    Updated: 2017/08/04 10:39:03 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -108,6 +108,7 @@ PUT =			put/ft_putchar.c \
 				put/ft_putendl_fd.c \
 				put/ft_putendl_fd_buffer.c \
 				put/ft_putllnbr.c \
+				put/ft_putllnbr_buffer.c \
 				put/ft_putmap.c \
 				put/ft_putnbr.c \
 				put/ft_putnbr_fd.c \
@@ -132,6 +133,8 @@ SORT =			sort/ft_qsort.c \
 
 STR =			str/ft_stradd.c \
 				str/ft_stradd_leakless.c \
+				str/ft_strbuffer.c \
+				str/ft_strbuffer_leakless.c \
 				str/ft_strcat.c \
 				str/ft_strcat_nullcrashless.c \
 				str/ft_strccat.c \
