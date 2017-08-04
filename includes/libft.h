@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/04 10:38:33 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/08/04 11:10:08 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,6 +100,7 @@ t_tab				*ft_qsort(t_tab *t);
 char				*ft_stradd(char const *s1, char c);
 char				*ft_stradd_leakless(char *s1, char c);
 char				*ft_strbuffer(char *s);
+char				*ft_strbuffer_leakless(char *s);
 char				*ft_strcat(char *dest, const char *src);
 char				*ft_strcat_nullcrashless(char *dest, const char *src);
 char				*ft_strccat(char *dest, const char *src, char c);
