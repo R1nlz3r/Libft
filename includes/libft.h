@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/03 06:41:19 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/08/04 10:38:33 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,6 +76,7 @@ int					ft_putendl_buffer(char *s, int release);
 void				ft_putendl_fd(char const *s, int fd);
 int					ft_putendl_fd_buffer(char *s, int release, int fd);
 void				ft_putllnbr(long long n);
+int					ft_putllnbr_buffer(long long nb, int release);
 void				ft_putmap(char **m, size_t nblines);
 void				ft_putnbr(int n);
 void				ft_putnbr_fd(int n, int fd);
@@ -98,6 +99,7 @@ int					ft_putwstr_fd_buffer(wchar_t *wc, int release, int fd);
 t_tab				*ft_qsort(t_tab *t);
 char				*ft_stradd(char const *s1, char c);
 char				*ft_stradd_leakless(char *s1, char c);
+char				*ft_strbuffer(char *s);
 char				*ft_strcat(char *dest, const char *src);
 char				*ft_strcat_nullcrashless(char *dest, const char *src);
 char				*ft_strccat(char *dest, const char *src, char c);
