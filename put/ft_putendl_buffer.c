@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/02 03:56:55 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/03 07:14:53 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/08/04 08:00:19 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,12 @@
 
 int		ft_putendl_buffer(char *s, int release)
 {
-	static char		*buf;
-
-	if (!(buf = ft_strjoin_leakless(buf, s)))
+	if (!(s = ft_strbuffer_leakless(s)))
 		return (-1);
 	if (release)
 	{
-		ft_putendl(buf);
-		ft_strdel(&buf);
+		ft_putendl(s);
+		ft_strdel(&s);
 	}
 	return (0);
 }
