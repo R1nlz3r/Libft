@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/04 10:38:33 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/08/06 06:28:37 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,15 +91,16 @@ int					ft_putwchar_fd_buffer(wchar_t wc, int release, int fd);
 void				ft_putwendl(wchar_t const *ws);
 int					ft_putwendl_buffer(wchar_t *wc, int release);
 void				ft_putwendl_fd(wchar_t const *ws, int fd);
-int					ft_putwendl_fd_buffer(wchar_t *wc, int release, int fd);
+int					ft_putwendl_fd_buffer(wchar_t *ws, int release, int fd);
 void				ft_putwstr(wchar_t const *ws);
-int					ft_putwstr_buffer(wchar_t *wc, int release);
+int					ft_putwstr_buffer(wchar_t *ws, int release);
 void				ft_putwstr_fd(wchar_t const *ws, int fd);
-int					ft_putwstr_fd_buffer(wchar_t *wc, int release, int fd);
+int					ft_putwstr_fd_buffer(wchar_t *ws, int release, int fd);
 t_tab				*ft_qsort(t_tab *t);
 char				*ft_stradd(char const *s1, char c);
 char				*ft_stradd_leakless(char *s1, char c);
 char				*ft_strbuffer(char *s);
+char				*ft_strbuffer_leakless(char *s);
 char				*ft_strcat(char *dest, const char *src);
 char				*ft_strcat_nullcrashless(char *dest, const char *src);
 char				*ft_strccat(char *dest, const char *src, char c);
@@ -207,6 +208,8 @@ int					ft_tolower(int c);
 int					ft_toupper(int c);
 wchar_t				*ft_wstradd(wchar_t const *ws1, wchar_t wc);
 wchar_t				*ft_wstradd_leakless(wchar_t *ws1, wchar_t wc);
+wchar_t				*ft_wstrbuffer(wchar_t *ws);
+wchar_t				*ft_wstrbuffer_leakless(wchar_t *ws);
 wchar_t				*ft_wstrcat(wchar_t *dest, const wchar_t *src);
 wchar_t				*ft_wstrcat_nullcrashless(wchar_t *dest,
 	const wchar_t *src);
