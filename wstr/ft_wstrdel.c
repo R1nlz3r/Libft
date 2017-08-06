@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/18 04:54:13 by mapandel          #+#    #+#             */
-/*   Updated: 2017/04/18 04:54:54 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/08/06 16:59:00 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 void	ft_wstrdel(wchar_t **as)
 {
 	if (as)
+	{
 		free(*as);
-	*as = NULL;
+		*as = NULL;
+	}
 }
