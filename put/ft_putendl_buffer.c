@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/02 03:56:55 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/05 05:01:54 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/08/07 12:25:42 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		ft_putendl_buffer(char *s, int release)
 	if (release)
 	{
 		ft_putendl(s);
-		ft_strdel(&s);
+		ft_strclr(s);
 	}
 	return (0);
 }
