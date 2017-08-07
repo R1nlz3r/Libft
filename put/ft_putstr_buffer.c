@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/02 06:35:53 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/06 19:44:27 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/08/07 12:25:36 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int		ft_putstr_buffer(char *s, int release)
 	if (release)
 	{
 		ft_putstr(s);
-		ft_strdel(&s);
+		ft_strclr(s);
 	}
 	return (0);
 }
