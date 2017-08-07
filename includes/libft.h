@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/04 11:10:08 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/08/07 06:47:07 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ typedef struct		s_list
 
 int					ft_atoi(const char *nptr);
 void				ft_bzero(void *s, size_t n);
+char				*ft_ctoa(const char c);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
 int					ft_isascii(int c);
@@ -206,6 +207,7 @@ t_tab				*ft_tabrotate(t_tab *t);
 t_tab				*ft_tabswap(t_tab *t);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
+wchar_t				*ft_wctowa(const wchar_t wc);
 wchar_t				*ft_wstradd(wchar_t const *ws1, wchar_t wc);
 wchar_t				*ft_wstradd_leakless(wchar_t *ws1, wchar_t wc);
 wchar_t				*ft_wstrbuffer(wchar_t *ws);
