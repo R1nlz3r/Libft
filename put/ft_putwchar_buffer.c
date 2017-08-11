@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/03 02:37:46 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/05 14:28:14 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/08/11 06:00:16 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,9 @@ int		ft_putwchar_buffer(wchar_t wc, int release)
 	if (!(ws = ft_wstrbuffer_leakless(ws)))
 		return (-1);
 	if (release)
+	{
 		ft_putwstr(ws);
+		ft_wstrclr(ws);
+	}
 	return (0);
 }
