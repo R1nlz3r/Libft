@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/07 06:47:07 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/08/11 05:56:46 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -215,6 +215,7 @@ wchar_t				*ft_wstrbuffer_leakless(wchar_t *ws);
 wchar_t				*ft_wstrcat(wchar_t *dest, const wchar_t *src);
 wchar_t				*ft_wstrcat_nullcrashless(wchar_t *dest,
 	const wchar_t *src);
+void				ft_wstrclr(wchar_t *ws);
 wchar_t				*ft_wstrcpy(wchar_t *dest, const wchar_t *src);
 wchar_t				*ft_wstrcpy_nullcrashless(wchar_t *dest,
 	const wchar_t *src);
