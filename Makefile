@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/08/07 06:47:23 by mapandel         ###   ########.fr        #
+#    Updated: 2017/08/11 05:56:17 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -230,6 +230,7 @@ WSTR =			wstr/ft_wstradd.c \
 				wstr/ft_wstrbuffer_leakless.c \
 				wstr/ft_wstrcat.c \
 				wstr/ft_wstrcat_nullcrashless.c \
+				wstr/ft_wstrclr.c \
 				wstr/ft_wstrcpy.c \
 				wstr/ft_wstrcpy_nullcrashless.c \
 				wstr/ft_wstrdel.c \
