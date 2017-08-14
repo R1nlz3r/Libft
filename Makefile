@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/08/07 06:47:23 by mapandel         ###   ########.fr        #
+#    Updated: 2017/08/14 23:07:16 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,6 +20,7 @@ CFLAGS = 		-Wall -Wextra -Werror -Weverything
 #			Sources
 
 CONV =			conv/ft_atoi.c \
+				conv/ft_atoi_spacesless.c \
 				conv/ft_ctoa.c \
 				conv/ft_itoa.c \
 				conv/ft_lltoabase_signed.c \
