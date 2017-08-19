@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/14 23:13:59 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/08/19 13:40:11 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,9 @@ typedef struct		s_list
 }					t_list;
 
 int					ft_atoi(const char *nptr);
+int					ft_atoi_iter(const char *nptr, size_t *iter);
 int					ft_atoi_spacesless(const char *nptr);
+int					ft_atoi_spacesless_iter(const char *nptr, size_t *iter);
 void				ft_bzero(void *s, size_t n);
 char				*ft_ctoa(const char c);
 int					ft_isalnum(int c);
