@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/08/20 20:06:53 by mapandel         ###   ########.fr        #
+#    Updated: 2017/08/20 21:11:04 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ CONV =			conv/ft_atoi.c \
 				conv/ft_atoi_iter.c \
 				conv/ft_atoi_spacesless.c \
 				conv/ft_atoi_spacesless_iter.c \
+				conv/ft_atoi_strict.c \
 				conv/ft_ctoa.c \
 				conv/ft_itoa.c \
 				conv/ft_lltoabase_signed.c \
