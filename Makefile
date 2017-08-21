@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/08/20 21:11:04 by mapandel         ###   ########.fr        #
+#    Updated: 2017/08/21 20:35:14 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -161,6 +161,7 @@ STR =			str/ft_stradd.c \
 				str/ft_strdup.c \
 				str/ft_strequ.c \
 				str/ft_strfill.c \
+				str/ft_strinc.c \
 				str/ft_striter.c \
 				str/ft_striteri.c \
 				str/ft_strjoin.c \
