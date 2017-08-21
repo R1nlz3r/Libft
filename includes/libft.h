@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/20 21:10:49 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/08/21 20:36:15 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -129,6 +129,7 @@ void				ft_strdel(char **as);
 char				*ft_strdup(const char *s);
 int					ft_strequ(char const *s1, char const *s2);
 char				*ft_strfill(char *s, char c, size_t size);
+int					ft_strinc(const char *s1, const char *s2);
 int					ft_strisalnum(const char *s);
 int					ft_strisalpha(const char *s);
 int					ft_strisascii(const char *s);
