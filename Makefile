@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/08/21 20:35:14 by mapandel         ###   ########.fr        #
+#    Updated: 2017/08/25 00:03:05 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -197,7 +197,9 @@ STR =			str/ft_stradd.c \
 				str/ft_strtoupper_leakless.c \
 				str/ft_strtrim.c \
 
-TAB =			tab/ft_tabcpy.c \
+TAB =			tab/ft_tabadd.c \
+				tab/ft_tabadd_leakless.c \
+				tab/ft_tabcpy.c \
 				tab/ft_tabdel.c \
 				tab/ft_tabdup.c \
 				tab/ft_tabfill.c \
