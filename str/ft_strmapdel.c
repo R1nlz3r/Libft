@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/19 17:46:45 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/20 12:36:43 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/08/25 13:25:40 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_strmapdel(char ***m)
 	size_t	i;
 
 	i = 0;
-	if (!m)
+	if (!m || !*m)
 		return ;
 	while ((*m)[i])
 		ft_strdel(&((*m)[i++]));
