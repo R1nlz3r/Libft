@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/08/25 00:03:05 by mapandel         ###   ########.fr        #
+#    Updated: 2017/09/07 06:27:22 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -224,6 +224,7 @@ TAB =			tab/ft_tabadd.c \
 				tab/ft_tabminpos.c \
 				tab/ft_tabncpy.c \
 				tab/ft_tabnew.c \
+				tab/ft_tabpercentile.c \
 				tab/ft_tabpush.c \
 				tab/ft_tabrev.c \
 				tab/ft_tabrev_leakless.c \
