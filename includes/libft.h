@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/25 00:02:41 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/09/07 06:26:54 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -209,6 +209,7 @@ int					ft_tabisdescending(t_tab *t);
 int					ft_tabisincreasing(t_tab *t);
 t_tab				*ft_tabncpy(t_tab *dest, const t_tab *src, size_t n);
 t_tab				*ft_tabnew(size_t size);
+double				ft_tabpercentile(t_tab *t, int percentile);
 void				ft_tabpush(t_tab *a, t_tab *b);
 t_tab				*ft_tabrev(t_tab *t);
 t_tab				*ft_tabrev_leakless(t_tab *t);
