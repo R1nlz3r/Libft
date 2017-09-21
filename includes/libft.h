@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/09/07 06:26:54 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/09/21 20:15:45 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,9 @@
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
+# include <errno.h>
+
+int					errno;
 
 typedef struct		s_tab
 {
@@ -80,6 +83,9 @@ void				ft_putendl(char const *s);
 int					ft_putendl_buffer(char *s, int release);
 void				ft_putendl_fd(char const *s, int fd);
 int					ft_putendl_fd_buffer(char *s, int release, int fd);
+void				ft_puterror(char *name, char *reason);
+void				ft_puterror_exit(char *name, char *reason)
+	__attribute__((noreturn));
 void				ft_putllnbr(long long n);
 int					ft_putllnbr_buffer(long long nb, int release);
 void				ft_putmap(char **m, size_t nblines);
