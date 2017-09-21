@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/09/07 06:27:22 by mapandel         ###   ########.fr        #
+#    Updated: 2017/09/21 20:17:58 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -113,6 +113,8 @@ PUT =			put/ft_putchar.c \
 				put/ft_putendl_buffer.c \
 				put/ft_putendl_fd.c \
 				put/ft_putendl_fd_buffer.c \
+				put/ft_puterror.c \
+				put/ft_puterror_exit.c \
 				put/ft_putllnbr.c \
 				put/ft_putllnbr_buffer.c \
 				put/ft_putmap.c \
