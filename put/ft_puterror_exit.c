@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/21 20:09:53 by mapandel          #+#    #+#             */
-/*   Updated: 2017/09/21 20:10:28 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/09/24 21:39:43 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,5 @@ void	ft_puterror_exit(char *name, char *reason)
 		ft_putstr_fd(": ", 2);
 	}
 	ft_putendl_fd(strerror(errno), 2);
-	exit(-1);
+	exit(1);
 }
