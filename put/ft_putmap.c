@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/30 11:36:32 by mapandel          #+#    #+#             */
-/*   Updated: 2017/01/30 11:55:02 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/09/26 09:34:12 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,9 @@ void	ft_putmap(char **m, size_t nblines)
 
 	i = 0;
 	while (m && i < nblines)
-		ft_putendl(m[i++]);
+	{
+		if (m[i])
+			ft_putendl(m[i]);
+		++i;
+	}
 }
