@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/26 09:25:24 by mapandel          #+#    #+#             */
-/*   Updated: 2017/09/26 10:11:23 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/09/26 12:29:06 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,5 @@ char	**ft_strmapconcat_leakless(char **m, size_t size)
 		++i;
 	}
 	ft_memdel((void**)&m);
-	return (result)
+	return (result);
 }
