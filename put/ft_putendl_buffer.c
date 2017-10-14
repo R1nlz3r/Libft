@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/02 03:56:55 by mapandel          #+#    #+#             */
-/*   Updated: 2017/10/14 23:05:20 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/10/14 23:34:23 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int		ft_putendl_buffer(char *s, int release)
 {
 	if (!(s = ft_strbuffer(s))
-		|| !(s = ft_strbuffer(ft_strdup("\n"))))
+		|| !(s = ft_strbuffer("\n")))
 		return (-1);
 	if (release)
 	{
