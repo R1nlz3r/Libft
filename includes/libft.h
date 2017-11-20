@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/09/26 12:26:45 by mapandel         ###   ########.fr       */
+/*   Updated: 2017/11/20 22:01:59 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@
 # include <string.h>
 # include <unistd.h>
 # include <errno.h>
-
-int					errno;
 
 typedef int			t_bool;
 
@@ -34,6 +32,7 @@ typedef struct		s_list
 	void			*content;
 	size_t			content_size;
 	struct s_list	*next;
+	struct s_list	*previous;
 }					t_list;
 
 int					ft_atoi(const char *nptr);
