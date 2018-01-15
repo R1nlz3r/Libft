@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 06:25:01 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/26 23:41:45 by mapandel         ###   ########.fr       */
+/*   Updated: 2018/01/15 05:04:19 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,13 @@ char	*ft_strdup(const char *s)
 	size_t		i;
 
 	i = 0;
-	if (!(dup = (char*)malloc(ft_strlen(s) + 1)))
+	if (!(dup = (char*)malloc(sizeof(char) * (ft_strlen_nullcrashless(s)
+		+ 1))))
 		return (NULL);
 	while (s[i])
 	{
 		dup[i] = s[i];
-		i++;
+		++i;
 	}
 	dup[i] = '\0';
 	return (dup);
