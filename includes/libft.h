@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/11/20 22:01:59 by mapandel         ###   ########.fr       */
+/*   Updated: 2018/01/15 04:39:07 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -161,9 +161,13 @@ char				*ft_strmap(char const *s, char (*f)(char));
 char				**ft_strmapconcat(char **m, size_t size);
 char				**ft_strmapconcat_leakless(char **m, size_t size);
 void				ft_strmapdel(char ***m);
+char				**ft_strmapdup(const char **m);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-size_t				ft_strmaplen(char **m);
-size_t				ft_strmaplen_nullcrashless(char **m);
+size_t				ft_strmaplen(const char **m);
+size_t				ft_strmaplen_nullcrashless(const char **m);
+char				**ft_strmapnew(size_t size);
+char				**ft_strmaprev(char **m);
+char				**ft_strmaprev_leakless(char **m);
 char				**ft_strmapsort(char **m);
 char				*ft_strncat(char *dest, const char *src, size_t n);
 char				*ft_strncat_nullcrashless(char *dest, const char *src,
