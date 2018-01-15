@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 17:49:56 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/28 12:10:24 by mapandel         ###   ########.fr       */
+/*   Updated: 2018/01/15 04:27:10 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strnew(size_t size)
 	char		*str;
 
 	i = 0;
-	if (!(str = (char*)malloc(size + 1)))
+	if (!(str = (char*)malloc(sizeof(char) * (size + 1))))
 		return (NULL);
 	while (i <= size)
 		str[i++] = '\0';
