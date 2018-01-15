@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2017/12/08 10:07:53 by mapandel         ###   ########.fr        #
+#    Updated: 2018/01/15 04:36:04 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -172,13 +172,6 @@ STR =			str/ft_stradd.c \
 				str/ft_strlcat.c \
 				str/ft_strlen.c \
 				str/ft_strlen_nullcrashless.c \
-				str/ft_strmap.c \
-				str/ft_strmapconcat.c \
-				str/ft_strmapconcat_leakless.c \
-				str/ft_strmapdel.c \
-				str/ft_strmapi.c \
-				str/ft_strmaplen.c \
-				str/ft_strmaplen_nullcrashless.c \
 				str/ft_strncat.c \
 				str/ft_strncat_nullcrashless.c \
 				str/ft_strncmp.c \
@@ -201,6 +194,18 @@ STR =			str/ft_stradd.c \
 				str/ft_strtoupper.c \
 				str/ft_strtoupper_leakless.c \
 				str/ft_strtrim.c \
+
+STRMAP =		strmap/ft_strmap.c \
+				strmap/ft_strmapconcat.c \
+				strmap/ft_strmapconcat_leakless.c \
+				strmap/ft_strmapdel.c \
+				strmap/ft_strmapdup.c \
+				strmap/ft_strmapi.c \
+				strmap/ft_strmaplen.c \
+				strmap/ft_strmaplen_nullcrashless.c \
+				strmap/ft_strmapnew.c \
+				strmap/ft_strmaprev.c \
+				strmap/ft_strmaprev_leakless.c \
 
 TAB =			tab/ft_tabadd.c \
 				tab/ft_tabadd_leakless.c \
@@ -262,7 +267,7 @@ WSTR =			wstr/ft_wstradd.c \
 				wstr/ft_wstrsub_leakless.c \
 
 SRC :=			$(CONV) $(FT_PRINTF) $(GET_NEXT) $(IS) $(LST) $(MEM) $(PUT) \
-				$(SORT) $(STR) $(TAB) $(TO) $(WSTR)
+				$(SORT) $(STR) $(STRMAP) $(TAB) $(TO) $(WSTR)
 
 OBJ =			$(SRC:.c=.o)
 OBJ_CONV =		$(CONV:.c=.o)
@@ -274,6 +279,7 @@ OBJ_MEM =		$(MEM:.c=.o)
 OBJ_PUT =		$(PUT:.c=.o)
 OBJ_SORT =		$(SORT:.c=.o)
 OBJ_STR =		$(STR:.c=.o)
+OBJ_STRMAP =	$(STRMAP:.c=.o)
 OBJ_TAB =		$(TAB:.c=.o)
 OBJ_TO =		$(TO:.c=.o)
 OBJ_WSTR =		$(WSTR:.c=.o)
@@ -306,26 +312,16 @@ BACK_WHI =		\033[47m
 
 #			Main Rules
 
-.PHONY: all conv ft_printf get_next is lst mem put sort str tab to wstr \
-	indexion re glu  clean fclean
+.PHONY: all conv ft_printf get_next is lst mem put sort str strmap tab to \
+	wstr indexion re glu clean fclean printstart
 
 all: $(NAME)
 
-$(NAME):
+$(NAME): printstart conv ft_printf get_next is lst mem put sort str strmap \
+	tab to wstr indextion
+
+printstart:
 	@echo "$(CYA)--::Libft Compilation::--$(DEF)"
-	@make conv
-	@make ft_printf
-	@make get_next
-	@make is
-	@make lst
-	@make mem
-	@make put
-	@make sort
-	@make str
-	@make tab
-	@make to
-	@make wstr
-	@make indextion
 
 indextion:
 	@echo "$(GRE)--::Libft Indextion::--$(DEF)"
@@ -376,6 +372,10 @@ str:
 	@echo "$(BLU)--::Str/ Compilation::--$(DEF)"
 	@make $(OBJ_STR)
 	@ar rc $(NAME) $(OBJ_STR)
+strmap:
+	@echo "$(BLU)--::Strmap/ Compilation::--$(DEF)"
+	@make $(OBJ_STRMAP)
+	@ar rc $(NAME) $(OBJ_STRMAP)
 tab:
 	@echo "$(BLU)--::Tab/ Compilation::--$(DEF)"
 	@make $(OBJ_TAB)
