@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2018/01/15 04:39:07 by mapandel         ###   ########.fr       */
+/*   Updated: 2018/01/16 07:17:48 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,13 @@ typedef struct		s_list
 	struct s_list	*previous;
 }					t_list;
 
+double				ft_atod(const char *nptr);
 int					ft_atoi(const char *nptr);
 int					ft_atoi_iter(const char *nptr, size_t *iter);
 int					ft_atoi_spacesless(const char *nptr);
 int					ft_atoi_spacesless_iter(const char *nptr, size_t *iter);
 long				ft_atoi_strict(const char *nptr);
+long long			ft_atoll(const char *nptr);
 void				ft_bzero(void *s, size_t n);
 char				*ft_ctoa(const char c);
 int					ft_isalnum(int c);
@@ -76,6 +78,7 @@ void				*ft_memcpy(void *dest, const void *src, size_t n);
 void				ft_memdel(void **ap);
 void				*ft_memmove(void *dest, const void *src, size_t n);
 void				*ft_memset(void *s, int c, size_t n);
+double				ft_pow(int nb, int expo);
 void				ft_putchar(char c);
 int					ft_putchar_buffer(char c, int release);
 void				ft_putchar_fd(char c, int fd);
