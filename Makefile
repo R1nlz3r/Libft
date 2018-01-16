@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2018/01/15 04:36:04 by mapandel         ###   ########.fr        #
+#    Updated: 2018/01/16 07:20:45 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,11 +19,13 @@ CFLAGS = 		-Wall -Wextra -Werror -Weverything
 
 #			Sources
 
-CONV =			conv/ft_atoi.c \
+CONV =			conv/ft_atod.c \
+				conv/ft_atoi.c \
 				conv/ft_atoi_iter.c \
 				conv/ft_atoi_spacesless.c \
 				conv/ft_atoi_spacesless_iter.c \
 				conv/ft_atoi_strict.c \
+				conv/ft_atoll.c \
 				conv/ft_ctoa.c \
 				conv/ft_itoa.c \
 				conv/ft_lltoabase_signed.c \
@@ -94,6 +96,8 @@ LST =			lst/ft_lstadd.c \
 				lst/ft_lstiter.c \
 				lst/ft_lstmap.c \
 				lst/ft_lstnew.c \
+
+MATH =			math/ft_pow.c \
 
 MEM =			mem/ft_bzero.c \
 				mem/ft_memalloc.c \
@@ -266,8 +270,8 @@ WSTR =			wstr/ft_wstradd.c \
 				wstr/ft_wstrsub.c \
 				wstr/ft_wstrsub_leakless.c \
 
-SRC :=			$(CONV) $(FT_PRINTF) $(GET_NEXT) $(IS) $(LST) $(MEM) $(PUT) \
-				$(SORT) $(STR) $(STRMAP) $(TAB) $(TO) $(WSTR)
+SRC :=			$(CONV) $(FT_PRINTF) $(GET_NEXT) $(IS) $(LST) $(MATH) $(MEM) \
+	$(PUT) $(SORT) $(STR) $(STRMAP) $(TAB) $(TO) $(WSTR)
 
 OBJ =			$(SRC:.c=.o)
 OBJ_CONV =		$(CONV:.c=.o)
@@ -275,6 +279,7 @@ OBJ_FT_PRINTF =	$(FT_PRINTF:.c=.o)
 OBJ_GET_NEXT =	$(GET_NEXT:.c=.o)
 OBJ_IS =		$(IS:.c=.o)
 OBJ_LST =		$(LST:.c=.o)
+OBJ_MATH =		$(MATH:.c=.o)
 OBJ_MEM =		$(MEM:.c=.o)
 OBJ_PUT =		$(PUT:.c=.o)
 OBJ_SORT =		$(SORT:.c=.o)
@@ -312,13 +317,13 @@ BACK_WHI =		\033[47m
 
 #			Main Rules
 
-.PHONY: all conv ft_printf get_next is lst mem put sort str strmap tab to \
-	wstr indexion re glu clean fclean printstart
+.PHONY: all conv ft_printf get_next is lst math mem put sort str strmap tab \
+	to wstr indexion re glu clean fclean printstart
 
 all: $(NAME)
 
-$(NAME): printstart conv ft_printf get_next is lst mem put sort str strmap \
-	tab to wstr indextion
+$(NAME): printstart conv ft_printf get_next is lst math mem put sort str \
+	strmap tab to wstr indextion
 
 printstart:
 	@echo "$(CYA)--::Libft Compilation::--$(DEF)"
@@ -356,6 +361,10 @@ lst:
 	@echo "$(BLU)--::Lst/ Compilation::--$(DEF)"
 	@make $(OBJ_LST)
 	@ar rc $(NAME) $(OBJ_LST)
+math:
+	@echo "$(BLU)--::Math/ Compilation::--$(DEF)"
+	@make $(OBJ_MATH)
+	@ar rc $(NAME) $(OBJ_MATH)
 mem:
 	@echo "$(BLU)--::Mem/ Compilation::--$(DEF)"
 	@make $(OBJ_MEM)
