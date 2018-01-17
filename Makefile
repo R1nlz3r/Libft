@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2018/01/16 07:20:45 by mapandel         ###   ########.fr        #
+#    Updated: 2018/01/17 01:14:38 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ NAME =			libft.a
 CC = 			clang
 CFLAGS = 		-Wall -Wextra -Werror -Weverything
 
-#			Sources
+#				Sources
 
 CONV =			conv/ft_atod.c \
 				conv/ft_atoi.c \
@@ -317,20 +317,17 @@ BACK_WHI =		\033[47m
 
 #			Main Rules
 
-.PHONY: all conv ft_printf get_next is lst math mem put sort str strmap tab \
-	to wstr indexion re glu clean fclean printstart
+.PHONY: all indexion re glu clean fclean
+
+$(NAME): $(OBJ)
+	@make indextion
 
 all: $(NAME)
 
-$(NAME): printstart conv ft_printf get_next is lst math mem put sort str \
-	strmap tab to wstr indextion
-
-printstart:
-	@echo "$(CYA)--::Libft Compilation::--$(DEF)"
-
 indextion:
-	@echo "$(GRE)--::Libft Indextion::--$(DEF)"
+	@ar rc $(NAME) $(OBJ)
 	@ranlib $(NAME)
+	@echo "$(GRE)--::Libft Indexed::--$(DEF)"
 
 re: fclean all
 
@@ -340,63 +337,6 @@ glu: fclean all clean
 
 %.o: %.c
 	$(CC) $(CFLAGS) -I $(INC) -c -o $@ $^
-
-conv:
-	@echo "$(BLU)--::Conv/ Compilation::--$(DEF)"
-	@make $(OBJ_CONV)
-	@ar rc $(NAME) $(OBJ_CONV)
-ft_printf:
-	@echo "$(BLU)--::Ft_printf/ Compilation::--$(DEF)"
-	@make $(OBJ_FT_PRINTF)
-	@ar rc $(NAME) $(OBJ_FT_PRINTF)
-get_next:
-	@echo "$(BLU)--::Get_next/ Compilation::--$(DEF)"
-	@make $(OBJ_GET_NEXT)
-	@ar rc $(NAME) $(OBJ_GET_NEXT)
-is:
-	@echo "$(BLU)--::Is/ Compilation::--$(DEF)"
-	@make $(OBJ_IS)
-	@ar rc $(NAME) $(OBJ_IS)
-lst:
-	@echo "$(BLU)--::Lst/ Compilation::--$(DEF)"
-	@make $(OBJ_LST)
-	@ar rc $(NAME) $(OBJ_LST)
-math:
-	@echo "$(BLU)--::Math/ Compilation::--$(DEF)"
-	@make $(OBJ_MATH)
-	@ar rc $(NAME) $(OBJ_MATH)
-mem:
-	@echo "$(BLU)--::Mem/ Compilation::--$(DEF)"
-	@make $(OBJ_MEM)
-	@ar rc $(NAME) $(OBJ_MEM)
-put:
-	@echo "$(BLU)--::Put/ Compilation::--$(DEF)"
-	@make $(OBJ_PUT)
-	@ar rc $(NAME) $(OBJ_PUT)
-sort:
-	@echo "$(BLU)--::Sort/ Compilation::--$(DEF)"
-	@make $(OBJ_SORT)
-	@ar rc $(NAME) $(OBJ_SORT)
-str:
-	@echo "$(BLU)--::Str/ Compilation::--$(DEF)"
-	@make $(OBJ_STR)
-	@ar rc $(NAME) $(OBJ_STR)
-strmap:
-	@echo "$(BLU)--::Strmap/ Compilation::--$(DEF)"
-	@make $(OBJ_STRMAP)
-	@ar rc $(NAME) $(OBJ_STRMAP)
-tab:
-	@echo "$(BLU)--::Tab/ Compilation::--$(DEF)"
-	@make $(OBJ_TAB)
-	@ar rc $(NAME) $(OBJ_TAB)
-to:
-	@echo "$(BLU)--::To/ Compilation::--$(DEF)"
-	@make $(OBJ_TO)
-	@ar rc $(NAME) $(OBJ_TO)
-wstr:
-	@echo "$(BLU)--::Wstr/ Compilation::--$(DEF)"
-	@make $(OBJ_WSTR)
-	@ar rc $(NAME) $(OBJ_WSTR)
 
 #			Clean Rules
 
