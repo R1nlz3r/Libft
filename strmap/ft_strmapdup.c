@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/15 04:03:38 by mapandel          #+#    #+#             */
-/*   Updated: 2018/01/15 05:06:52 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/18 01:06:06 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,8 @@ char	**ft_strmapdup(const char **m)
 	size_t		i;
 
 	i = 0;
-	if (!(dup = (char**)malloc(sizeof(char*) * (ft_strmaplen(m) + 1))))
+	if (!(dup = (char**)malloc(sizeof(char*) *
+		(ft_strmaplen_nullcrashless(m) + 1))))
 		return (NULL);
 	while (m[i])
 	{
@@ -26,6 +27,6 @@ char	**ft_strmapdup(const char **m)
 			return (NULL);
 		++i;
 	}
-	m[i] = NULL;
+	dup[i] = NULL;
 	return (dup);
 }
