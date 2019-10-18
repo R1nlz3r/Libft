@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2018/01/16 07:17:48 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/18 03:22:55 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -161,11 +161,17 @@ size_t				ft_strlcat(char *dest, const char *src, size_t size);
 size_t				ft_strlen(const char *s);
 size_t				ft_strlen_nullcrashless(const char *s);
 char				*ft_strmap(char const *s, char (*f)(char));
+char				**ft_strmapcat(char **dest, const char **src);
+char				**ft_strmapcat_nullcrashless(char **dest, const char **src);
 char				**ft_strmapconcat(char **m, size_t size);
 char				**ft_strmapconcat_leakless(char **m, size_t size);
+char				**ft_strmapcpy(char **dest, const char **src);
+char				**ft_strmapcpy_nullcrashless(char **dest, const char **src);
 void				ft_strmapdel(char ***m);
 char				**ft_strmapdup(const char **m);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char				**ft_strmapjoin(char const **m1, char const **m2);
+char				**ft_strmapjoin_leakless(char **m1, char const **m2);
 size_t				ft_strmaplen(const char **m);
 size_t				ft_strmaplen_nullcrashless(const char **m);
 char				**ft_strmapnew(size_t size);
