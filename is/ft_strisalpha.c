@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/05 14:56:30 by mapandel          #+#    #+#             */
-/*   Updated: 2017/05/05 16:59:16 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/30 10:54:30 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_strisalpha: string is alphabetic
+**		Checks all the characters in a const char*
+**		Verifies if it contains only alphabetic characters
+**		NULL behavior handled
+*/
 
 int		ft_strisalpha(const char *s)
 {

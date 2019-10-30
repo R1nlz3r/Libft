@@ -3,14 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 19:08:42 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/26 13:11:15 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/29 20:26:20 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_isalnum: is alphanumeric
+**		Checks the character code an int
+**		Verifies if it is a letter or a digit
+*/
 
 int		ft_isalnum(int c)
 {

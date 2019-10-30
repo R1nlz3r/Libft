@@ -6,11 +6,19 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/05 16:40:48 by mapandel          #+#    #+#             */
-/*   Updated: 2017/05/05 16:57:28 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/30 11:07:21 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_strisgraph: string is graphical
+**		Checks all the characters in a const char*
+**		Verifies if it contains only graphical characters (printable codes
+**			excluding space)
+**		NULL behavior handled
+*/
 
 int		ft_strisgraph(const char *s)
 {

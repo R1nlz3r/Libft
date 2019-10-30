@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/05 15:00:03 by mapandel          #+#    #+#             */
-/*   Updated: 2017/05/05 16:58:58 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/30 10:54:59 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_strisascii: string is ascii
+**		Checks all the characters in a const char*
+**		Verifies if it contains only ASCII characters
+**		NULL behavior handled
+*/
 
 int		ft_strisascii(const char *s)
 {

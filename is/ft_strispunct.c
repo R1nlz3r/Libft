@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/05 17:04:55 by mapandel          #+#    #+#             */
-/*   Updated: 2017/05/05 17:05:21 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/30 11:10:18 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_strispunct: string is punctuation
+**		Checks all the characters in a const char*
+**		Verifies if it contains only punctuation characters
+**		NULL behavior handled
+*/
 
 int		ft_strispunct(const char *s)
 {

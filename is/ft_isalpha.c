@@ -3,14 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 18:18:41 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/26 13:11:40 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/29 20:26:26 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_isalpha: is alphabetic
+**		Checks the character code an int
+**		Verifies if it is a letter (case insensitive)
+*/
 
 int		ft_isalpha(int c)
 {

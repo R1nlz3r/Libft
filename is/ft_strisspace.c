@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/05 17:04:55 by mapandel          #+#    #+#             */
-/*   Updated: 2017/05/05 17:05:45 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/30 11:10:50 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_strisspace: string is space
+**		Checks all the characters in a const char*
+**		Verifies if it contains only space characters
+**		NULL behavior handled
+*/
 
 int		ft_strisspace(const char *s)
 {

@@ -6,11 +6,17 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/27 17:23:52 by mapandel          #+#    #+#             */
-/*   Updated: 2017/02/27 22:37:42 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/29 20:44:46 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_islessinf: is less infinite
+**		Checks the value of a double
+**		Verifies if it is a negative infinite
+*/
 
 int		ft_islessinf(double f)
 {

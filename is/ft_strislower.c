@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/05 17:00:44 by mapandel          #+#    #+#             */
-/*   Updated: 2017/05/05 17:01:07 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/30 11:08:58 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_strislower: string is lowercase
+**		Checks all the characters in a const char*
+**		Verifies if it contains only letters in lowercase
+**		NULL behavior handled
+*/
 
 int		ft_strislower(const char *s)
 {

@@ -3,14 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_islower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 18:53:00 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/26 13:16:55 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/29 20:26:37 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_islower: is lowercase
+**		Checks the character code an int
+**		Verifies if it is a letter in lowercase
+*/
 
 int		ft_islower(int c)
 {

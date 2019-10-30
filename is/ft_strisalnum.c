@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/05 14:36:23 by mapandel          #+#    #+#             */
-/*   Updated: 2017/05/05 16:59:36 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/30 10:53:24 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_strisalnum: string is alphanumeric
+**		Checks all the characters in a const char*
+**		Verifies if it contains only alphanumeric characters
+**		NULL behavior handled
+*/
 
 int		ft_strisalnum(const char *s)
 {

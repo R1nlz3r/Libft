@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/05 17:04:55 by mapandel          #+#    #+#             */
-/*   Updated: 2017/05/05 17:07:00 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/30 11:14:11 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_strisupper: string is uppercase
+**		Checks all the characters in a const char*
+**		Verifies if it contains only uppercase characters
+**		NULL behavior handled
+*/
 
 int		ft_strisupper(const char *s)
 {

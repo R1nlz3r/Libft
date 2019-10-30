@@ -3,14 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isxdigit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 17:16:59 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/26 14:27:23 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/30 10:47:26 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_isxdigit: is hexadecimal digit
+**		Checks the character code an int
+**		Verifies if it is a digit on the hexadecimal base
+*/
 
 int		ft_isxdigit(int c)
 {
