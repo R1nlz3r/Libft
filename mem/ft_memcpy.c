@@ -3,20 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 17:44:51 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/27 00:22:30 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/31 11:46:37 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_memcpy: memory copy
+**		Copies a const void* into a void* for a size_t length
+**		NULL behaviors are handled but the length should be correct
+**		The destination should be allocated properly to receive the data
+**		Returns the destination
+*/
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t i;
 
 	i = 0;
+	if (!dest || !src)
+		return (dest);
 	while (i < n)
 	{
 		((char *)dest)[i] = ((char *)(unsigned long)src)[i];
