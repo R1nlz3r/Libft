@@ -6,11 +6,17 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 11:33:09 by mapandel          #+#    #+#             */
-/*   Updated: 2017/09/25 12:11:58 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/31 18:20:03 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strmapsort: string map sorting
+**		Sorts a char** by comparing its char*
+**		NULL behaviors are handled
+*/
 
 char	**ft_strmapsort(char **m)
 {
@@ -20,6 +26,8 @@ char	**ft_strmapsort(char **m)
 	int		j;
 
 	i = 0;
+	if (!m)
+		return (NULL);
 	while (m[i] && m[i + 1])
 	{
 		tmppos = i;

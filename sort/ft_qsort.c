@@ -6,11 +6,21 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/06 06:35:35 by mapandel          #+#    #+#             */
-/*   Updated: 2017/06/07 02:10:48 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/31 18:06:05 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_qsort: qwick sort
+**		Sorts an int* with the qwick sort algorithm for a size_t length (all
+**			part of the t_tab structure)
+**		NULL behavior is handled but length should be set and up to date
+**
+**		Issue #1: Duplicate values are not handled by the function and result
+**			in a timeout
+*/
 
 static void		ft_qsort_swap(t_tab *t, size_t a, size_t b)
 {
@@ -49,6 +59,7 @@ static void		ft_qsort2(t_tab *t, size_t start, size_t end)
 
 t_tab			*ft_qsort(t_tab *t)
 {
-	ft_qsort2(t, 0, t->len - 1);
+	if (t && t->tab && t->len > 1)
+		ft_qsort2(t, 0, t->len - 1);
 	return (t);
 }
