@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 05:54:16 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/30 18:36:16 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/01 17:35:18 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /*
 ** ft_memchr: memory search
-**		Searches for a an int in a const void* for a size_t length
+**		Searches for an int in a const void* for a size_t length
 **		Returns a pointer on the first occurence or NULL if none was found
 **		NULL behavior is handled but the length should be correct
 */
