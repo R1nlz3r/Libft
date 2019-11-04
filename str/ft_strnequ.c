@@ -3,14 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnequ.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 18:47:30 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/26 23:15:00 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/04 23:17:48 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strnequ: strings number equal
+**		Compares two char const* for a size_t length
+**		NULL behaviors are handled
+**		Returns true if they contain the same data or are NULL
+*/
 
 int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {

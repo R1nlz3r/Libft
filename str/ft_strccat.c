@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/26 12:36:12 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/26 15:49:16 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/31 20:10:09 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_strccat: string character concatenation
+**		Copies a const char* at the end of a char* while a char is not found
+**		The destination should be allocated properly to receive the data
+**		Returns the destination
+*/
 
 char	*ft_strccat(char *dest, const char *src, char c)
 {

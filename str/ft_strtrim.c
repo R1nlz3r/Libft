@@ -3,14 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 19:33:53 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/26 23:06:57 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/04 16:50:19 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strtrim: string trim
+**		Duplicates and suppresses a const char*
+**			from its leading and trailing spaces, tabs and newlines
+**		NULL behavior is handled
+**		Returns this new string or NULL if the allocation failed
+*/
 
 char	*ft_strtrim(const char *s)
 {

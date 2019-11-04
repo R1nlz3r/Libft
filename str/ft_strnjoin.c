@@ -6,11 +6,19 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/01 13:02:22 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/03 01:42:11 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/04 23:36:54 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strcjoin: string number join
+**		Creates a char* from the concatenation of two char const*
+**			for a size_t length
+**		NULL behaviors are handled
+**		Returns this new string or NULL if the allocation failed
+*/
 
 char	*ft_strnjoin(char const *s1, char const *s2, size_t n)
 {

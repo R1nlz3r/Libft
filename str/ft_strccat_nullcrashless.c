@@ -6,11 +6,20 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/02 04:49:45 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/02 04:50:31 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/31 20:12:37 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_strccat_nullcrashless: string character concatenation null crashless
+**		Copies a const char* at the end of a char* while a char is not found
+**		The destination should be allocated properly to receive the data
+**		NULL behaviors are handled
+**		Returns the destination
+*/
+
 
 char	*ft_strccat_nullcrashless(char *dest, const char *src, char c)
 {
@@ -19,11 +28,11 @@ char	*ft_strccat_nullcrashless(char *dest, const char *src, char c)
 
 	i = 0;
 	j = 0;
-	if (!dest)
-		return (NULL);
+	if (!dest || !src)
+		return (dest);
 	while (dest[i])
 		++i;
-	while (src && src[j] && src[j] != c)
+	while (src[j] && src[j] != c)
 		dest[i++] = src[j++];
 	dest[i] = '\0';
 	return (dest);

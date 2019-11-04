@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 17:49:56 by mapandel          #+#    #+#             */
-/*   Updated: 2018/01/15 04:27:10 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/03 23:14:02 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strnew: string new
+**		Allocates a char* in memory for a given size_t length
+**		Cleans all the data in that new string
+**		Returns it or a NULL value if the allocation fails
+*/
 
 char	*ft_strnew(size_t size)
 {

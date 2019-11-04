@@ -6,11 +6,19 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/04 06:17:37 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/04 06:24:46 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/05 00:20:55 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strbuffer: string buffer
+**		Joins up a char* to a static char* buffer
+**		Frees up the char* parameter addition
+**		NULL behavior is handled
+**		Returns this new string or NULL if the allocation failed
+*/
 
 char	*ft_strbuffer_leakless(char *s)
 {

@@ -6,20 +6,29 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/19 16:56:39 by mapandel          #+#    #+#             */
-/*   Updated: 2017/01/20 17:05:00 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/04 11:21:21 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strtoupper: string to uppercase
+**		Duplicates and translates a const char* of all its minor letters
+**			to their equivalent in uppercase
+**		NULL behavior is handled
+**		Returns this new string or NULL if the allocation failed
+*/
 
 char	*ft_strtoupper(const char *s)
 {
 	char	*dup;
 	int		i;
 
-	dup = ft_strdup(s);
 	i = 0;
-	while (dup && dup[i])
+	if (!(dup = ft_strdup(s))
+		return (NULL);
+	while (dup[i])
 	{
 		if (dup[i] >= 'a' && dup[i] <= 'z')
 			dup[i] -= 32;

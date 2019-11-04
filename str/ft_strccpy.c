@@ -3,14 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/16 17:19:47 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/26 15:58:43 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/01 17:25:59 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_strccpy: string character copy
+**		Copies a const char* into a char*
+**		The copy runs stops before the first encounter of a char
+**		The destination should be allocated properly to receive the data
+**		Returns the destination
+*/
 
 char	*ft_strccpy(char *dest, const char *src, char c)
 {

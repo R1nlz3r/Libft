@@ -3,21 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strclr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 18:05:24 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/26 15:56:45 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/01 17:40:57 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strclr: string clear
+**		Clears a char* from all its data
+**		NULL behavior is handled
+**		The function do not return a value
+*/
 
 void	ft_strclr(char *s)
 {
 	size_t i;
 
 	i = 0;
-	while (s && s[i])
+	if (!s)
+		return ;
+	while (s[i])
 	{
 		s[i] = '\0';
 		++i;

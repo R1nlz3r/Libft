@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/21 02:23:19 by mapandel          #+#    #+#             */
-/*   Updated: 2018/01/15 07:00:57 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/04 10:09:28 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strrev: string reversion
+**		Duplicates and reverses a const char* of its data
+**		NULL behavior is handled
+**		Returns this new string or NULL if the allocation failed
+*/
 
 char	*ft_strrev(const char *s)
 {
@@ -23,7 +30,7 @@ char	*ft_strrev(const char *s)
 		return (NULL);
 	start = 0;
 	end = ft_strlen(dup) - 1;
-	while (dup && dup[start] && start < end)
+	while (dup[start] && start < end)
 	{
 		tmp = dup[start];
 		dup[start++] = dup[end];

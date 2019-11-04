@@ -3,20 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 18:10:27 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/26 23:44:20 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/02 12:51:39 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_striter: string iteration
+**		Executes a function on every character of a char*
+**		The pointed function should take a char* parameter
+**		NULL behaviors are handled
+**		Both this and the pointed function returns nothing
+*/
 
 void	ft_striter(char *s, void (*f)(char*))
 {
 	size_t i;
 
 	i = 0;
-	while (f && s && s[i])
+	if (!f || !s)
+		return ;
+	while (s[i])
 		f(&s[i++]);
 }

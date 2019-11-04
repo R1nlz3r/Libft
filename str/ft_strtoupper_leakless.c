@@ -6,20 +6,30 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/16 02:08:23 by mapandel          #+#    #+#             */
-/*   Updated: 2017/04/16 02:13:10 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/04 22:33:33 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strtoupper_leakless: string to uppercase leakless
+**		Duplicates and translates a char* of all its minor letters
+**			to their equivalent in uppercase
+**		Frees up the char* source
+**		NULL behavior is handled
+**		Returns this new string or NULL if the allocation failed
+*/
 
 char	*ft_strtoupper_leakless(char *s)
 {
 	char	*dup;
 	int		i;
 
-	dup = ft_strdup(s);
 	i = 0;
-	while (dup && dup[i])
+	if (!(dup = ft_strdup(s)))
+		return (NULL);
+	while (dup[i])
 	{
 		if (dup[i] >= 'a' && dup[i] <= 'z')
 			dup[i] -= 32;

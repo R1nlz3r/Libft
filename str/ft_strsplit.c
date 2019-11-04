@@ -3,14 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 03:27:31 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/26 23:11:50 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/04 10:27:16 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strsplit: string split
+**		Splits up a const char* by a char
+**		All the parts are contained in a char** newly allocated
+**		NULL behavior is handled
+**		Returns this new map of strings or NULL if an allocation failed
+*/
 
 static int		ft_splitwords(char **result, const char *s, char c)
 {

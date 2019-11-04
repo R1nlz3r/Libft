@@ -6,11 +6,19 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/03 13:33:38 by mapandel          #+#    #+#             */
-/*   Updated: 2017/02/25 14:30:51 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/04 23:29:32 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strrev_leakless: string reversion leakless
+**		Duplicates and reverses a char* of its data
+**		Frees up the char* source
+**		NULL behavior is handled
+**		Returns this new string or NULL if the allocation failed
+*/
 
 char	*ft_strrev_leakless(char *s)
 {
@@ -19,7 +27,8 @@ char	*ft_strrev_leakless(char *s)
 	size_t		start;
 	size_t		end;
 
-	dup = ft_strdup(s);
+	if (!(dup = ft_strdup(s))
+		return (dup);
 	start = 0;
 	end = ft_strlen(dup) - 1;
 	while (dup && dup[start] && start < end)

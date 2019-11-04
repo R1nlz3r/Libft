@@ -6,11 +6,21 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/24 14:34:17 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/03 01:45:42 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/04 23:33:48 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strcjoin_leakless: string character join leakless
+**		Creates a char* from the concatenation of a char* and a char const*
+**		The copy of the second source parameter stops
+**			at the first encounter of a char
+**		Frees up the first source parameter char*
+**		NULL behaviors are handled
+**		Returns this new string or NULL if the allocation failed
+*/
 
 char	*ft_strcjoin_leakless(char *s1, char const *s2, char c)
 {

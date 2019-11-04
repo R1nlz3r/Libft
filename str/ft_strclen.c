@@ -6,11 +6,17 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/03 18:19:33 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/02 06:02:18 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/01 17:30:27 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strclen: string character length
+**		Counts the number of characters of a const char* until a char is found
+**		Returns a size_t length
+*/
 
 size_t		ft_strclen(const char *s, char c)
 {

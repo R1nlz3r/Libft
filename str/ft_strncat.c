@@ -3,14 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 07:26:24 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/27 00:04:10 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/03 22:50:27 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_strncat: string number concatenation
+**		Copies a const char* at the end of a char*
+**		The copy runs for a size_t length on the source
+**		Returns the destination
+*/
 
 char	*ft_strncat(char *dest, const char *src, size_t n)
 {
@@ -24,11 +31,7 @@ char	*ft_strncat(char *dest, const char *src, size_t n)
 	while (dest[i])
 		++i;
 	while (j < n && src[j])
-	{
-		dest[i] = src[j];
-		++i;
-		++j;
-	}
+		dest[i++] = src[j++];
 	dest[i] = '\0';
 	return (dest);
 }

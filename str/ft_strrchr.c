@@ -3,20 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 08:05:39 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/09 18:26:00 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/04 10:54:16 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+** ft_strrchr: string reverse search
+**		Searches for an int in a const char* from the end to start
+**		NULL behavior is handled
+**		Returns a pointer on the first occurence or NULL if none was found
+*/
+
 char	*ft_strrchr(const char *s, int c)
 {
 	char	*scpy;
 
-	scpy = (char*)(unsigned long)s;
+	if (!(scpy = (char*)(unsigned long)s))
+		return (NULL);
 	while (*scpy)
 		++scpy;
 	while (scpy != s && *scpy != c)

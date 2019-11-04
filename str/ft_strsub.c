@@ -3,14 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsub.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 18:53:42 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/26 23:08:50 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/04 22:29:11 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strsub: string substitution
+**		Duplicates and extracts the data of a char const*
+**			starting at an unsigned int index for a size_t length
+**		NULL behavior is handled but the length should be correct
+**		Returns this new string or NULL if the allocation failed
+*/
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
@@ -18,10 +26,7 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	char			*cpy;
 
 	i = 0;
-	if (!s || start > ft_strlen(s))
-		return (NULL);
-	cpy = ft_strnew(len);
-	if (!cpy)
+	if (!s || start > ft_strlen(s) || !(cpy = ft_strnew(len))
 		return (NULL);
 	while (i < len)
 		cpy[i++] = s[start++];

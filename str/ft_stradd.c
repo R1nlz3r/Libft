@@ -6,11 +6,17 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/29 18:33:25 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/03 02:54:24 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/04 23:13:43 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_stradd: string addition
+**		Adds a char at the end of a char const*
+**		Returns this new string or NULL if the allocation failed
+*/
 
 char	*ft_stradd(char const *s1, char c)
 {

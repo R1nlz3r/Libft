@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/21 20:29:47 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/21 20:34:30 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/02 12:31:13 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strinc: string includes
+**		Compares two const char*
+**		Returns true if the second parameter is contained in the first one
+**		NULL behaviors are handled
+*/
 
 int		ft_strinc(const char *s1, const char *s2)
 {
