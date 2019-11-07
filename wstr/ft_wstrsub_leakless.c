@@ -6,11 +6,21 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/18 05:16:24 by mapandel          #+#    #+#             */
-/*   Updated: 2017/07/19 00:44:13 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/07 23:57:27 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_wstrsub: wide string substitution
+**		Duplicates and extracts the data of a const wchar_t*
+**			starting at an unsigned int index for a size_t length
+**		The length should contain all the sub characters of those wide
+**		Frees up the wchar_t* source
+**		NULL behavior is handled but the length should be correct
+**		Returns this new wide string or NULL if the allocation failed
+*/
 
 static size_t	ft_wstrsub_leakless2(wchar_t *ws, size_t i, size_t round)
 {
@@ -36,7 +46,7 @@ wchar_t			*ft_wstrsub_leakless(wchar_t *ws, unsigned int start,
 	i = 0;
 	round = 0;
 	tmpround = 0;
-	if (!(cpy = NULL) && (!ws || start > ft_wstrlenuni(ws)))
+	if (!ws || start > ft_wstrlenuni(ws))
 		return (NULL);
 	while (ws[i] && round < len)
 	{
@@ -45,10 +55,10 @@ wchar_t			*ft_wstrsub_leakless(wchar_t *ws, unsigned int start,
 		if (round == len)
 			tmpround = round;
 	}
-	if (!(round = 0)
-		&& !(cpy = ft_wstrnew(i)))
+	if (!(cpy = ft_wstrnew(i)))
 		return (NULL);
 	i = 0;
+	round = 0;
 	while (round < tmpround && (round = ft_wstrsub_leakless2(ws, i, round)))
 		cpy[i++] = ws[start++];
 	ft_wstrdel(&ws);

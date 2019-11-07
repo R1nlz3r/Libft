@@ -6,11 +6,20 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/18 05:14:08 by mapandel          #+#    #+#             */
-/*   Updated: 2017/07/19 00:44:20 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/07 23:57:43 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_wstrsub: wide string substitution
+**		Duplicates and extracts the data of a const wchar_t*
+**			starting at an unsigned int index for a size_t length
+**		The length should contain all the sub characters of those wide
+**		NULL behavior is handled but the length should be correct
+**		Returns this new wide string or NULL if the allocation failed
+*/
 
 static size_t	ft_wstrsub2(const wchar_t *ws, size_t i, size_t round)
 {
@@ -35,7 +44,7 @@ wchar_t			*ft_wstrsub(const wchar_t *ws, unsigned int start, size_t len)
 	i = 0;
 	round = 0;
 	tmpround = 0;
-	if (!(cpy = NULL) && (!ws || start > ft_wstrlenuni(ws)))
+	if (!ws || start > ft_wstrlenuni(ws))
 		return (NULL);
 	while (ws[i] && round < len)
 	{
@@ -44,9 +53,10 @@ wchar_t			*ft_wstrsub(const wchar_t *ws, unsigned int start, size_t len)
 		if (round == len)
 			tmpround = round;
 	}
-	if (!(round = 0)
-		&& !(cpy = ft_wstrnew(i)))
+	if (!(cpy = ft_wstrnew(i)))
 		return (NULL);
+	i = 0;
+	round = 0;
 	while (round < tmpround && (round = ft_wstrsub2(ws, i, round)))
 		cpy[i++] = ws[start++];
 	return (cpy);

@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/03 02:49:40 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/03 04:09:21 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/07 20:26:47 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_wstradd: wide string addition
+**		Adds a wchar_t at the end of a wchar_t const*
+**		NULL behavior is handled
+**		Returns this new wide string or NULL if the allocation failed
+*/
 
 wchar_t		*ft_wstradd(wchar_t const *ws1, wchar_t wc)
 {

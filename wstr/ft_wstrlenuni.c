@@ -6,11 +6,19 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/25 00:40:36 by mapandel          #+#    #+#             */
-/*   Updated: 2017/05/08 11:53:44 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/07 19:20:51 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_wstrlenuni: wide string length unicode
+**		Counts the number of characters in all the wide characters
+**			of a const wchar_t*
+**		Null behavior is handled
+**		Returns a size_t length
+*/
 
 size_t		ft_wstrlenuni(const wchar_t *ws)
 {
@@ -19,6 +27,8 @@ size_t		ft_wstrlenuni(const wchar_t *ws)
 
 	i = 0;
 	ret = 0;
+	if (!ws)
+		return (0);
 	while (ws[i])
 	{
 		if ((ws[i] < 128) || (MB_CUR_MAX != 4 && ws[i] >= 128 && ws[i] < 256))
