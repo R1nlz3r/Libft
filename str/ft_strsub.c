@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 18:53:42 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/04 22:29:11 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/05 13:15:12 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	char			*cpy;
 
 	i = 0;
-	if (!s || start > ft_strlen(s) || !(cpy = ft_strnew(len))
+	if (!s || start > ft_strlen(s) || !(cpy = ft_strnew(len)))
 		return (NULL);
 	while (i < len)
 		cpy[i++] = s[start++];

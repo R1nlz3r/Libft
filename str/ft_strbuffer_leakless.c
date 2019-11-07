@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/04 06:17:37 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/05 00:20:55 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/07 17:20:44 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ char	*ft_strbuffer_leakless(char *s)
 	char	*tmp;
 
 	tmp = ft_strbuffer(s);
-	if (s)
-		ft_strdel(&s);
+	ft_strdel(&s);
 	return (tmp);
 }

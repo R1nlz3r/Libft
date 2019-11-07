@@ -6,14 +6,14 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 07:16:21 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/02 13:31:46 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/07 18:08:52 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** ft_strccat: string concatenation
+** ft_strcat: string concatenation
 **		Copies a const char* at the end of a char*
 **		The destination should be allocated properly to receive the data
 **		Returns the destination

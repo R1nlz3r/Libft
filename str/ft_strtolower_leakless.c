@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/19 16:51:55 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/04 22:33:28 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/05 13:15:31 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strtolower_leakless(char *s)
 	int		i;
 
 	i = 0;
-	if (!(dup = ft_strdup(s))
+	if (!(dup = ft_strdup(s)))
 		return (NULL);
 	while (dup[i])
 	{

@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/24 14:32:12 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/04 23:33:37 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/07 17:21:06 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,6 @@ char	*ft_strjoin_leakless(char *s1, char const *s2)
 		return (NULL);
 	result = ft_strcpy_nullcrashless(result, s1);
 	result = ft_strcat_nullcrashless(result, s2);
-	if (s1)
-		ft_strdel(&s1);
+	ft_strdel(&s1);
 	return (result);
 }

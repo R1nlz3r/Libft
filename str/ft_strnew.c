@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 17:49:56 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/03 23:14:02 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/06 22:27:35 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 **	ft_strnew: string new
 **		Allocates a char* in memory for a given size_t length
 **		Cleans all the data in that new string
-**		Returns it or a NULL value if the allocation fails
+**		Returns it or a NULL value if the allocation failed
 */
 
 char	*ft_strnew(size_t size)

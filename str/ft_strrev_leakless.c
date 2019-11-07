@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/03 13:33:38 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/04 23:29:32 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/05 13:14:37 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strrev_leakless(char *s)
 	size_t		start;
 	size_t		end;
 
-	if (!(dup = ft_strdup(s))
+	if (!(dup = ft_strdup(s)))
 		return (dup);
 	start = 0;
 	end = ft_strlen(dup) - 1;

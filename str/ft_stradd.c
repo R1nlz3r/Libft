@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/29 18:33:25 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/04 23:13:43 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/07 17:06:29 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 /*
 **	ft_stradd: string addition
 **		Adds a char at the end of a char const*
+**		NULL behavior is handled
 **		Returns this new string or NULL if the allocation failed
 */
 
@@ -27,7 +28,7 @@ char	*ft_stradd(char const *s1, char c)
 	len = ft_strlen_nullcrashless(s1) + 1;
 	if (!(result = ft_strnew(len)))
 		return (NULL);
-	result = ft_strcpy(result, s1);
+	result = ft_strcpy_nullcrashless(result, s1);
 	result[len - 1] = c;
 	return (result);
 }
