@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/20 20:05:12 by mapandel          #+#    #+#             */
-/*   Updated: 2018/01/15 04:38:40 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/06 22:32:53 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strmaplen_nullcrashless: string map length null crashless
+**		Counts the number of strings of a const char**
+**		NULL behavior is handled
+**		Returns a size_t length
+*/
 
 size_t		ft_strmaplen_nullcrashless(const char **m)
 {

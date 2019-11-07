@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 03:11:58 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/18 03:17:07 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/07 18:15:00 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_strmapcat: string map concatenation
+**		Copies a const char** at the end of a char**
+**		The destination should be allocated properly to receive the data
+**		Returns the destination or NULL if an allocation failed
+*/
 
 char	**ft_strmapcat(char **dest, const char **src)
 {

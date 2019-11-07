@@ -6,11 +6,19 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 09:22:31 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/18 12:22:43 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/07 18:06:10 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strmapadd_leakless: string map addition leakless
+**		Adds a char* at the end of a char**
+**		Frees up the char** source
+**		NULL behavior is handled
+**		Returns this new string map or NULL an allocation failed
+*/
 
 char	**ft_strmapadd_leakless(char **m, char *s)
 {
@@ -23,9 +31,8 @@ char	**ft_strmapadd_leakless(char **m, char *s)
 		|| !(result = ft_strmapcpy_nullcrashless(result,
 		(const char**)(unsigned long)m)))
 		return (NULL);
-	if (!(result[len - 1] = ft_strdup(s)))
+	if (!(result[len - 1] = ft_strdup(s)) && s)
 		return (NULL);
-	if (m)
-		ft_strmapdel(&m);
+	ft_strmapdel(&m);
 	return (result);
 }

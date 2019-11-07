@@ -6,11 +6,19 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/26 09:25:24 by mapandel          #+#    #+#             */
-/*   Updated: 2017/09/28 11:16:28 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/07 18:51:18 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strmapconcat_leakless: string map contraction leakless
+**		Removes NULL substrings in a char** for a size_t length
+**		Frees up the char** source and all its substrings
+**		NULL behavior is handled but the length should be correct
+**		Returns this new string map or NULL an allocation failed
+*/
 
 char	**ft_strmapconcat_leakless(char **m, size_t size)
 {
@@ -29,6 +37,6 @@ char	**ft_strmapconcat_leakless(char **m, size_t size)
 		ft_strdel(&m[i]);
 		++i;
 	}
-	ft_memdel((void**)&m);
+	ft_strmapdel(&m);
 	return (result);
 }

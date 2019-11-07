@@ -6,11 +6,19 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/19 17:46:45 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/25 13:25:40 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/06 22:46:34 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strmapdel: string map delection
+**		Deletes a char** pointed by its address
+**			and all the substrings contained inside
+**		NULL behavior is handled
+**		The function do not return a value
+*/
 
 void	ft_strmapdel(char ***m)
 {

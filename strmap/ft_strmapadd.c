@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 09:10:22 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/18 09:39:03 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/07 17:09:37 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strmapadd: string map addition
+**		Adds a char* at the end of a char const**
+**		NULL behavior is handled
+**		Returns this new string map or NULL an allocation failed
+*/
 
 char	**ft_strmapadd(char const **m, char *s)
 {
@@ -22,7 +29,7 @@ char	**ft_strmapadd(char const **m, char *s)
 	if (!(result = ft_strmapnew(len))
 		|| !(result = ft_strmapcpy(result, (const char**)(unsigned long)m)))
 		return (NULL);
-	if (!(result[len - 1] = ft_strdup(s)))
+	if (!(result[len - 1] = ft_strdup(s)) && s)
 		return (NULL);
 	return (result);
 }

@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/15 04:20:44 by mapandel          #+#    #+#             */
-/*   Updated: 2018/01/15 04:32:09 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/06 22:27:41 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strmapnew: string map new
+**		Allocates a char** in memory for a given size_t length
+**		Cleans all the data in that new string map
+**		Returns it or a NULL value if the allocation failed
+*/
 
 char	**ft_strmapnew(size_t size)
 {

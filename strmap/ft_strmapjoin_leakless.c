@@ -6,11 +6,19 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 02:26:09 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/18 03:30:37 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/07 18:55:18 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strmapjoin_leakless: string join
+**		Creates a char** from the concatenation of two char const**
+**		Frees up the first source parameter char** and all its substrings
+**		NULL behaviors are handled
+**		Returns this new string map or NULL if the allocation failed
+*/
 
 char	**ft_strmapjoin_leakless(char **m1, char const **m2)
 {
@@ -26,7 +34,6 @@ char	**ft_strmapjoin_leakless(char **m1, char const **m2)
 		(unsigned long)m1)))
 		return (NULL);
 	result = ft_strmapcat_nullcrashless(result, m2);
-	if (m1)
-		ft_strmapdel(&m1);
+	ft_strmapdel(&m1);
 	return (result);
 }

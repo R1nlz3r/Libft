@@ -6,11 +6,19 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 02:30:45 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/18 03:08:17 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/07 01:23:09 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_strmapcpy: string map copy
+**		Copies a const char** into a char**
+**		The destination should be allocated properly to receive the data
+**		All the substrings are duplicated
+**		Returns the destination or NULL if an allocation failed
+*/
 
 char	**ft_strmapcpy(char **dest, const char **src)
 {

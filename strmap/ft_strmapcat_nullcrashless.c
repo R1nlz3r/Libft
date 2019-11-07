@@ -6,11 +6,19 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 03:19:39 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/18 03:22:43 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/07 18:28:14 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_strmapcat_nullcrashless: string map concatenation null crashless
+**		Copies a const char** at the end of a char**
+**		The destination should be allocated properly to receive the data
+**		NULL behaviors are handled
+**		Returns the destination or NULL if an allocation failed
+*/
 
 char	**ft_strmapcat_nullcrashless(char **dest, const char **src)
 {
@@ -19,11 +27,11 @@ char	**ft_strmapcat_nullcrashless(char **dest, const char **src)
 
 	i = 0;
 	j = 0;
-	if (!dest)
+	if (!dest || !src)
 		return (NULL);
 	while (dest[i])
 		++i;
-	while (src && src[j]) {
+	while (src[j]) {
 		if (!(dest[i++] = ft_strdup(src[j++])))
 			return (NULL);
 	}

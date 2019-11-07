@@ -3,31 +3,37 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 18:31:15 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/27 00:03:30 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/07 17:15:32 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+**	ft_strmapi: string map index
+**		Executes a function on every char of a char const*
+**		The pointed function should take an unsigned int index who will be
+**			iterated and a char
+**		All the successive calls are stored in a char* newly allocated
+**		NULL behavior is handled
+**		Returns this new string or NULL if the allocation failed
+*/
+
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;
-	char			*scpy;
 	char			*result;
 
 	i = 0;
-	scpy = NULL;
-	result = NULL;
-	if (!s || !f || !(scpy = ft_strdup(s))
-		|| !(result = ft_strnew(ft_strlen(scpy))))
+	if (!f || !s || !(result = ft_strnew(ft_strlen(s))))
 		return (NULL);
-	while (i < ft_strlen(scpy))
+	while (s[i])
 	{
-		result[i] = f(i, scpy[i]);
-		i++;
+		result[i] = f(i, s[i]);
+		++i;
 	}
 	return (result);
 }

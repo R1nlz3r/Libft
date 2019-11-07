@@ -6,11 +6,19 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/15 03:55:39 by mapandel          #+#    #+#             */
-/*   Updated: 2018/01/15 05:09:43 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/07 13:06:26 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_strmaprev: string map reversion
+**		Duplicates and reverses a char** of its data
+**		Frees up the char** source and all its substrings
+**		NULL behavior is handled
+**		Returns this new string map or NULL if an allocation failed
+*/
 
 char	**ft_strmaprev_leakless(char **m)
 {
@@ -22,7 +30,7 @@ char	**ft_strmaprev_leakless(char **m)
 	if (!(dup = ft_strmapdup((const char**)(unsigned long)m)))
 		return (NULL);
 	start = 0;
-	end = ft_strmaplen_nullcrashless((const char**)(unsigned long)dup) - 1;
+	end = ft_strmaplen((const char**)(unsigned long)dup) - 1;
 	while (dup[start] && start < end)
 	{
 		tmp = dup[start];
