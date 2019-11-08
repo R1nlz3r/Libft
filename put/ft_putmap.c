@@ -6,11 +6,19 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/30 11:36:32 by mapandel          #+#    #+#             */
-/*   Updated: 2017/09/26 09:34:12 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/31 15:35:30 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_putmap: put map
+**		Writes a char** for a size_t length
+**		Every char* is followed by a newline
+**		NULL behaviors are handled
+**		The function do not return a value
+*/
 
 void	ft_putmap(char **m, size_t nblines)
 {

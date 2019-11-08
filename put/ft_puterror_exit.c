@@ -6,11 +6,20 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/21 20:09:53 by mapandel          #+#    #+#             */
-/*   Updated: 2017/09/24 21:39:43 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/31 12:58:12 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_puterror: put error exit
+**		Writes a char* name followed by a char* reason on the standard error
+**		Those parameters are optional (NULL behaviours are handled)
+**		Calls strerror to print the system error string
+**		Then exits the program with a status failure
+**		The function do not return a value
+*/
 
 void	ft_puterror_exit(char *name, char *reason)
 {

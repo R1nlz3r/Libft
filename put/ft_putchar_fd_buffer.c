@@ -6,11 +6,19 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/02 04:40:01 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/11 05:39:33 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/05 00:57:00 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_putchar_fd_buffer: put character file descriptor buffer
+**		Adds a char to a static char*
+**		Writes on a file descriptor int and flushes the static string
+**			if a true value for an int is passed as a parameter
+**		Returns a negative value for a failed allocation
+*/
 
 int		ft_putchar_fd_buffer(char c, int release, int fd)
 {

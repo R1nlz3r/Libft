@@ -3,14 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 21:44:41 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/15 17:03:00 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/31 12:57:21 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_putstr_fd: put string file descriptor
+**		Writes a const char* on a file descriptor int
+**		NULL behaviour is handled
+**		The function do not return a value
+*/
 
 void	ft_putstr_fd(char const *s, int fd)
 {

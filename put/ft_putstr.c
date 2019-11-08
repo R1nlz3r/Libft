@@ -3,14 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 21:10:53 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/26 15:52:39 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/31 12:57:24 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_putstr: put string
+**		Writes a const char* on the standard output
+**		NULL behaviour is handled
+**		The function do not return a value
+*/
 
 void	ft_putstr(char const *s)
 {

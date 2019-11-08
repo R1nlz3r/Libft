@@ -6,14 +6,25 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/24 16:18:10 by mapandel          #+#    #+#             */
-/*   Updated: 2017/02/24 16:22:41 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/31 15:33:44 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+** ft_putnbr: put long long number
+**		Writes a long long on the standard output
+**		The function do not return a value
+*/
+
 void	ft_putllnbr(long long n)
 {
+	if (n == -9223372036854775807 - 1)
+	{
+		ft_putstr("-9223372036854775808");
+		return ;
+	}
 	if (n < 0)
 	{
 		n = -n;

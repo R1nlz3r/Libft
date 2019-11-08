@@ -6,11 +6,17 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/17 23:06:46 by mapandel          #+#    #+#             */
-/*   Updated: 2017/07/19 00:34:52 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/31 16:44:23 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_putwchar_fd: put wide character file descriptor
+**		Writes one wchar_t on a file descriptor int
+**		The function do not return a value
+*/
 
 static void		ft_putwchar_fd2(wchar_t wc, int fd)
 {

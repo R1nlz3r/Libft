@@ -6,17 +6,26 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/17 23:11:38 by mapandel          #+#    #+#             */
-/*   Updated: 2017/04/26 23:51:34 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/31 16:43:10 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+** ft_putwstr_fd: put wide string file descriptor
+**		Writes a const wchar_t* on a file descriptor int
+**		NULL behaviour is handled
+**		The function do not return a value
+*/
 
 void	ft_putwstr_fd(wchar_t const *ws, int fd)
 {
 	int		i;
 
 	i = 0;
-	while (ws && ws[i])
+	if (!ws)
+		return ;
+	while (ws[i])
 		ft_putwchar_fd(ws[i++], fd);
 }
