@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/26 12:25:29 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/04 23:30:38 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/07 23:59:10 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ char	*ft_strcjoin(char const *s1, char const *s2, char c)
 	size_t		len;
 	char		*result;
 
-	result = NULL;
 	len = ft_strlen_nullcrashless(s1);
 	len += ft_strclen_nullcrashless(s2, c);
 	if (!(result = ft_strnew(len)))

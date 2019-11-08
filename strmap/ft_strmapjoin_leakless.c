@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 02:26:09 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/07 18:55:18 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/08 00:24:52 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ char	**ft_strmapjoin_leakless(char **m1, char const **m2)
 	size_t		len;
 	char		**result;
 
-	result = NULL;
 	len = ft_strmaplen_nullcrashless((const char**)(unsigned long)m1);
 	len += ft_strmaplen_nullcrashless((const char**)(unsigned long)m2);
 	if (!(result = ft_strmapnew(len)))

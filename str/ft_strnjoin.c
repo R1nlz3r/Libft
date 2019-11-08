@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/01 13:02:22 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/04 23:36:54 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/07 23:58:57 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ char	*ft_strnjoin(char const *s1, char const *s2, size_t n)
 	size_t		len;
 	char		*result;
 
-	result = NULL;
 	len = ft_strlen_nullcrashless(s1);
 	len += n;
 	if (!(result = ft_strnew(len)))
