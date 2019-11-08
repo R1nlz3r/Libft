@@ -6,11 +6,17 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/07 06:45:18 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/07 06:46:33 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/06 17:28:35 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_wctowa: wide char to wide array
+**		Converts a wchar to a new wchar*
+**		Returns this new string or NULL if the allocation failed
+*/
 
 wchar_t		*ft_wctowa(const wchar_t wc)
 {

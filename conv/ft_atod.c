@@ -6,12 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/16 02:39:37 by mapandel          #+#    #+#             */
-/*   Updated: 2018/01/16 07:32:09 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/10/23 22:51:55 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "ft_printf.h"
+
+/*
+** ft_atod: array to double
+**		Converts an array of const char* to a double
+**		The delimiter for the floating point number is a '.'
+**		The convertion stops when the last digit is found
+*/
 
 double		ft_atod(const char *nptr)
 {

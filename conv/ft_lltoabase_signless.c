@@ -6,11 +6,20 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/15 01:58:53 by mapandel          #+#    #+#             */
-/*   Updated: 2017/04/15 02:01:36 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/06 17:24:38 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_lltoabase_signless: long long to array base signless
+**		Converts a long long to a new char*
+**		The int base parameter allows convertion from binary to base 36
+**		The negative sign is not included and should be handled
+**			outside the function if nessesary
+**		Returns this new string or NULL if the allocation failed
+*/
 
 char	*ft_lltoabase_signless(long long nbr, int base)
 {

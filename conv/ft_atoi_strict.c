@@ -6,11 +6,20 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/20 21:00:49 by mapandel          #+#    #+#             */
-/*   Updated: 2017/09/16 09:28:39 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/05 15:32:26 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_atoi_strict: array to integer strict
+**		Extracts an int value from the data of a const char*
+**		This string should contain the value of a an int and nothing else
+**		NULL behavior is handled
+**		Returns a long long value, 10000000000 to express a parsing error
+**			or the extracted int
+*/
 
 long		ft_atoi_strict(const char *nptr)
 {
@@ -19,7 +28,7 @@ long		ft_atoi_strict(const char *nptr)
 	size_t	i;
 
 	zero = 0;
-	if (!nptr[0]
+	if (!nptr || !nptr[0]
 		|| !((ft_isdigit(nptr[0]) || nptr[0] == '+'
 		|| nptr[0] == '-') && (ft_strisdigit(&nptr[1])
 		|| (!nptr[1] && ft_isdigit(nptr[0])))))

@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/19 13:38:44 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/19 19:07:15 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/05 16:53:15 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_atoi_spacesless_iter: array to integer spacesless iteration
+**		Extracts an int value from the data of a const char*
+**		Starts at the pointed value of a size_t* and iterates on it
+**		Allows overflow on the result
+*/
 
 int		ft_atoi_spacesless_iter(const char *nptr, size_t *iter)
 {

@@ -3,14 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 15:34:05 by mapandel          #+#    #+#             */
-/*   Updated: 2016/12/26 13:05:56 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/05 13:54:54 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_atoi: array to integer
+**		Extracts an int value from the data of a const char*
+**		Allows spaces, tabs and newlines before parsing the number
+**			and overflow on the result
+*/
 
 int		ft_atoi(const char *nptr)
 {

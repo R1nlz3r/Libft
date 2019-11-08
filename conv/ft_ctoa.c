@@ -6,11 +6,17 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/07 06:38:10 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/07 06:44:31 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/05 17:00:00 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_ctoa: character to array
+**		Allocates a memory zone to store a char in a first position of a char*
+**		Returns this new string or NULL if the allocation failed
+*/
 
 char	*ft_ctoa(const char c)
 {
