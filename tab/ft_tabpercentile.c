@@ -6,11 +6,20 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/07 05:58:58 by mapandel          #+#    #+#             */
-/*   Updated: 2017/09/09 07:09:01 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/08 21:50:51 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_tabpercentile: table percentile
+**		Finds the value that splits an int* table at its int percent length
+**		For example a given percentile parameter of fivety would output
+**			the middle value (ranged in increasing order) of that table
+**		NULL behaviors are handled but the length and size should be correct
+**		Returns 0 to express an error or the extracted int
+*/
 
 double			ft_tabpercentile(t_tab *t, int percentile)
 {
@@ -19,7 +28,8 @@ double			ft_tabpercentile(t_tab *t, int percentile)
 	size_t	i;
 
 	i = 0;
-	if (!t->len || percentile < 1 || percentile > 99)
+	if (!t || !t->tab || !t->len || t->size < t->len
+		|| percentile < 1 || percentile > 99)
 		return (0);
 	sort = ft_tabdup(t);
 	ft_qsort(sort);

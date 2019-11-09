@@ -6,11 +6,20 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/24 23:59:45 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/25 00:01:58 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/09 02:58:13 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_tabadd_leakless: table addition leakless
+**		Adds an int to the end of an int* table
+**		All under t_tab* stucture, length value is updated too in consequence
+**		Frees up the t_tab* source
+**		NULL behaviors are handled but the length and sizes should be correct
+**		Returns it or a NULL value if an allocation failed
+*/
 
 t_tab		*ft_tabadd_leakless(t_tab *t, int n)
 {

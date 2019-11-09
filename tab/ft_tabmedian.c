@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/06 18:12:34 by mapandel          #+#    #+#             */
-/*   Updated: 2017/06/07 02:20:08 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/09 01:07:25 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_tabpercentile: table median
+**		Finds the median value of an int* table from a t_tab*
+**		NULL behaviors are handled but the length and size should be correct
+**		Returns 0 to express an error or the extracted double
+*/
 
 double			ft_tabmedian(t_tab *t)
 {
@@ -19,9 +26,8 @@ double			ft_tabmedian(t_tab *t)
 	size_t	i;
 
 	i = 0;
-	if (!t->len)
+	if (!t || !t->tab || !t->len || t->size < t->len || !(sort = ft_tabdup(t)))
 		return (0);
-	sort = ft_tabdup(t);
 	ft_qsort(sort);
 	while (i < sort->len / 2)
 		++i;

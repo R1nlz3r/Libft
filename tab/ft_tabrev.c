@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/02 17:16:53 by mapandel          #+#    #+#             */
-/*   Updated: 2017/06/03 01:35:54 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/09 03:10:36 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_tabrev: table reversion
+**		Duplicates a t_tab* and reverses its int* table of data
+**		NULL behaviors are handled
+**		Returns this new t_tab* or NULL if an allocation failed
+*/
 
 t_tab		*ft_tabrev(t_tab *t)
 {

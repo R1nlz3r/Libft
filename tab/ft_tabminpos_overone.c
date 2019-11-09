@@ -6,11 +6,19 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/16 10:32:54 by mapandel          #+#    #+#             */
-/*   Updated: 2017/06/16 11:08:54 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/09 00:14:05 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_tabminpos_overone: table minimum position over one
+**		Finds the second minimum int of a t_tab* int* table
+**			and returns its position
+**		NULL behaviors are handled but the length and size should be correct
+**		Returns 0 to express an error or the found position
+*/
 
 static size_t		ft_tabminpos_overone2(t_tab *t, size_t i, size_t min_i,
 	size_t over_i)
@@ -48,7 +56,7 @@ size_t				ft_tabminpos_overone(t_tab *t)
 	i = 0;
 	min_i = 0;
 	over_i = 1;
-	if (!t || t->len < 2 || t->size < t->len)
+	if (!t || !t->tab || t->len < 2 || t->size < t->len)
 		return (0);
 	return (ft_tabminpos_overone2(t, i, min_i, over_i));
 }

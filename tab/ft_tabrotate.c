@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/01 23:32:42 by mapandel          #+#    #+#             */
-/*   Updated: 2017/06/02 06:54:23 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/09 03:57:51 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_tabrotate: table rotate
+**		Moves all the int values of a t_tab* int* table
+**		One step from the bottom to the top of the index
+**		NULL behaviors are handled but the length and size should be correct
+*/
 
 t_tab		*ft_tabrotate(t_tab *t)
 {
@@ -19,7 +26,7 @@ t_tab		*ft_tabrotate(t_tab *t)
 	size_t	i;
 
 	i = 1;
-	if (!t || !t->len || t->size < t->len)
+	if (!t || !t->tab || !t->len || t->size < t->len)
 		return (t);
 	tmp = t->tab[0];
 	t->tab[0] = t->tab[t->len - 1];

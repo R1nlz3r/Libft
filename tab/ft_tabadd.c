@@ -6,17 +6,25 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/24 23:44:38 by mapandel          #+#    #+#             */
-/*   Updated: 2017/08/24 23:58:58 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/09 02:58:00 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+**	ft_tabadd: table addition
+**		Adds an int to the end of an int* table
+**		All under t_tab* stucture, length value is updated too in consequence
+**		NULL behaviors are handled but the length and size should be correct
+**		Returns this new t_tab* or a NULL value if an allocation failed
+*/
+
 t_tab		*ft_tabadd(t_tab *t, int n)
 {
 	t_tab		*result;
 
-	if (!t || !(result = ft_tabnew(t->size + 1)))
+	if (!t || !t->tab || t->size < t->len || !(result = ft_tabnew(t->size + 1)))
 		return (NULL);
 	result = ft_tabcpy(result, t);
 	result->tab[result->len++] = n;

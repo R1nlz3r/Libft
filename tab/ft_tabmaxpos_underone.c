@@ -6,11 +6,19 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/16 05:41:28 by mapandel          #+#    #+#             */
-/*   Updated: 2017/06/16 11:20:54 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/09 00:12:00 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_tabmaxpos_underone: table maximum position under one
+**		Finds the second maximum int of a t_tab* int* table
+**			and returns its position
+**		NULL behaviors are handled but the length and size should be correct
+**		Returns 0 to express an error or the found position
+*/
 
 static size_t		ft_tabmaxpos_underone2(t_tab *t, size_t i, size_t max_i,
 	size_t under_i)
@@ -48,7 +56,7 @@ size_t				ft_tabmaxpos_underone(t_tab *t)
 	i = 0;
 	max_i = 0;
 	under_i = 1;
-	if (!t || t->len < 2 || t->size < t->len)
+	if (!t || !t->tab || t->len < 2 || t->size < t->len)
 		return (0);
 	return (ft_tabmaxpos_underone2(t, i, max_i, under_i));
 }

@@ -6,11 +6,18 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/15 05:43:37 by mapandel          #+#    #+#             */
-/*   Updated: 2017/06/16 05:45:52 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/08 23:02:55 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_tabminpos: table minimum position
+**		Finds the minimum int of a t_tab* int* table and returns its position
+**		NULL behaviors are handled but the length and size should be correct
+**		Returns 0 to express an error or the found position
+*/
 
 size_t		ft_tabminpos(t_tab *t)
 {
@@ -20,7 +27,7 @@ size_t		ft_tabminpos(t_tab *t)
 
 	min_i = 0;
 	i = 0;
-	if (!t || !t->len || t->size < t->len)
+	if (!t || !t->tab || !t->len || t->size < t->len)
 		return (0);
 	min = t->tab[0];
 	while (i < t->len)

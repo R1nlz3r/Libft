@@ -6,11 +6,19 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/02 18:59:06 by mapandel          #+#    #+#             */
-/*   Updated: 2017/06/03 01:36:11 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/09 02:59:20 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_tabrev_leakless: table reversion leakless
+**		Duplicates a t_tab* and reverses its int* table of data
+**		Frees up the t_tab* source
+**		NULL behaviors are handled
+**		Returns this new t_tab* or NULL if an allocation failed
+*/
 
 t_tab		*ft_tabrev_leakless(t_tab *t)
 {
