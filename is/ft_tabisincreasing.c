@@ -6,14 +6,14 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/06 06:33:05 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/30 12:35:51 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/08 12:22:54 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** ft_tabisincreasing: tab is increasing
+** ft_tabisincreasing: table is increasing
 **		Checks all the int numbers in a int* for a size_t length (all part of
 **			the t_tab structure)
 **		Verifies if the numbers are arranged in the increasing order

@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 06:25:01 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/07 19:11:02 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/08 12:36:44 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /*
 **	ft_strdup: string duplicate
 **		Duplicates a const char* into a new char*
-**		The correct length is allocated then the data is copied
+**		The correct length is allocated before the data is copied
 **		NULL behavior is handled
 **		Returns this new allocated string
 */

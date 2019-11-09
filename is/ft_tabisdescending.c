@@ -6,14 +6,14 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/02 17:12:22 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/30 12:36:00 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/08 12:23:02 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-** ft_tabisdescending: tab is descending
+** ft_tabisdescending: table is descending
 **		Checks all the int numbers in a int* for a size_t length (all part of
 **			the t_tab structure)
 **		Verifies if the numbers are arranged in the descending order
