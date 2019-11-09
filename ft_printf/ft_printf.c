@@ -6,11 +6,21 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/30 10:21:36 by mapandel          #+#    #+#             */
-/*   Updated: 2017/05/02 15:05:34 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/10 00:37:45 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+/*
+**	ft_printf: print fromat
+**		Writes a formated char* on the standard output
+**		Handle most of the flags, modifiers and convertions
+**			like the standard printf
+**		Do not handle floating point number convertions
+**		NULL behavior is handled
+**		Returns the number of characters printed
+*/
 
 int		ft_printf(char *format, ...)
 {
@@ -23,7 +33,7 @@ int		ft_printf(char *format, ...)
 		return (-1);
 	va_start(p->ap, format);
 	ft_printf_display(p, format);
-	va_end(p->ap);
+	va_end(p->asqp);
 	ret = p->ret;
 	if (p->error == 1)
 		ret = -1;
