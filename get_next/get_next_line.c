@@ -6,11 +6,25 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/04 03:17:08 by mapandel          #+#    #+#             */
-/*   Updated: 2017/07/24 20:08:27 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/09 23:43:57 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
+
+/*
+**	get_next_line: get next line
+**		Reads the a line from a file descriptor int
+**		The system function read is called for a BUFF_SIZE number
+**			of characters at a time
+**		This char* line should be newline or EOF terminated
+**		Duplicates and stores it in a parameter pointer on char*
+**		The last standing newline character is not copied
+**		The next function call searches the next line in the given file
+**		Returns a positive value if a line was read,
+**			a zero value if the file was read entirely
+**			or a negative value for an error
+*/
 
 static t_line		*ft_init_list(t_line *list, const int fd)
 {
