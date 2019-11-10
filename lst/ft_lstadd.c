@@ -3,17 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 02:03:10 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/07 02:11:39 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/10 02:52:16 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/*
+**	ft_lstadd: list addition
+**		Adds a t_list* node to the start of a chained t_list*
+**			pointed by its address
+**		The starting pointer this chained list is replaced by
+**			the address of the added node
+**		The function do not return a value
+*/
+
 void	ft_lstadd(t_list **alst, t_list *new)
 {
-	new->next = *alst;
-	*alst = new;
+		new->next = *alst;
+		*alst = new;
 }

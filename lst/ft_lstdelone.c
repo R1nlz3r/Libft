@@ -3,14 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mapandel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 00:39:56 by mapandel          #+#    #+#             */
-/*   Updated: 2016/11/07 00:58:44 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/10 02:32:33 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+/*
+**	ft_lstdelone: list delection one
+**		Applies a delection function on a t_list* node pointed by its address
+**		This delection function takes a void* content parameter
+**			and its size_t length
+**		The function do not return a value
+*/
 
 void	ft_lstdelone(t_list **alst, void (*del)(void*, size_t))
 {
