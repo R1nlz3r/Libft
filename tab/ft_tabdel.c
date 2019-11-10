@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/05 12:09:11 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/08 16:11:28 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/10 02:00:42 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 /*
 **	ft_tabdel: table delection
 **		Deletes a t_tab* pointed by its address and its int* table
-**		NULL behavior are handled
+**		NULL behaviors are handled
 **		The function do not return a value
 */
 
