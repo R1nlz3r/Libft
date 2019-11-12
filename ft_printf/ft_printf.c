@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/30 10:21:36 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/10 00:37:45 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 00:19:23 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int		ft_printf(char *format, ...)
 		return (-1);
 	va_start(p->ap, format);
 	ft_printf_display(p, format);
-	va_end(p->asqp);
+	va_end(p->ap);
 	ret = p->ret;
 	if (p->error == 1)
 		ret = -1;

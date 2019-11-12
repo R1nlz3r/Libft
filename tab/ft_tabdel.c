@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/05 12:09:11 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/10 02:00:42 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 00:23:28 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,8 @@ void	ft_tabdel(t_tab **t)
 {
 	if (t && *t)
 	{
-		free(*t->tab);
-		*t->tab = NULL;
+		free((*t)->tab);
+		(*t)->tab = NULL;
 	}
 	if (t)
 	{
