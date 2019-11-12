@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2019/10/18 09:37:40 by mapandel         ###   ########.fr        #
+#    Updated: 2019/11/12 22:29:26 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -176,6 +176,8 @@ STR =			str/ft_stradd.c \
 				str/ft_strlcat.c \
 				str/ft_strlen.c \
 				str/ft_strlen_nullcrashless.c \
+				str/ft_strmap.c \
+				str/ft_strmapi.c \
 				str/ft_strncat.c \
 				str/ft_strncat_nullcrashless.c \
 				str/ft_strncmp.c \
@@ -199,8 +201,7 @@ STR =			str/ft_stradd.c \
 				str/ft_strtoupper_leakless.c \
 				str/ft_strtrim.c \
 
-STRMAP =		strmap/ft_strmap.c \
-				strmap/ft_strmapadd.c \
+STRMAP =		strmap/ft_strmapadd.c \
 				strmap/ft_strmapadd_leakless.c \
 				strmap/ft_strmapcat.c \
 				strmap/ft_strmapcat_nullcrashless.c \
@@ -210,7 +211,6 @@ STRMAP =		strmap/ft_strmap.c \
 				strmap/ft_strmapcpy_nullcrashless.c \
 				strmap/ft_strmapdel.c \
 				strmap/ft_strmapdup.c \
-				strmap/ft_strmapi.c \
 				strmap/ft_strmapjoin.c \
 				strmap/ft_strmapjoin_leakless.c \
 				strmap/ft_strmaplen.c \
