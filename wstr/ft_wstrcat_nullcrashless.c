@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "wstr.h"
 
 /*
 ** ft_wstrcat_nullcrashless: wide string concatenation null crashless

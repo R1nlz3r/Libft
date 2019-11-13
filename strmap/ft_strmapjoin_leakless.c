@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 02:26:09 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/08 00:24:52 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:08:38 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "strmap.h"
 
 /*
 **	ft_strmapjoin_leakless: string join

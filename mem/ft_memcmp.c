@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 06:16:37 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/01 11:28:29 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:49:15 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "mem.h"
 
 /*
 ** ft_memcmp: memory comparison

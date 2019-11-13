@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/02 04:39:25 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/31 20:07:53 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:03:03 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "str.h"
 
 /*
 ** ft_strcat_nullcrashless: string concatenation null crashless

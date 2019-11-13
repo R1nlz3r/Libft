@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 07:26:24 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/03 22:50:27 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:05:10 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "str.h"
 
 /*
 ** ft_strncat: string number concatenation

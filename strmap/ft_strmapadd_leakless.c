@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 09:22:31 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/07 18:06:10 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:08:05 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "strmap.h"
 
 /*
 **	ft_strmapadd_leakless: string map addition leakless

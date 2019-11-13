@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/27 17:21:28 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/29 20:44:18 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:43:29 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "is.h"
 
 /*
 ** ft_isinf: is infinite

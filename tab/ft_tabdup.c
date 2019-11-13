@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/02 18:14:35 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/08 13:39:16 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:12:17 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "tab.h"
 
 /*
 **	ft_tabdup: table duplicate

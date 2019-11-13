@@ -6,16 +6,23 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/30 10:19:56 by mapandel          #+#    #+#             */
-/*   Updated: 2017/07/24 20:07:28 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 23:47:46 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include <stdarg.h>
+# include <unistd.h>
+# include <stdlib.h>
 # include <wchar.h>
-# include "libft.h"
+
+# include "conv.h"
+# include "is.h"
+# include "mem.h"
+# include "put.h"
+# include "str.h"
+# include "wstr.h"
 
 enum						e_printf_modifier
 {

@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 03:27:31 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/04 10:27:16 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:06:25 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "str.h"
 
 /*
 **	ft_strsplit: string split

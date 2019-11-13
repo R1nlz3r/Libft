@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 08:05:39 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/04 10:54:16 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:05:59 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "str.h"
 
 /*
 ** ft_strrchr: string reverse search

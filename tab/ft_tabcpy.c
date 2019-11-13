@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/01 01:01:12 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/08 21:50:28 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:12:10 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "tab.h"
 
 /*
 ** ft_tabcpy: table copy

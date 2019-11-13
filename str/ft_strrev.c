@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/21 02:23:19 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/04 10:09:28 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:06:21 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "str.h"
 
 /*
 **	ft_strrev: string reversion

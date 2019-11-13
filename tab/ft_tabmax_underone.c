@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/16 04:55:14 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/09 00:15:25 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:13:12 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "tab.h"
 
 /*
 **	ft_tabmax_underone: table maximum under one

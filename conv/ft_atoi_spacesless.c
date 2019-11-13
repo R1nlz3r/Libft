@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/14 23:02:58 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/05 15:40:24 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:36:37 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "conv.h"
 
 /*
 **	ft_atoi_spacesless: array to integer spacesless

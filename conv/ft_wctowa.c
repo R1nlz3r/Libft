@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/07 06:45:18 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/06 17:28:35 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:37:12 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "conv.h"
 
 /*
 **	ft_wctowa: wide char to wide array

@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/27 17:23:52 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/29 20:45:27 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:43:46 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "is.h"
 
 /*
 ** ft_isnan: is not a value

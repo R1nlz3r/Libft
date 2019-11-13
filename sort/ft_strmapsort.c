@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/25 11:33:09 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/31 18:20:03 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:58:54 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "sort.h"
 
 /*
 **	ft_strmapsort: string map sorting

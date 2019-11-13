@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 14:31:11 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/01 11:26:41 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:03:55 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "str.h"
 
 /*
 ** ft_strcmp: string comparison

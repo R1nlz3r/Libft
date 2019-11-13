@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/02 17:12:22 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/08 12:23:02 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:45:06 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "is.h"
 
 /*
 ** ft_tabisdescending: table is descending

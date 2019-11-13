@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/26 09:25:24 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/13 00:16:24 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:09:15 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "strmap.h"
 
 /*
 **	ft_strmapshrink_leakless: string map shrink leakless

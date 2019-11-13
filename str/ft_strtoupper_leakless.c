@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/16 02:08:23 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/04 22:33:33 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:06:47 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "str.h"
 
 /*
 **	ft_strtoupper_leakless: string to uppercase leakless

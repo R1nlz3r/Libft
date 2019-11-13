@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/16 07:08:11 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/30 12:48:56 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:48:08 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "math.h"
 
 /*
 ** ft_power: power

@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 21:18:46 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/31 15:33:55 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:51:11 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "put.h"
 
 /*
 ** ft_putnbr: put number

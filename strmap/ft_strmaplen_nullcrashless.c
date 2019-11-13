@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/20 20:05:12 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/06 22:32:53 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:08:46 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "strmap.h"
 
 /*
 **	ft_strmaplen_nullcrashless: string map length null crashless

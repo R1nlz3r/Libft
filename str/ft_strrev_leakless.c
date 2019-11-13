@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/03 13:33:38 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/05 13:14:37 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:06:04 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "str.h"
 
 /*
 **	ft_strrev_leakless: string reversion leakless

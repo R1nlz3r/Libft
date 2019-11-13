@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/03 06:20:32 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/08 01:02:33 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:51:52 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "put.h"
 
 /*
 **	ft_putwendl_buffer: put wide end line buffer

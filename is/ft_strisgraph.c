@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/05 16:40:48 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/30 11:07:21 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:44:39 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "is.h"
 
 /*
 ** ft_strisgraph: string is graphical

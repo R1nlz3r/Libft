@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 23:38:12 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/10 01:20:49 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:47:09 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "lst.h"
 
 /*
 **	ft_lstnew: list new

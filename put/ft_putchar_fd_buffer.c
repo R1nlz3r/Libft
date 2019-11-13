@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/02 04:40:01 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/05 00:57:00 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:50:12 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "put.h"
 
 /*
 **	ft_putchar_fd_buffer: put character file descriptor buffer

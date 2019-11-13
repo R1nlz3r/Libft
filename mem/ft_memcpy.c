@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 17:44:51 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/31 11:46:37 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:49:18 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "mem.h"
 
 /*
 ** ft_memcpy: memory copy

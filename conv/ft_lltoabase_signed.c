@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/21 02:18:37 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/06 17:18:09 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:37:00 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "conv.h"
 
 /*
 **	ft_lltoabase_signed: long long to array base signed

@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 07:03:44 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/03 23:05:58 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:05:19 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "str.h"
 
 /*
 ** ft_strncpy: string number copy

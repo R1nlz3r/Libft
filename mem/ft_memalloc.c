@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 17:36:48 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/30 16:44:59 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:49:05 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "mem.h"
 
 /*
 ** ft_memalloc: memory allocation

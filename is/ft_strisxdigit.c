@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/05 17:07:27 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/30 11:15:17 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:45:02 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "is.h"
 
 /*
 ** ft_strisxdigit: string is hexadecimal digit

@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/24 08:42:26 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/05 13:14:21 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:05:56 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "str.h"
 
 /*
 **	ft_strplugc: string plug character

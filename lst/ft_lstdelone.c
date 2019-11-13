@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 00:39:56 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/10 02:32:33 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:46:57 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "lst.h"
 
 /*
 **	ft_lstdelone: list delection one
