@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/13 00:17:31 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 01:58:24 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -266,7 +266,11 @@ size_t				ft_wstrlenuni(const wchar_t *ws);
 wchar_t				*ft_wstrnew(size_t size);
 wchar_t				*ft_wstrsub_leakless(wchar_t *ws, unsigned int start,
 	size_t len);
-wchar_t				*ft_wstrsub(wchar_t const *ws, unsigned int start,
+wchar_t				*ft_wstrsub(const wchar_t *ws, unsigned int start,
+	size_t len);
+wchar_t				*ft_wstrsubuni_leakless(wchar_t *ws, unsigned int start,
+	size_t len);
+wchar_t				*ft_wstrsubuni(const wchar_t *ws, unsigned int start,
 	size_t len);
 
 #endif

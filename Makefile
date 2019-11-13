@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2019/11/13 00:17:27 by mapandel         ###   ########.fr        #
+#    Updated: 2019/11/13 01:55:32 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -277,6 +277,8 @@ WSTR =			wstr/ft_wstradd.c \
 				wstr/ft_wstrnew.c \
 				wstr/ft_wstrsub.c \
 				wstr/ft_wstrsub_leakless.c \
+				wstr/ft_wstrsubuni.c \
+				wstr/ft_wstrsubuni_leakless.c \
 
 SRC :=			$(CONV) $(FT_PRINTF) $(GET_NEXT) $(IS) $(LST) $(MATH) $(MEM) \
 	$(PUT) $(SORT) $(STR) $(STRMAP) $(TAB) $(TO) $(WSTR)
