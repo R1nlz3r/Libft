@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 02:03:10 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/10 02:52:16 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:46:49 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "lst.h"
 
 /*
 **	ft_lstadd: list addition

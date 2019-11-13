@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "tab.h"
 
 /*
 **	ft_tabrev_leakless: table reversion leakless

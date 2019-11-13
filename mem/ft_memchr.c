@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 05:54:16 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/01 17:35:18 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:49:12 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "mem.h"
 
 /*
 ** ft_memchr: memory search

@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/21 02:44:00 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/09 03:41:22 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:12:25 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "tab.h"
 
 /*
 **	ft_tabfindpos_over: table find position over

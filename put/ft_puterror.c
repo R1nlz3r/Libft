@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/21 19:40:27 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/31 12:57:16 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:50:49 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "put.h"
 
 /*
 ** ft_puterror: put error

@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/24 14:25:29 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/07 17:21:42 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:02:49 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "str.h"
 
 /*
 **	ft_stradd_leakless: string addition leakless

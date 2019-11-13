@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "wstr.h"
 
 /*
 **	ft_strbuffer: wide string buffer

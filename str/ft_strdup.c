@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 06:25:01 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/08 12:36:44 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:04:11 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "str.h"
 
 /*
 **	ft_strdup: string duplicate

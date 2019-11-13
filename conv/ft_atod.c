@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/16 02:39:37 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/23 22:51:55 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:36:28 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "conv.h"
 
 /*
 ** ft_atod: array to double

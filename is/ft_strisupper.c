@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/05 17:04:55 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/30 11:14:11 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:44:59 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "is.h"
 
 /*
 ** ft_strisupper: string is uppercase

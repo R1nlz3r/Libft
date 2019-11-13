@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 19:33:53 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/04 16:50:19 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:06:53 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "str.h"
 
 /*
 **	ft_strtrim: string trim

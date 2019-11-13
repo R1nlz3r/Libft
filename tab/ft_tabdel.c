@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/05 12:09:11 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/13 00:23:28 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:12:14 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "tab.h"
 
 /*
 **	ft_tabdel: table delection

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "wstr.h"
 
 /*
 **	ft_wstrjoin: wide string join

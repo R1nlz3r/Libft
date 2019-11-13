@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 18:35:34 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/04 23:16:07 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:04:14 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "str.h"
 
 /*
 **	ft_strequ: strings equal

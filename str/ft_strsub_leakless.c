@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/27 23:28:15 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/04 22:34:28 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:06:32 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "str.h"
 
 /*
 **	ft_strsub_leakless: string substitution leakless

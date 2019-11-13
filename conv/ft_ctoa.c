@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/07 06:38:10 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/05 17:00:00 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:36:51 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "conv.h"
 
 /*
 **	ft_ctoa: character to array

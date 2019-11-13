@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/02 05:15:16 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/01 17:27:39 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:03:21 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "str.h"
 
 /*
 ** ft_strccpy_nullcrashless: string character copy null crashless

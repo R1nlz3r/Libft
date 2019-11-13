@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 03:39:09 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/31 11:48:57 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:49:30 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "mem.h"
 
 /*
 ** ft_memset: memory setting

@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/19 17:46:45 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/06 22:46:34 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:08:31 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "strmap.h"
 
 /*
 **	ft_strmapdel: string map delection

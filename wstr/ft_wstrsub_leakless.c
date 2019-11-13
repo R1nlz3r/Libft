@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "wstr.h"
 
 /*
 **	ft_wstrsub_leakless: wide string substitution leakless

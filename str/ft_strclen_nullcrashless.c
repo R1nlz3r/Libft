@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/02 05:22:53 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/01 17:32:58 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:03:43 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "str.h"
 
 /*
 **	ft_strclen_nullcrashless: string character length null crashless

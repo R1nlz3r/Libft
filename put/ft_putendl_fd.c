@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 21:47:25 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/31 12:57:05 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:50:36 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "put.h"
 
 /*
 ** ft_putendl_fd: put end line file descriptor

@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2019/11/13 01:55:32 by mapandel         ###   ########.fr        #
+#    Updated: 2019/11/13 23:52:25 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -327,9 +327,9 @@ BACK_WHI =		\033[47m
 
 #			Main Rules
 
-.PHONY: all indexion re glu clean fclean
+.PHONY:			all indexion re glu clean fclean
 
-$(NAME): $(OBJ)
+$(NAME):		$(OBJ)
 	@make indextion
 
 all: $(NAME)
@@ -339,14 +339,29 @@ indextion:
 	@ranlib $(NAME)
 	@echo "$(GRE)--::Libft Indexed::--$(DEF)"
 
-re: fclean all
+re:				fclean all
 
-glu: fclean all clean
+glu:			fclean all clean
 
 #			Compilation Rules
 
-%.o: %.c
+%.o:			%.c
 	$(CC) $(CFLAGS) -I $(INC) -c -o $@ $^
+
+conv:			$(OBJ_CONV)
+ft_printf:		$(OBJ_FT_PRINTF)
+get_next:		$(OBJ_GET_NEXT)
+is:				$(OBJ_IS)
+lst:			$(OBJ_LST)
+math:			$(OBJ_MATH)
+mem:			$(OBJ_MEM)
+put:			$(OBJ_PUT)
+sort:			$(OBJ_SORT)
+str:			$(OBJ_STR)
+strmap:			$(OBJ_STRMAP)
+tab:			$(OBJ_TAB)
+to:				$(OBJ_TO)
+wstr:			$(OBJ_WSTR)
 
 #			Clean Rules
 

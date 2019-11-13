@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "wstr.h"
 
 /*
 **	ft_wstrlen: wide string length

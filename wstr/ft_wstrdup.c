@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "wstr.h"
 
 /*
 **	ft_wstrdup: wide string duplicate

@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 19:03:04 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/29 20:26:32 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:43:22 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "is.h"
 
 /*
 ** ft_isdigit: is digit

@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/30 11:36:32 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/31 15:35:30 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:51:01 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "put.h"
 
 /*
 ** ft_putmap: put map

@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/20 21:00:49 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/13 03:04:00 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:36:40 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "conv.h"
 
 /*
 **	ft_atoi_strict: array to integer strict

@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/18 03:11:58 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/07 18:15:00 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:08:20 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "strmap.h"
 
 /*
 ** ft_strmapcat: string map concatenation

@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 16:56:06 by mapandel          #+#    #+#             */
-/*   Updated: 2019/10/29 20:31:12 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:43:18 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "is.h"
 
 /*
 ** ft_iscntrl: is control

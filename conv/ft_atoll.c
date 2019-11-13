@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/01/16 04:39:09 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/05 16:54:40 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:36:48 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "conv.h"
 
 /*
 **	ft_atoll: array to long long

@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/04 03:17:08 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/09 23:43:57 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 18:08:07 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next.h"
 
 /*
 **	get_next_line: get next line

@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/26 12:25:29 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/07 23:59:10 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/13 19:03:39 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "str.h"
 
 /*
 **	ft_strcjoin: string character join
