@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 16:59:32 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/13 23:48:23 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/18 23:21:52 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,15 @@
 # define LST_H
 
 # include <stdlib.h>
+
+
+/*
+**	t_list: Chain list wrapper for any structure
+**		Stores any content along with its size
+**		With previous and next pointers
+**		Various functions associated with this type ease access
+**			to complicated manipulations
+*/
 
 typedef struct		s_list
 {

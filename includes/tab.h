@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 17:53:05 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/13 23:48:48 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/18 23:25:59 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,16 @@
 # define TAB_H
 
 # include <stdlib.h>
+
+
+/*
+**	t_tab: Table structure
+**		Stores data along with an integer array
+**		Its memory allocated size
+**		And its effective size_t length
+**		Various functions associated with this type ease access
+**			to complicated manipulations
+*/
 
 typedef struct		s_tab
 {

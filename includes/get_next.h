@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/04 03:17:20 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/13 23:48:17 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/18 23:13:56 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,13 @@
 
 # include "mem.h"
 # include "str.h"
+
+
+/*
+**	t_line: Used as a chain list
+**		Stores the last buffer string
+**		For the given int file descriptor
+*/
 
 typedef struct		s_line
 {
