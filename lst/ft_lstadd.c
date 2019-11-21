@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 02:03:10 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/19 02:11:01 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/21 02:19:42 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,24 @@
 
 /*
 **	ft_lstadd: list addition
-**		Adds a t_list* node to the start of a chained t_list*
+**		Adds a t_list* node to the end of a chained t_list*
 **			pointed by its address
-**		The starting pointer this chained list is replaced by
-**			the address of the added node
+**		NULL behaviors are handled
 **		The function do not return a value
 */
 
 void	ft_lstadd(t_list **alst, t_list *new)
 {
-	new->next = *alst;
-	*alst = new;
+	t_list		*end;
+
+	if (!alst || !new)
+		return ;
+	end = ft_lstend(*alst);
+	if (end)
+	{
+		end->next = new;
+		new->previous = end;
+	}
+	else
+		*alst = new;
 }
