@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/07 01:07:14 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/13 18:46:53 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/21 23:08:46 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	ft_lstdel(t_list **alst, void (*del)(void*, size_t))
 	t_list *lst;
 	t_list *nextlst;
 
-	if  (alst)
+	if  (!alst)
 		return ;
 	lst = *alst;
 	while (lst)
