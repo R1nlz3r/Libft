@@ -1,40 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdel.c                                        :+:      :+:    :+:   */
+/*   ft_lstinsertaft.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/07 01:07:14 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/21 23:08:46 by mapandel         ###   ########.fr       */
+/*   Created: 2019/11/19 10:23:41 by mapandel          #+#    #+#             */
+/*   Updated: 2019/11/19 18:12:22 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lst.h"
 
 /*
-**	ft_lstdel: list delection
-**		Applies a delection function on all nodes of a chained list
-**			starting from a t_list* pointer
-**		This delection function takes a void* content parameter
-**			and its size_t length
+**	ft_lstinsertaft: list insertion after
+**		Inserts a t_list* chain into an other
+**		This new chain is plugged right on the following node
+**			of the first parameter
+**		And stops at the end of the second, assuming it is the starting node
 **		NULL behaviors are handled
 **		The function do not return a value
 */
 
-void	ft_lstdel(t_list **alst, void (*del)(void*, size_t))
+void	ft_lstinsertaft(t_list *lst, t_list *new)
 {
-	t_list *lst;
-	t_list *nextlst;
+	t_list		*aft;
+	t_list		*new_end;
 
-	if  (!alst)
+	if (!lst)
 		return ;
-	lst = *alst;
-	while (lst)
+	aft = NULL;
+	new_end = ft_lstend(new);
+	if (lst->next)
 	{
-		nextlst = lst->next;
-		ft_lstdelone(&lst, del);
-		lst = nextlst;
+		aft = lst->next;
+		aft->previous = new_end;
 	}
-	*alst = NULL;
+	lst->next = new;
+	if (!new)
+		return ;
+	new->previous = lst;
+	new_end->next = aft;
 }

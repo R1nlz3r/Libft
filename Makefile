@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2019/12/01 15:19:56 by mapandel         ###   ########.fr        #
+#    Updated: 2019/11/19 18:20:34 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -93,9 +93,13 @@ IS =			is/ft_isalnum.c \
 LST =			lst/ft_lstadd.c \
 				lst/ft_lstdel.c \
 				lst/ft_lstdelone.c \
+				lst/ft_lstend.c \
+				lst/ft_lstinsertaft.c \
+				lst/ft_lstinsertbef.c \
 				lst/ft_lstiter.c \
 				lst/ft_lstmap.c \
 				lst/ft_lstnew.c \
+				lst/ft_lststart.c \
 
 MATH =			math/ft_pow.c \
 
