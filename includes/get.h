@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/04 03:17:20 by mapandel          #+#    #+#             */
-/*   Updated: 2019/12/01 16:09:33 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/12/01 19:24:02 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # define BUFF_SIZE 4096
 
 # include <unistd.h>
+# include <stdio.h>
 
 # include "mem.h"
 # include "str.h"
