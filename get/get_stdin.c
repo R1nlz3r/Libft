@@ -1,33 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   get_stdin.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2019/12/01 15:37:47 by mapandel         ###   ########.fr       */
+/*   Created: 2019/12/01 16:06:36 by mapandel          #+#    #+#             */
+/*   Updated: 2019/12/01 16:08:21 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "get.h"
 
-typedef int			t_bool;
+/*
+**	get_stdin: get standard input
+**		Reads the standard input until an EOF character
+**		The system function read is called for a BUFF_SIZE number
+**			of characters every time
+**		Allocates the needed memory space to store the read string
+**		Returns it or NULL for a failed allocation or an error
+*/
 
-# include "conv.h"
-# include "ft_printf.h"
-# include "get.h"
-# include "is.h"
-# include "lst.h"
-# include "math.h"
-# include "mem.h"
-# include "put.h"
-# include "sort.h"
-# include "str.h"
-# include "strmap.h"
-# include "tab.h"
-# include "to.h"
-# include "wstr.h"
-
-#endif
+char	*get_stdin()
+{
+	return (get_file(0));
+}

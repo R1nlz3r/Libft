@@ -55,8 +55,8 @@ FT_PRINTF =		ft_printf/ft_printf_c.c \
 				ft_printf/ft_printf.c \
 				ft_printf/touch_t_printf.c \
 
-GET_NEXT =		get_next/get_next_line.c \
-				get_next/get_next_char.c \
+GET =			get/get_next_line.c \
+				get/get_next_char.c \
 
 IS =			is/ft_isalnum.c \
 				is/ft_isalpha.c \
@@ -284,13 +284,13 @@ WSTR =			wstr/ft_wstradd.c \
 				wstr/ft_wstrsubuni.c \
 				wstr/ft_wstrsubuni_leakless.c \
 
-SRC :=			$(CONV) $(FT_PRINTF) $(GET_NEXT) $(IS) $(LST) $(MATH) $(MEM) \
-	$(PUT) $(SORT) $(STR) $(STRMAP) $(TAB) $(TO) $(WSTR)
+SRC :=			$(CONV) $(FT_PRINTF) $(GET) $(IS) $(LST) $(MATH) $(MEM) \
+				$(PUT) $(SORT) $(STR) $(STRMAP) $(TAB) $(TO) $(WSTR)
 
 OBJ =			$(SRC:.c=.o)
 OBJ_CONV =		$(CONV:.c=.o)
 OBJ_FT_PRINTF =	$(FT_PRINTF:.c=.o)
-OBJ_GET_NEXT =	$(GET_NEXT:.c=.o)
+OBJ_GET =		$(GET:.c=.o)
 OBJ_IS =		$(IS:.c=.o)
 OBJ_LST =		$(LST:.c=.o)
 OBJ_MATH =		$(MATH:.c=.o)
@@ -354,7 +354,7 @@ glu:			fclean all clean
 
 conv:			$(OBJ_CONV)
 ft_printf:		$(OBJ_FT_PRINTF)
-get_next:		$(OBJ_GET_NEXT)
+get:			$(OBJ_GET)
 is:				$(OBJ_IS)
 lst:			$(OBJ_LST)
 math:			$(OBJ_MATH)
