@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2019/11/19 18:20:34 by mapandel         ###   ########.fr        #
+#    Updated: 2019/12/01 19:13:48 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,8 +55,10 @@ FT_PRINTF =		ft_printf/ft_printf_c.c \
 				ft_printf/ft_printf.c \
 				ft_printf/touch_t_printf.c \
 
-GET =			get/get_next_line.c \
+GET =			get/get_file.c \
+				get/get_next_line.c \
 				get/get_next_char.c \
+				get/get_stdin.c \
 
 IS =			is/ft_isalnum.c \
 				is/ft_isalpha.c \
