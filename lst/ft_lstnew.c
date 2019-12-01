@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/06 23:38:12 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/13 18:47:09 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/11/19 02:07:07 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,5 +42,6 @@ t_list		*ft_lstnew(void const *content, size_t content_size)
 		new->content_size = content_size;
 	}
 	new->next = NULL;
+	new->previous = NULL;
 	return (new);
 }

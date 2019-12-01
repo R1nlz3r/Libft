@@ -1,37 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd.c                                        :+:      :+:    :+:   */
+/*   ft_lststart.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/07 02:03:10 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/21 02:19:42 by mapandel         ###   ########.fr       */
+/*   Created: 2019/11/19 10:02:16 by mapandel          #+#    #+#             */
+/*   Updated: 2019/11/19 18:00:09 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "lst.h"
 
 /*
-**	ft_lstadd: list addition
-**		Adds a t_list* node to the end of a chained t_list*
-**			pointed by its address
+**	ft_lststart: list start
+**		Finds the starting node of a t_list* chain and returns it
 **		NULL behaviors are handled
-**		The function do not return a value
 */
 
-void	ft_lstadd(t_list **alst, t_list *new)
-{
-	t_list		*end;
-
-	if (!alst || !new)
-		return ;
-	end = ft_lstend(*alst);
-	if (end)
-	{
-		end->next = new;
-		new->previous = end;
-	}
-	else
-		*alst = new;
+t_list		*ft_lststart(t_list *lst) {
+	if (!lst)
+		return (NULL);
+	while (lst->previous)
+		lst = lst->previous;
+	return (lst);
 }
