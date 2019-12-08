@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/01 15:39:43 by mapandel          #+#    #+#             */
-/*   Updated: 2019/12/01 15:48:58 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/12/08 04:08:17 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,28 +16,50 @@
 **	get_file: get file
 **		Reads the entire file from a file descriptor int
 **		The system function read is called for a BUFF_SIZE number
-**			of characters every time
-**		Allocates the needed memory space to store the read string
+**			of blocks every time
+**		The total length if stored in a ssize_t* parameter
+**		Allocates the needed memory space to store the read data
 **		Returns it or NULL for a failed allocation or an error
 */
 
-char	*get_file(int fd)
+static int		buffer_stack(void **mem, void *buf, ssize_t *len_read,
+	ssize_t buf_len)
 {
-	int		ret_val;
-	char	*str;
-	char	*str_tmp;
+	void		*tmp;
 
-	str = NULL;
-	str_tmp = NULL;
-	while ((ret_val = get_next_char(fd, &str_tmp, EOF)) > 0)
+	if (!(tmp = ft_memalloc((size_t)*len_read + (size_t)buf_len)))
+		return (-1);
+	if (*mem)
 	{
-		if (!(str = ft_strjoin_leakless(str, str_tmp)))
-			return (NULL);
-		ft_strdel(&str_tmp);
+		tmp = ft_memcpy(tmp, *mem, (size_t)*len_read);
+		ft_memdel(&*mem);
 	}
-	if (ret_val == -1 || !(str = ft_strjoin_leakless(str, str_tmp)))
-		return (NULL);
-	ft_strdel(&str_tmp);
+	ft_memcpy((char*)tmp + *len_read, buf, (size_t)buf_len);
+	*len_read += buf_len;
+	if (!(*mem = ft_memalloc((size_t)*len_read)))
+		return (-1);
+	ft_memcpy(*mem, tmp, (size_t)*len_read);
+	ft_memdel(&tmp);
+	return (0);
+}
 
-	return (str);
+void			*get_file(int fd, ssize_t *len_read)
+{
+	void		*mem;
+	void		*buf;
+	ssize_t		buf_len;
+
+	mem = NULL;
+	*len_read = 0;
+	if (!(buf = ft_memalloc(BUFF_SIZE)))
+		return (NULL);
+	while ((buf_len = read(fd, buf, BUFF_SIZE)) && buf_len > 0)
+	{
+		if (buffer_stack(&mem, buf, len_read, buf_len))
+			return (NULL);
+	}
+	ft_memdel(&buf);
+	if (buf_len == -1 && (*len_read = -1))
+		return (NULL);
+	return (mem);
 }

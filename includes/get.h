@@ -6,14 +6,14 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/04 03:17:20 by mapandel          #+#    #+#             */
-/*   Updated: 2019/12/01 19:24:02 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/12/08 04:07:39 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef GET_H
 # define GET_H
 
-# define BUFF_SIZE 4096
+# define BUFF_SIZE (4096 * 16)
 
 # include <unistd.h>
 # include <stdio.h>
@@ -36,9 +36,9 @@ typedef struct		s_line
 	char			*save;
 }					t_line;
 
-char				*get_file(int fd);
+void				*get_file(int fd, ssize_t *len_read);
 int					get_next_char(const int fd, char **line, char c);
 int					get_next_line(const int fd, char **line);
-char				*get_stdin(void);
+void				*get_stdin(ssize_t *len_read);
 
 #endif
