@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/01 15:39:43 by mapandel          #+#    #+#             */
-/*   Updated: 2019/12/08 04:08:17 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/12/09 01:07:21 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,8 @@ static int		buffer_stack(void **mem, void *buf, ssize_t *len_read,
 
 	if (!(tmp = ft_memalloc((size_t)*len_read + (size_t)buf_len)))
 		return (-1);
-	if (*mem)
-	{
-		tmp = ft_memcpy(tmp, *mem, (size_t)*len_read);
-		ft_memdel(&*mem);
-	}
+	tmp = ft_memcpy(tmp, *mem, (size_t)*len_read);
+	ft_memdel(mem);
 	ft_memcpy((char*)tmp + *len_read, buf, (size_t)buf_len);
 	*len_read += buf_len;
 	if (!(*mem = ft_memalloc((size_t)*len_read)))
@@ -49,7 +46,8 @@ void			*get_file(int fd, ssize_t *len_read)
 	void		*buf;
 	ssize_t		buf_len;
 
-	mem = NULL;
+	if (!(mem = ft_memalloc(0)))
+		return (NULL);
 	*len_read = 0;
 	if (!(buf = ft_memalloc(BUFF_SIZE)))
 		return (NULL);
@@ -59,7 +57,7 @@ void			*get_file(int fd, ssize_t *len_read)
 			return (NULL);
 	}
 	ft_memdel(&buf);
-	if (buf_len == -1 && (*len_read = -1))
-		return (NULL);
+	if (buf_len == -1)
+		*len_read = -1;
 	return (mem);
 }
