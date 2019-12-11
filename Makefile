@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2019/12/01 19:13:48 by mapandel         ###   ########.fr        #
+#    Updated: 2019/12/11 16:56:36 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,6 +71,7 @@ IS =			is/ft_isalnum.c \
 				is/ft_islessinf.c \
 				is/ft_islower.c \
 				is/ft_isnan.c \
+				is/ft_isprime.c \
 				is/ft_isprint.c \
 				is/ft_ispunct.c \
 				is/ft_isspace.c \

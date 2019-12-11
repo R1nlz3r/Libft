@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 16:53:11 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/13 23:48:19 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/12/11 16:56:18 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int		ft_isinf(double f);
 int		ft_islessinf(double f);
 int		ft_islower(int c);
 int		ft_isnan(double f);
+int		ft_isprime(int nb);
 int		ft_isprint(int c);
 int		ft_ispunct(int c);
 int		ft_isspace(int c);
