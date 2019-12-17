@@ -20,7 +20,6 @@
 **		Returns 0 to express an error or the distance from the end of the table
 */
 
-
 size_t		ft_tabfindrev(t_tab *t, int n)
 {
 	size_t	i;

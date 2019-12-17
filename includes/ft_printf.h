@@ -24,8 +24,10 @@
 # include "str.h"
 # include "wstr.h"
 
+/*
+**	Length modifier for the next conversion
+*/
 
-// Length modifier for the next conversion
 enum						e_printf_modifier
 {
 	FT_PRINTF_NO_MODIFIERS,
@@ -37,8 +39,10 @@ enum						e_printf_modifier
 	FT_PRINTF_LL
 };
 
+/*
+**	Conversions gateway
+*/
 
-// Conversions gateway
 enum						e_printf_conv
 {
 	FT_PRINTF_WAIT_INPUT,
@@ -53,10 +57,9 @@ enum						e_printf_conv
 	FT_PRINTF_PERCENT
 };
 
-
-// Apply additional flags to the next conversion
 /*
 **	t_printf_flags:
+**		Apply additional flags to the next conversion
 **		Contains booleans for the given flags
 **		Those will be applied on the next conversion
 */
@@ -71,14 +74,13 @@ typedef struct				s_printf_flags
 	int						apostrophe;
 }							t_printf_flags;
 
-
 /*
 **	t_printf: data container for this project
 **		Stores the va_list to get arguments from
 **		An error boolean to feedback any fail on system functions
 **		The format string index that will be iterated on
 **		An increasing counter of characters printed used as return value
-		A tampon character variable then a padding
+**		A tampon character variable then a padding
 **		The sum of characters printed on the last conversion
 **		Some flags variables used on each conversion
 **		Flags / conversions / modifiers gateways

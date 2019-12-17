@@ -31,7 +31,8 @@ char	**ft_strmapcat_nullcrashless(char **dest, const char **src)
 		return (NULL);
 	while (dest[i])
 		++i;
-	while (src[j]) {
+	while (src[j])
+	{
 		if (!(dest[i++] = ft_strdup(src[j++])))
 			return (NULL);
 	}

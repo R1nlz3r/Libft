@@ -13,14 +13,13 @@
 #ifndef GET_H
 # define GET_H
 
-# define BUFF_SIZE (4096 * 16)
-
 # include <unistd.h>
 # include <stdio.h>
 
 # include "mem.h"
 # include "str.h"
 
+# define BUFF_SIZE 65536
 
 /*
 **	t_line: Used as a chain list

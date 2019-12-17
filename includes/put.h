@@ -54,5 +54,4 @@ int		ft_putwstr_buffer(wchar_t *ws, int release);
 void	ft_putwstr_fd(wchar_t const *ws, int fd);
 int		ft_putwstr_fd_buffer(wchar_t *ws, int release, int fd);
 
-
 #endif

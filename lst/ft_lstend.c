@@ -18,7 +18,8 @@
 **		NULL behaviors are handled
 */
 
-t_list		*ft_lstend(t_list *lst) {
+t_list		*ft_lstend(t_list *lst)
+{
 	if (!lst)
 		return (NULL);
 	while (lst->next)

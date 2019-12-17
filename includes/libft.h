@@ -13,8 +13,6 @@
 #ifndef LIBFT_H
 # define LIBFT_H
 
-typedef int			t_bool;
-
 # include "conv.h"
 # include "ft_printf.h"
 # include "get.h"
@@ -29,5 +27,7 @@ typedef int			t_bool;
 # include "tab.h"
 # include "to.h"
 # include "wstr.h"
+
+typedef int			t_bool;
 
 #endif

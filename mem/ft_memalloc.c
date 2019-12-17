@@ -19,7 +19,6 @@
 **		Returns a pointer on the allocated zone or NULL in case of failure
 */
 
-
 void	*ft_memalloc(size_t size)
 {
 	void	*bus;

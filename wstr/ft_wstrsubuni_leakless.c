@@ -59,8 +59,7 @@ wchar_t			*ft_wstrsubuni_leakless(wchar_t *ws, unsigned int start,
 		return (NULL);
 	i = 0;
 	round = 0;
-	while (round < tmpround &&
-		(round = ft_wstrsubuni_leakless2(ws, i, round)))
+	while (round < tmpround && (round = ft_wstrsubuni_leakless2(ws, i, round)))
 		cpy[i++] = ws[start++];
 	ft_wstrdel(&ws);
 	return (cpy);
