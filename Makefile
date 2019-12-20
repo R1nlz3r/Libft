@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2019/12/11 16:56:36 by mapandel         ###   ########.fr        #
+#    Updated: 2019/12/20 03:47:25 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,15 @@ CC = 			clang
 CFLAGS = 		-Wall -Wextra -Werror -Weverything
 
 #				Sources
+
+BIT =			bit/ft_left_rotate_u8.c \
+				bit/ft_left_rotate_u16.c \
+				bit/ft_left_rotate_u32.c \
+				bit/ft_left_rotate_u64.c \
+				bit/ft_right_rotate_u8.c \
+				bit/ft_right_rotate_u16.c \
+				bit/ft_right_rotate_u32.c \
+				bit/ft_right_rotate_u64.c \
 
 CONV =			conv/ft_atod.c \
 				conv/ft_atoi.c \
@@ -287,10 +296,11 @@ WSTR =			wstr/ft_wstradd.c \
 				wstr/ft_wstrsubuni.c \
 				wstr/ft_wstrsubuni_leakless.c \
 
-SRC :=			$(CONV) $(FT_PRINTF) $(GET) $(IS) $(LST) $(MATH) $(MEM) \
+SRC :=			$(BIT) $(CONV) $(FT_PRINTF) $(GET) $(IS) $(LST) $(MATH) $(MEM) \
 				$(PUT) $(SORT) $(STR) $(STRMAP) $(TAB) $(TO) $(WSTR)
 
 OBJ =			$(SRC:.c=.o)
+OBJ_BIT =		$(BIT:.c=.o)
 OBJ_CONV =		$(CONV:.c=.o)
 OBJ_FT_PRINTF =	$(FT_PRINTF:.c=.o)
 OBJ_GET =		$(GET:.c=.o)
@@ -355,6 +365,7 @@ glu:			fclean all clean
 %.o:			%.c
 	$(CC) $(CFLAGS) -I $(INC) -c -o $@ $^
 
+bit:			$(OBJ_BIT)
 conv:			$(OBJ_CONV)
 ft_printf:		$(OBJ_FT_PRINTF)
 get:			$(OBJ_GET)

@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2019/12/01 15:37:47 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/12/20 03:48:18 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 typedef int			t_bool;
 
+# include "bit.h"
 # include "conv.h"
 # include "ft_printf.h"
 # include "get.h"
