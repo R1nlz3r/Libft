@@ -20,7 +20,6 @@
 **		Returns the destination
 */
 
-
 char	*ft_strccat_nullcrashless(char *dest, const char *src, char c)
 {
 	size_t i;

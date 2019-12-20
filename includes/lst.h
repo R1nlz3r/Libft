@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 
+# include "mem.h"
 
 /*
 **	t_list: Chain list wrapper for any structure
@@ -31,8 +32,6 @@ typedef struct		s_list
 	struct s_list	*next;
 	struct s_list	*previous;
 }					t_list;
-
-# include "mem.h"
 
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstdel(t_list **alst, void (*del)(void*, size_t));

@@ -28,7 +28,8 @@ char	**ft_strmapcat(char **dest, const char **src)
 	j = 0;
 	while (dest[i])
 		++i;
-	while (src[j]) {
+	while (src[j])
+	{
 		if (!(dest[i++] = ft_strdup(src[j++])))
 			return (NULL);
 	}

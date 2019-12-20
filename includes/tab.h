@@ -15,6 +15,11 @@
 
 # include <stdlib.h>
 
+# include "mem.h"
+# include "sort.h"
+
+# ifndef T_TAB
+#  define T_TAB
 
 /*
 **	t_tab: Table structure
@@ -32,8 +37,7 @@ typedef struct		s_tab
 	size_t			len;
 }					t_tab;
 
-# include "mem.h"
-# include "sort.h"
+# endif
 
 t_tab				*ft_tabadd(t_tab *t, int n);
 t_tab				*ft_tabadd_leakless(t_tab *t, int n);
@@ -69,6 +73,5 @@ t_tab				*ft_tabrev_leakless(t_tab *t);
 t_tab				*ft_tabrevrotate(t_tab *t);
 t_tab				*ft_tabrotate(t_tab *t);
 t_tab				*ft_tabswap(t_tab *t);
-
 
 #endif

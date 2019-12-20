@@ -36,5 +36,4 @@ char		**ft_strmapnew(size_t size);
 char		**ft_strmaprev(char **m);
 char		**ft_strmaprev_leakless(char **m);
 
-
 #endif

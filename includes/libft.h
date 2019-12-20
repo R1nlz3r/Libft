@@ -6,14 +6,12 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 02:57:54 by mapandel          #+#    #+#             */
-/*   Updated: 2019/12/20 03:48:18 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/12/20 04:01:52 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
-typedef int			t_bool;
 
 # include "bit.h"
 # include "conv.h"
@@ -30,5 +28,7 @@ typedef int			t_bool;
 # include "tab.h"
 # include "to.h"
 # include "wstr.h"
+
+typedef int			t_bool;
 
 #endif
