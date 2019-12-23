@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/01 15:39:43 by mapandel          #+#    #+#             */
-/*   Updated: 2019/12/09 01:07:21 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/12/23 05:09:22 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,49 +15,52 @@
 /*
 **	get_file: get file
 **		Reads the entire file from a file descriptor int
-**		The system function read is called for a BUFF_SIZE number
-**			of blocks every time
-**		The total length if stored in a ssize_t* parameter
+**		The system function read is called for the file size length
+**			found after a call to the fstat system function
+**		If the file size is bigger than the read buffer size,
+**			multiple calls does happen
+**		The total length read if stored in a ssize_t* parameter
 **		Allocates the needed memory space to store the read data
 **		Returns it or NULL for a failed allocation or an error
 */
 
-static int		buffer_stack(void **mem, void *buf, ssize_t *len_read,
-	ssize_t buf_len)
+static void		segmented_read_calls(int fd, void *mem, ssize_t *len_read)
 {
-	void		*tmp;
+	ssize_t		tmp_size;
+	void		*buf;
 
-	if (!(tmp = ft_memalloc((size_t)*len_read + (size_t)buf_len)))
-		return (-1);
-	tmp = ft_memcpy(tmp, *mem, (size_t)*len_read);
-	ft_memdel(mem);
-	ft_memcpy((char*)tmp + *len_read, buf, (size_t)buf_len);
-	*len_read += buf_len;
-	if (!(*mem = ft_memalloc((size_t)*len_read)))
-		return (-1);
-	ft_memcpy(*mem, tmp, (size_t)*len_read);
-	ft_memdel(&tmp);
-	return (0);
+	if (!(buf = ft_memalloc(2147479552)))
+	{
+		*len_read = -1;
+		return ;
+	}
+	*len_read = 0;
+	while ((tmp_size = read(fd, buf, 2147479552)) && tmp_size > 0)
+	{
+		ft_memcpy(&((char*)mem)[*len_read], buf, (size_t)tmp_size);
+		*len_read += tmp_size;
+	}
+	if (tmp_size == -1)
+		*len_read = -1;
+	ft_memdel(&buf);
 }
 
 void			*get_file(int fd, ssize_t *len_read)
 {
-	void		*mem;
-	void		*buf;
-	ssize_t		buf_len;
+	struct stat		*file_stats;
+	size_t			file_size;
+	void			*mem;
 
-	if (!(mem = ft_memalloc(0)))
+	if (!len_read || !(file_stats = ft_memalloc(sizeof(struct stat))))
 		return (NULL);
-	*len_read = 0;
-	if (!(buf = ft_memalloc(BUFF_SIZE)))
+	fstat(fd, file_stats);
+	file_size = (size_t)file_stats->st_size;
+	ft_memdel((void**)&file_stats);
+	if (!(mem = ft_memalloc(file_size)))
 		return (NULL);
-	while ((buf_len = read(fd, buf, BUFF_SIZE)) && buf_len > 0)
-	{
-		if (buffer_stack(&mem, buf, len_read, buf_len))
-			return (NULL);
-	}
-	ft_memdel(&buf);
-	if (buf_len == -1)
-		*len_read = -1;
+	if (file_size <= 2147479552)
+		*len_read = read(fd, mem, file_size);
+	else
+		segmented_read_calls(fd, mem, len_read);
 	return (mem);
 }
