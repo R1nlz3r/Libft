@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/04 03:17:20 by mapandel          #+#    #+#             */
-/*   Updated: 2019/12/08 04:07:39 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/12/23 04:55:26 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <unistd.h>
 # include <stdio.h>
+# include <sys/stat.h>
 
 # include "mem.h"
 # include "str.h"

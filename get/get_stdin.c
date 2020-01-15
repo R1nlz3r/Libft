@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/01 16:06:36 by mapandel          #+#    #+#             */
-/*   Updated: 2019/12/08 04:08:44 by mapandel         ###   ########.fr       */
+/*   Updated: 2019/12/23 05:02:21 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,14 @@
 
 /*
 **	get_stdin: get standard input
-**		Reads the standard input until an EOF character
-**		The system function read is called for a BUFF_SIZE number
-**			of characters every time
-**		The total length if stored in a ssize_t* parameter
-**		Allocates the needed memory space to store the read string
-**		Returns it or NULL for a failed allocation or an error
-*/
+**		Reads the standard input
+**		The system function read is called for the stdin length
+**			found after a call to the fstat system function
+**		If the found size is bigger than the read buffer size,
+**			multiple calls does happen
+**		The total length read if stored in a ssize_t* parameter
+**		Allocates the needed memory space to store the read data
+**		Returns it or NULL for a failed allocation or an error*/
 
 void	*get_stdin(ssize_t *len_read)
 {
