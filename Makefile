@@ -6,7 +6,7 @@
 #    By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/04 03:03:10 by mapandel          #+#    #+#              #
-#    Updated: 2019/12/20 03:47:25 by mapandel         ###   ########.fr        #
+#    Updated: 2020/01/15 23:41:11 by mapandel         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -344,7 +344,7 @@ BACK_WHI =		\033[47m
 
 #			Main Rules
 
-.PHONY:			all indexion re glu clean fclean
+.PHONY:			all indexion re glu watch
 
 $(NAME):		$(OBJ)
 	@make indextion
@@ -360,7 +360,16 @@ re:				fclean all
 
 glu:			fclean all clean
 
+watch:
+	@fswatch $(SRC) | \
+	while read ; \
+		do make -j 8 || afplay /System/Library/Sounds/Glass.aiff ; \
+	done ;
+
 #			Compilation Rules
+
+.PHONY:			bit conv ft_printf get is lst math mem put sort str strmap \
+	tab to wstr
 
 %.o:			%.c
 	$(CC) $(CFLAGS) -I $(INC) -c -o $@ $^
@@ -382,6 +391,8 @@ to:				$(OBJ_TO)
 wstr:			$(OBJ_WSTR)
 
 #			Clean Rules
+
+.PHONY:			clean fclean
 
 clean:
 	@echo "$(PUR)--::Libft Binary Delection::--$(DEF)"
