@@ -124,6 +124,8 @@ MEM =			mem/ft_bzero.c \
 				mem/ft_memcmp.c \
 				mem/ft_memcpy.c \
 				mem/ft_memdel.c \
+				mem/ft_memdup.c \
+				mem/ft_memjoin.c \
 				mem/ft_memmove.c \
 				mem/ft_memset.c \
 
@@ -140,6 +142,7 @@ PUT =			put/ft_putchar.c \
 				put/ft_putllnbr.c \
 				put/ft_putllnbr_buffer.c \
 				put/ft_putmap.c \
+				put/ft_putmem.c \
 				put/ft_putnbr.c \
 				put/ft_putnbr_fd.c \
 				put/ft_putstr.c \

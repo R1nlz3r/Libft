@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 17:18:06 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/13 23:48:33 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/01/16 19:02:25 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ void	ft_puterror_exit(char *name, char *reason) __attribute__((noreturn));
 void	ft_putllnbr(long long n);
 int		ft_putllnbr_buffer(long long nb, int release);
 void	ft_putmap(char **m, size_t nblines);
+void	ft_putmem(void const *s, size_t n);
 void	ft_putnbr(int n);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putstr(char const *s);

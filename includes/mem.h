@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 17:15:30 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/13 23:48:27 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/01/16 19:32:57 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	ft_memdel(void **ap);
+void	*ft_memdup(const void *s, size_t n);
+void	*ft_memjoin(const void *s1, const void *s2, size_t n1, size_t n2);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memset(void *s, int c, size_t n);
 
