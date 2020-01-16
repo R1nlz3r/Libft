@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/04 03:17:20 by mapandel          #+#    #+#             */
-/*   Updated: 2019/12/23 04:55:26 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/01/16 19:36:29 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,12 @@ typedef struct		s_line
 	char			*save;
 }					t_line;
 
-void				*get_file(int fd, ssize_t *len_read);
+void				*get_file_segment(int fd, void *s, size_t buf_len,
+	ssize_t *total_read_len, ssize_t *read_len);
+void				*get_file(int fd, ssize_t *read_len);
 int					get_next_char(const int fd, char **line, char c);
 int					get_next_line(const int fd, char **line);
-void				*get_stdin(ssize_t *len_read);
+void				*get_pipe(int fd, ssize_t *read_len);
+void				*get_stdin(ssize_t *read_len);
 
 #endif

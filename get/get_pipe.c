@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_stdin.c                                        :+:      :+:    :+:   */
+/*   get_pipe.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/01 16:06:36 by mapandel          #+#    #+#             */
-/*   Updated: 2020/01/16 21:30:15 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/01/16 21:24:49 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get.h"
 
 /*
-**	get_stdin: get standard input
-**		Reads the entire data from the standard input
+**	get_pipe: get pipe
+**		Reads the entire data from a file descriptor int
 **		The system function read is called for a BUFF_SIZE number
 **			of characters every time
 **		The total length is stored in a ssize_t* parameter
@@ -22,7 +22,27 @@
 **		Returns it or NULL for a failed allocation or an error
 */
 
-void	*get_stdin(ssize_t *len_read)
+void	*get_pipe(int fd, ssize_t *read_len)
 {
-	return (get_pipe(0, len_read));
+	void		*mem;
+	void		*tmp;
+	ssize_t		buf_len;
+
+	buf_len = 1;
+	if (!read_len || !(mem = ft_memalloc(0)))
+		return (NULL);
+	*read_len = 0;
+	while (buf_len > 0)
+	{
+		if (!(tmp = get_file_segment(fd, mem, BUFF_SIZE, read_len, &buf_len)))
+		{
+			*read_len = -1;
+			return (NULL);
+		}
+		ft_memdel(&mem);
+		mem = tmp;
+	}
+	if (buf_len == -1)
+		*read_len = -1;
+	return (mem);
 }
