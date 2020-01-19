@@ -56,10 +56,10 @@ void			*get_file(int fd, ssize_t *read_len)
 		|| fstat(fd, file_stats))
 		return (NULL);
 	file_size = (size_t)file_stats->st_size;
-	if (S_ISFIFO(file_stats->st_mode))
+	if (S_ISFIFO(file_stats->st_mode) || S_ISCHR(file_stats->st_mode))
 	{
 		ft_memdel((void**)&file_stats);
-		return(get_pipe(fd, read_len));
+		return (get_pipe(fd, read_len));
 	}
 	ft_memdel((void**)&file_stats);
 	if (!(mem = ft_memalloc(file_size)))

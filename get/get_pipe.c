@@ -22,27 +22,41 @@
 **		Returns it or NULL for a failed allocation or an error
 */
 
-void	*get_pipe(int fd, ssize_t *read_len)
+static void		*join_file_segments(void *s1, void *s2, ssize_t *read_len,
+	ssize_t segment_len)
+{
+	void	*join;
+
+	if (!segment_len)
+		return (s1);
+	join = ft_memjoin(s1, s2, (size_t)*read_len, (size_t)segment_len);
+	ft_memdel(&s1);
+	s1 = join;
+	*read_len += segment_len;
+	return (s1);
+}
+
+void			*get_pipe(int fd, ssize_t *read_len)
 {
 	void		*mem;
-	void		*tmp;
-	ssize_t		buf_len;
+	void		*segment;
+	ssize_t		segment_len;
 
-	buf_len = 1;
-	if (!read_len || !(mem = ft_memalloc(0)))
+	if (!read_len)
 		return (NULL);
-	*read_len = 0;
-	while (buf_len > 0)
+	mem = NULL;
+	segment_len = 1;
+	while (segment_len)
 	{
-		if (!(tmp = get_file_segment(fd, mem, BUFF_SIZE, read_len, &buf_len)))
+		if (!(segment = get_file_segment(fd, BUFF_SIZE, &segment_len))
+			|| segment_len == -1
+			|| !(mem = join_file_segments(mem, segment, read_len, segment_len)))
 		{
 			*read_len = -1;
+			ft_memdel(&mem);
 			return (NULL);
 		}
-		ft_memdel(&mem);
-		mem = tmp;
+		ft_memdel(&segment);
 	}
-	if (buf_len == -1)
-		*read_len = -1;
 	return (mem);
 }

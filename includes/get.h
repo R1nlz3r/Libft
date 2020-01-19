@@ -36,8 +36,8 @@ typedef struct		s_line
 	char			*save;
 }					t_line;
 
-void				*get_file_segment(int fd, void *s, size_t buf_len,
-	ssize_t *total_read_len, ssize_t *read_len);
+void				*get_file_segment(int fd, size_t buf_len,
+	ssize_t *read_len);
 void				*get_file(int fd, ssize_t *read_len);
 int					get_next_char(const int fd, char **line, char c);
 int					get_next_line(const int fd, char **line);
