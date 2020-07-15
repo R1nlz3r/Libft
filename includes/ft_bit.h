@@ -6,12 +6,12 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/20 03:44:58 by mapandel          #+#    #+#             */
-/*   Updated: 2020/07/15 15:00:43 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/07/15 15:35:51 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_BIT_H
-# define BIT_H
+# define FT_BIT_H
 
 # include <stdint.h>
 
