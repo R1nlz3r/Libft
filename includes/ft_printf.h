@@ -6,7 +6,7 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/30 10:19:56 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/18 23:21:38 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/07/15 14:57:52 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@
 # include <stdlib.h>
 # include <wchar.h>
 
-# include "conv.h"
-# include "is.h"
-# include "mem.h"
-# include "put.h"
-# include "str.h"
-# include "wstr.h"
+# include "ft_conv.h"
+# include "ft_is.h"
+# include "ft_mem.h"
+# include "ft_put.h"
+# include "ft_str.h"
+# include "ft_wstr.h"
 
 /*
 **	Length modifier for the next conversion

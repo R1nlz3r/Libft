@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "tab.h"
+#include "ft_tab.h"
 
 /*
 **	ft_tabfindrev_undereq: table find position under equal

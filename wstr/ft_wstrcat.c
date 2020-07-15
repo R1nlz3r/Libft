@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "wstr.h"
+#include "ft_wstr.h"
 
 /*
 ** ft_wstrcat: wide string concatenation

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "is.h"
+#include "ft_is.h"
 
 /*
 ** ft_strisxdigit: string is hexadecimal digit

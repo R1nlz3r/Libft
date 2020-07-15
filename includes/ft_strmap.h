@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strmap.h                                           :+:      :+:    :+:   */
+/*   ft_strmap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 17:51:18 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/13 23:48:43 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/07/15 15:03:54 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef STRMAP_H
-# define STRMAP_H
+#ifndef FT_STRMAP_H
+# define FT_STRMAP_H
 
 # include <stdlib.h>
 
-# include "mem.h"
-# include "str.h"
+# include "ft_mem.h"
+# include "ft_str.h"
 
 char		**ft_strmapadd(char const **m, char *s);
 char		**ft_strmapadd_leakless(char **m, char *s);

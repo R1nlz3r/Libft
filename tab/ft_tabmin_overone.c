@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "tab.h"
+#include "ft_tab.h"
 
 /*
 **	ft_tabmin_overone: table minimum over one

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "sort.h"
+#include "ft_sort.h"
 
 /*
 **	ft_strmapsort: string map sorting

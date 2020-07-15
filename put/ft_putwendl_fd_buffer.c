@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "put.h"
+#include "ft_put.h"
 
 /*
 **	ft_putwendl_fd_buffer: put wide end line file descriptor buffer

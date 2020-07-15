@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "str.h"
+#include "ft_str.h"
 
 /*
 ** ft_strccat_nullcrashless: string character concatenation null crashless

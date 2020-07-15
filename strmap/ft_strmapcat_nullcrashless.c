@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "strmap.h"
+#include "ft_strmap.h"
 
 /*
 ** ft_strmapcat_nullcrashless: string map concatenation null crashless

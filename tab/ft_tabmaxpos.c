@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "tab.h"
+#include "ft_tab.h"
 
 /*
 **	ft_tabmaxpos: table maximum position

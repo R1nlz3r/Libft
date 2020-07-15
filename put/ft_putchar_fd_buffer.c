@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "put.h"
+#include "ft_put.h"
 
 /*
 **	ft_putchar_fd_buffer: put character file descriptor buffer

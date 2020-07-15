@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/04 04:10:09 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/13 18:49:01 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/07/15 14:53:36 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "mem.h"
+#include "ft_mem.h"
 
 /*
 ** ft_bzero: base zero

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "wstr.h"
+#include "ft_wstr.h"
 
 /*
 **	ft_wstrlenuni: wide string length unicode

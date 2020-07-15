@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bit.h"
+#include "ft_bit.h"
 
 /*
 **	ft_left_rotate_u32: left rotation unsigned 32bits

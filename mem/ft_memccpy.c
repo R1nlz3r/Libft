@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "mem.h"
+#include "ft_mem.h"
 
 /*
 ** ft_memccpy: memory character copy

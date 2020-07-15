@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   tab.h                                              :+:      :+:    :+:   */
+/*   ft_tab.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 17:53:05 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/18 23:25:59 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/07/15 15:04:08 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef TAB_H
-# define TAB_H
+#ifndef FT_TAB_H
+# define FT_TAB_H
 
 # include <stdlib.h>
 
-# include "mem.h"
-# include "sort.h"
+# include "ft_mem.h"
+# include "ft_sort.h"
 
 # ifndef T_TAB
 #  define T_TAB

@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get.h                                              :+:      :+:    :+:   */
+/*   ft_get.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/02/04 03:17:20 by mapandel          #+#    #+#             */
-/*   Updated: 2020/01/16 19:36:29 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/07/15 15:01:14 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_H
-# define GET_H
+#ifndef FT_GET_H
+# define FT_GET_H
 
 # include <unistd.h>
 # include <stdio.h>
 # include <sys/stat.h>
 
-# include "mem.h"
-# include "str.h"
+# include "ft_mem.h"
+# include "ft_str.h"
 
 # define BUFF_SIZE 65536
 

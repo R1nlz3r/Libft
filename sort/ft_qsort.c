@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/06 06:35:35 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/13 18:58:49 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/07/15 14:54:42 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "sort.h"
+#include "ft_sort.h"
 
 /*
 **	ft_qsort: qwick sort

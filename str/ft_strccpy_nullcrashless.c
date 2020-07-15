@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "str.h"
+#include "ft_str.h"
 
 /*
 ** ft_strccpy_nullcrashless: string character copy null crashless

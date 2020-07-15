@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   put.h                                              :+:      :+:    :+:   */
+/*   ft_put.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 17:18:06 by mapandel          #+#    #+#             */
-/*   Updated: 2020/01/16 19:02:25 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/07/15 15:03:21 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PUT_H
-# define PUT_H
+#ifndef FT_PUT_H
+# define FT_PUT_H
 
 # include <errno.h>
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
 
-# include "conv.h"
-# include "str.h"
-# include "wstr.h"
+# include "ft_conv.h"
+# include "ft_str.h"
+# include "ft_wstr.h"
 
 void	ft_putchar(char c);
 int		ft_putchar_buffer(char c, int release);

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bit.h"
+#include "ft_bit.h"
 
 /*
 **	ft_right_rotate_u8: right rotation unsigned 8bits

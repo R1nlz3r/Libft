@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   conv.h                                             :+:      :+:    :+:   */
+/*   ft_conv.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 16:45:39 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/13 23:48:14 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/07/15 15:01:03 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CONV_H
-# define CONV_H
+#ifndef FT_CONV_H
+# define FT_CONV_H
 
 # include <wchar.h>
 
-# include "is.h"
-# include "math.h"
-# include "str.h"
-# include "wstr.h"
+# include "ft_is.h"
+# include "ft_math.h"
+# include "ft_str.h"
+# include "ft_wstr.h"
 
 double			ft_atod(const char *nptr);
 int				ft_atoi(const char *nptr);

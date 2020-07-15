@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/05 19:08:42 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/13 18:43:03 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/07/15 14:51:42 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "is.h"
+#include "ft_is.h"
 
 /*
 ** ft_isalnum: is alphanumeric

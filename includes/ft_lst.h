@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   lst.h                                              :+:      :+:    :+:   */
+/*   ft_lst.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 16:59:32 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/19 18:26:12 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/07/15 15:02:49 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LST_H
-# define LST_H
+#ifndef FT_LST_H
+# define FT_LST_H
 
 # include <stdlib.h>
 
-# include "mem.h"
+# include "ft_mem.h"
 
 /*
 **	t_list: Chain list wrapper for any structure

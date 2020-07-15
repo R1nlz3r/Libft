@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/19 23:55:01 by mapandel          #+#    #+#             */
-/*   Updated: 2019/12/20 03:52:11 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/07/15 14:48:58 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "bit.h"
+#include "ft_bit.h"
 
 /*
 **	ft_left_rotate_u8: left rotation unsigned 8bits

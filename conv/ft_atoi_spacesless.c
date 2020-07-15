@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "conv.h"
+#include "ft_conv.h"
 
 /*
 **	ft_atoi_spacesless: array to integer spacesless

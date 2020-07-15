@@ -6,11 +6,11 @@
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/10 05:17:25 by mapandel          #+#    #+#             */
-/*   Updated: 2019/12/11 18:06:34 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/07/15 14:52:02 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_is.h"
 
 /*
 ** ft_isprime: is prime

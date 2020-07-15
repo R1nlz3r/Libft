@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sort.h                                             :+:      :+:    :+:   */
+/*   ft_sort.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 17:20:26 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/13 23:48:36 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/07/15 15:03:31 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SORT_H
-# define SORT_H
+#ifndef FT_SORT_H
+# define FT_SORT_H
 
 # include <stdlib.h>
 
-# include "str.h"
-# include "tab.h"
+# include "ft_str.h"
+# include "ft_tab.h"
 
 # ifndef T_TAB
 #  define T_TAB

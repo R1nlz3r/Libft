@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   to.h                                               :+:      :+:    :+:   */
+/*   ft_to.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 17:55:01 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/13 23:48:50 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/07/15 15:04:17 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef TO_H
-# define TO_H
+#ifndef FT_TO_H
+# define FT_TO_H
 
-# include "is.h"
+# include "ft_is.h"
 
 int		ft_tolower(int c);
 int		ft_toupper(int c);

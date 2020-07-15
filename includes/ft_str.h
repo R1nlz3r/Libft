@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   str.h                                              :+:      :+:    :+:   */
+/*   ft_str.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 17:49:53 by mapandel          #+#    #+#             */
-/*   Updated: 2019/11/13 23:48:39 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/07/15 15:03:41 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef STR_H
-# define STR_H
+#ifndef FT_STR_H
+# define FT_STR_H
 
 # include <stdlib.h>
 
-# include "mem.h"
+# include "ft_mem.h"
 
 char		*ft_stradd(char const *s1, char c);
 char		*ft_stradd_leakless(char *s1, char c);

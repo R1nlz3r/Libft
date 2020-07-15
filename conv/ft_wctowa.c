@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "conv.h"
+#include "ft_conv.h"
 
 /*
 **	ft_wctowa: wide char to wide array

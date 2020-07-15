@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "strmap.h"
+#include "ft_strmap.h"
 
 /*
 **	ft_strmaplen: string map length

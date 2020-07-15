@@ -1,21 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   is.h                                               :+:      :+:    :+:   */
+/*   ft_is.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mapandel <mapandel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/13 16:53:11 by mapandel          #+#    #+#             */
-/*   Updated: 2019/12/11 16:56:18 by mapandel         ###   ########.fr       */
+/*   Updated: 2020/07/15 15:02:29 by mapandel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef IS_H
-# define IS_H
+#ifndef FT_IS_H
+# define FT_IS_H
 
 # include <unistd.h>
 
-# include "tab.h"
+# include "ft_tab.h"
 
 # ifndef T_TAB
 #  define T_TAB
